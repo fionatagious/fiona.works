@@ -102,8 +102,8 @@ export default function TemporaryDrawer() {
 
   return (
     <Container maxWidth={false} sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%,#fb6962 80%,#fef84c 100%)'}}>
-      <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={9} sx={{ marginTop: '20px' }}>
+      <Grid container rowSpacing={{ xs: 2, md: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid item xs={8} sx={{ maxHeight: '95vh', overflow: 'auto' }}>
           <Overview />
           <TMPCard />
           <CFACard />
@@ -111,7 +111,7 @@ export default function TemporaryDrawer() {
           <UberCard />
           <CMCard />
         </Grid>
-        <Grid item xs={3} sx={{ marginTop: '20px' }}>
+        <Grid item xs={4} sx={{ maxHeight: '95vh', overflow: 'auto' }}>
           <Skills />
         </Grid>
       </Grid>

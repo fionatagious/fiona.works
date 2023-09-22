@@ -7,11 +7,13 @@ import Typography from '@mui/material/Typography';
 export default function Overview() {
   return (
     <Card sx={{ minWidth: 275, maxWidth: 1200 }}>
-      <CardContent>
+      <CardContent sx={{ pb: 0 }} >
+        <div class="text-2xl">2xl</div>
+        <div class="text-3xl font bold underline">3xlfont bold underline</div>
         <Typography variant="h6" component="div">
           Overview
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        <Typography color="text.secondary">
             I am a collaborative and committed full-stack engineer passionate about using my software skills to improve public service delivery and to equip governments with the technology they need to better serve their communities.
         </Typography>
         <Typography variant="body2">
