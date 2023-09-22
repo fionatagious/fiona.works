@@ -7,8 +7,8 @@ export default function Home() {
     <>
       <div className={styles.container}>
         <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
+          <title>Fiona Tang's site</title>
+          <link rel="icon" href="/favicon.ico" sizes="any"/>
         </Head>
 
         <main>

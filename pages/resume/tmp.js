@@ -2,7 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-
+import Grid from '@mui/material/Grid';
 
 export default function TMPCard() {
   return (
@@ -11,9 +11,14 @@ export default function TMPCard() {
         <Typography variant="h6" component="div">
           Software Engineer
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          The Mom Project
-        </Typography>
+        <Grid sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <Typography color="text.secondary">
+            The Mom Project
+          </Typography>
+          <Typography color="text.secondary">
+            11/2021 – 9/2023
+          </Typography>
+        </Grid>
         <Typography variant="body2">
           <ul>
             <li>Built features to enhance user flows impacting acquisition and retention: log in, sign up, and job post creation (Rails).</li>

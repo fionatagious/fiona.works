@@ -2,6 +2,7 @@ import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 
 
 export default function CFACard() {
@@ -11,9 +12,14 @@ export default function CFACard() {
         <Typography variant="h6" component="div">
           Software Engineering Fellow
         </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          Code for America
-        </Typography>
+        <Grid sx={{ display: 'flex', justifyContent: 'space-between' }}>
+          <Typography color="text.secondary">
+            Code for America
+          </Typography>
+          <Typography color="text.secondary">
+            10/2020 – 7/2021
+          </Typography>
+        </Grid>
         <Typography variant="body2">
           <ul>
             <li>Researched, project managed, designed, and developed a web app that streamlines the intake process to help people experiencing homelessness access shelter during cold weather periods, in partnership with Adams County, Colorado.</li>
