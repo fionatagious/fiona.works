@@ -6,8 +6,8 @@ import Typography from '@mui/material/Typography';
 
 export default function Overview() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200 }}>
-      <CardContent sx={{ pb: 0 }} >
+    <Card sx={{ minWidth: 275, maxWidth: 1200, opacity: 0.8 }}>
+      <CardContent sx={{ pb: 0 }}>
         <Typography variant="h6" component="div">
           Overview
         </Typography>

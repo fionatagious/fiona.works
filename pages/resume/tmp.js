@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 
 export default function TMPCard() {
   return (
-    <Card mt={5} sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px' }}>
+    <Card mt={5} sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', opacity: 0.8 }}>
       <CardContent>
         <Typography variant="h6" component="div">
           Software Engineer

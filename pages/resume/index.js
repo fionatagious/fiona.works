@@ -45,63 +45,63 @@ export default function TemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
-    <Box
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
-      <List>
-        <h4>Languages</h4>
-        {['HTML5', 'CSS3', 'Javascript', 'SQL', 'TypeScript', 'Ruby', 'Python', 'SAS', 'R'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-              <ListItemIcon>
-                {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        <h4>Full-stack Frameworks</h4>
-        {['Ruby on Rails', 'Next.js'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemIcon>
-              {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <List>
-        <h4>Testing Frameworks</h4>
-        {['Jest', 'Rspec', 'Capybara'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemIcon>
-              {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <List>
-        <h4>Soft Skills</h4>
-        {['Attention to detail', 'Communication', 'Curiosity', 'Dedication', 'Empathy', 'Organization'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemIcon>
-              {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+  // const list = (anchor) => (
+  //   <Box
+  //     sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+  //     role="presentation"
+  //     onClick={toggleDrawer(anchor, false)}
+  //     onKeyDown={toggleDrawer(anchor, false)}
+  //   >
+  //     <List>
+  //       <h4>Languages</h4>
+  //       {['HTML5', 'CSS3', 'Javascript', 'SQL', 'TypeScript', 'Ruby', 'Python', 'SAS', 'R'].map((text, index) => (
+  //         <ListItem key={text} disablePadding>
+  //             <ListItemIcon>
+  //               {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
+  //             </ListItemIcon>
+  //             <ListItemText primary={text} />
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //     <Divider />
+  //     <List>
+  //       <h4>Full-stack Frameworks</h4>
+  //       {['Ruby on Rails', 'Next.js'].map((text, index) => (
+  //         <ListItem key={text} disablePadding>
+  //           <ListItemIcon>
+  //             {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
+  //           </ListItemIcon>
+  //           <ListItemText primary={text} />
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //     <List>
+  //       <h4>Testing Frameworks</h4>
+  //       {['Jest', 'Rspec', 'Capybara'].map((text, index) => (
+  //         <ListItem key={text} disablePadding>
+  //           <ListItemIcon>
+  //             {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
+  //           </ListItemIcon>
+  //           <ListItemText primary={text} />
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //     <List>
+  //       <h4>Soft Skills</h4>
+  //       {['Attention to detail', 'Communication', 'Curiosity', 'Dedication', 'Empathy', 'Organization'].map((text, index) => (
+  //         <ListItem key={text} disablePadding>
+  //           <ListItemIcon>
+  //             {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
+  //           </ListItemIcon>
+  //           <ListItemText primary={text} />
+  //         </ListItem>
+  //       ))}
+  //     </List>
+  //   </Box>
+  // );
 
   return (
-    <Container maxWidth={false} sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%,#fb6962 80%,#fef84c 100%)'}}>
+    <Container maxWidth={false} sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #ef745c 40%, #34073d 60%, #34073d 100%)'}}>
       <Grid container rowSpacing={{ xs: 2, md: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={8} sx={{ maxHeight: '95vh', overflow: 'auto' }}>
           <Overview />
