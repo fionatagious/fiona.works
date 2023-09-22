@@ -9,7 +9,7 @@ export default function Overview() {
     <Card sx={{ minWidth: 275, maxWidth: 1200 }}>
       <CardContent sx={{ pb: 0 }} >
         <div class="text-2xl">2xl</div>
-        <div class="text-3xl font bold underline">3xlfont bold underline</div>
+        <div class="text-3xl">3xl</div>
         <Typography variant="h6" component="div">
           Overview
         </Typography>
