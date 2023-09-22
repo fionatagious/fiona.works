@@ -2,11 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
@@ -14,6 +13,12 @@ import ListItemText from '@mui/material/ListItemText';
 import Overview from './overview'
 import TMPCard from './tmp'
 import CFACard from './cfa'
+import AcumenCard from './acumen'
+import UberCard from './uber'
+import CMCard from './cm'
+
+// Skills section
+import Skills from './skills'
 
 const bull = (
   <Box
@@ -60,8 +65,8 @@ export default function TemporaryDrawer() {
       </List>
       <Divider />
       <List>
-        <h4>Frameworks</h4>
-        {['Ruby on Rails', 'Next.js, React.js, Material UI'].map((text, index) => (
+        <h4>Full-stack Frameworks</h4>
+        {['Ruby on Rails', 'Next.js'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemIcon>
               {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
@@ -71,19 +76,8 @@ export default function TemporaryDrawer() {
         ))}
       </List>
       <List>
-        <h4>Testing</h4>
+        <h4>Testing Frameworks</h4>
         {['Jest', 'Rspec', 'Capybara'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemIcon>
-              {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <List>
-        <h4>Observability</h4>
-        {['Honeybadger', 'Logz.io'].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemIcon>
               {index % 2 === 0 ? <ListItemIcon /> : <ListItemIcon />}
@@ -108,11 +102,19 @@ export default function TemporaryDrawer() {
 
   return (
     <Container maxWidth={false} sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%,#fb6962 80%,#fef84c 100%)'}}>
-      <Container>
-        <Overview />
-        <TMPCard />
-        <CFACard />
-      </Container>
+      <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid item xs={9} sx={{ marginTop: '20px' }}>
+          <Overview />
+          <TMPCard />
+          <CFACard />
+          <AcumenCard />
+          <UberCard />
+          <CMCard />
+        </Grid>
+        <Grid item xs={3} sx={{ marginTop: '20px' }}>
+          <Skills />
+        </Grid>
+      </Grid>
     </Container>
   );
 }
