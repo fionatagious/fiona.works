@@ -1,16 +1,10 @@
 import Head from "next/head";
-import Ben from "./blog";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Ben />
-      <p>
-        Click <a href="/posts/first-post">this link</a> to navigate to the first
-        post.
-      </p>
       <div className={styles.container}>
         <Head>
           <title>Create Next App</title>
@@ -19,56 +13,36 @@ export default function Home() {
 
         <main>
           <h1 className={styles.title}>
-            Welcome to <a href="https://nextjs.org">Next.js!</a>
+            Hello I'm Fiona.
           </h1>
-          <h1>
-            Read <Link href="/posts/first-post">this page!</Link>
-          </h1>
-
           <p className={styles.description}>
-            Get started by editing <code>pages/index.js</code>
-          </p>
+            I'm a software engineer and community organizer based in Chicago.</p>
+          <p>Click <a href="/resume">here</a> to learn more.</p>
 
           <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
+            {/* <a href="/posts" className={styles.card}>
+              <h3>&#x270E; stuff I write</h3>
+              <p></p>
             </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
             <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
+              href="/apps"
               className={styles.card}
             >
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
+              <h3>&#x1F4BB; stuff I code</h3>
+              <p></p>
             </a>
-
             <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              href="/recipes"
               className={styles.card}
             >
-              <h3>Deploy &rarr;</h3>
+              <h3>&#x1F373; stuff I cook</h3>
               <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
               </p>
-            </a>
+            </a> */}
           </div>
         </main>
 
         <footer>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{" "}
-            <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-          </a>
         </footer>
 
         <style jsx>{`
