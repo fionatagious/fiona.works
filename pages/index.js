@@ -98,7 +98,7 @@ export default function Home() {
       </div>
     </>
   );
-}
+  }
 
 // import Head from 'next/head';
 // import Layout, { siteTitle } from '../components/layout';

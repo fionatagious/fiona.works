@@ -8,9 +8,6 @@ export default function Overview() {
   return (
     <Card sx={{ minWidth: 275, maxWidth: 1200, opacity: 0.8 }}>
       <CardContent sx={{ pb: 0 }}>
-        <Typography variant="h6" component="div">
-          Overview
-        </Typography>
         <Typography color="text.secondary">
             I'm a collaborative and committed full-stack engineer passionate about using my software skills to improve public service delivery and to equip governments and non-profits with the technology they need to better serve their communities.
         </Typography>
