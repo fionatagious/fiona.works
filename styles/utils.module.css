@@ -34,7 +34,7 @@
 }
 
 .borderLogo {
-  border-radius: 8%;
+  border-radius: 2%;
 }
 
 .descriptionText {
@@ -44,11 +44,6 @@
 .fullNameText {
   color: white;
   margin-left: 15px;
-}
-
-.overviewText {
-  color: white;
-  text-align: left;
 }
 
 .colorInherit {

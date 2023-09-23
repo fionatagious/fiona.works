@@ -10,6 +10,7 @@ import CFACard from './cfa'
 import AcumenCard from './acumen'
 import UberCard from './uber'
 import CMCard from './cm'
+import ACLUCard from './aclu'
 // Skills section
 import Skills from './skills'
 // Education section
@@ -48,6 +49,7 @@ export default function Resume() {
             <AcumenCard />
             <UberCard />
             <CMCard />
+            <ACLUCard />
             <Typography className={utils.headingMd}>Education</Typography>
             <Education />
           </Grid>
