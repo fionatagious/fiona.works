@@ -23,12 +23,12 @@ export default function AcumenCard() {
         </Grid>
         <Grid item sx={{ marginLeft: '10px'}}>
           <Typography variant="h6" component="div" className={utils.descriptionText}>
-            Data and Policy Analyst - Statistical Programmer
+            Data and Policy Analyst—Statistical Programmer
           </Typography>
-          <Typography className={utils.descriptionText}>
+          <Typography variant="subtitle2" className={utils.descriptionText}>
             Acumen, LLC
           </Typography>
-          <Typography className={utils.descriptionText}>
+          <Typography variant="subtitle2" className={utils.descriptionText}>
             1/2020 – 2/2021
           </Typography>
           </Grid>

@@ -25,10 +25,10 @@ export default function CMCard() {
             <Typography variant="h6" component="div" className={utils.descriptionText}>
               Data Associate
             </Typography>
-            <Typography variant="body3" className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               Change Machine (formerly The Financial Clinic)
             </Typography>
-            <Typography variant="body3" className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               10/2017 – 4/2018
             </Typography>
           </Grid>

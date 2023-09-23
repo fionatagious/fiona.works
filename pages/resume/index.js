@@ -32,22 +32,21 @@ export default function Resume() {
         />
         <h2 className={utils.descriptionText}>Fiona Tang</h2>
       </Toolbar>
-      <Container maxWidth={false} sx={{ position: 'relative', minHeight: '90vh', background: 'linear-gradient(155deg, #F79256 10%, #FBD1A2 30%, #7DCFB6 50%, #00B2CA 100%)' }}>
+      <Container maxWidth={false} sx={{ position: 'relative', minHeight: '90vh', background: 'linear-gradient(155deg, #7DCFB6 30%, #7DCFB6 30%, #00B2CA 40%, #7E6377 80%, #4B3B47 100%)' }}>
         <Grid container rowSpacing={{ xs: 2, md: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-          <Grid item xs={3} sx={{ maxHeight: '100vh', overflow: 'auto', marginTop: '24px', paddingBottom: '24px' }}>
-            <Typography variant="h6">Skills</Typography>
+          <Grid item xs={3} sx={{ maxHeight: '100vh', overflow: 'auto', marginTop: '15px', paddingBottom: '24px' }}>
             <Skills />
           </Grid>
           <Grid item xs={9} sx={{ maxHeight: '100vh', overflow: 'auto', marginTop: '24px', paddingBottom: '24px' }}>
-            <Typography variant="h6">Overview</Typography>
+            <Typography className={utils.headingMd}>Overview</Typography>
             <Overview />
-            <Typography variant="h6">Work Experience</Typography>
+            <Typography className={utils.headingMd}>Work Experience</Typography>
             <TMPCard />
             <CFACard />
             <AcumenCard />
             <UberCard />
             <CMCard />
-            <Typography variant="h6">Education</Typography>
+            <Typography className={utils.headingMd}>Education</Typography>
             <Education />
           </Grid>
         </Grid>

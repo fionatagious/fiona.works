@@ -25,10 +25,10 @@ export default function CFACard() {
             <Typography variant="h6" component="div" className={utils.descriptionText}>
               Software Engineering Fellow
             </Typography>
-            <Typography className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               Code for America
             </Typography>
-            <Typography className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               10/2020 – 7/2021
             </Typography>
           </Grid>

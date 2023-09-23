@@ -29,7 +29,7 @@ export default function SkillsAccordion() {
           <Typography className={utils.descriptionText}>R</Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion defaultExpanded>
+      <Accordion defaultExpanded sx={{ backgroundColor: 'hsla(0, 100%, 0%, 0.3)' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: 'white' }}/>}
           aria-controls="panel2a-content"
@@ -46,7 +46,7 @@ export default function SkillsAccordion() {
           <Typography className={utils.descriptionText}>Material UI</Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion defaultExpanded>
+      <Accordion defaultExpanded sx={{ backgroundColor: 'hsla(0, 100%, 0%, 0.3)' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: 'white' }}/>}
           aria-controls="panel2a-content"
@@ -64,7 +64,7 @@ export default function SkillsAccordion() {
           <Typography className={utils.descriptionText}>SendGrid</Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion defaultExpanded>
+      <Accordion defaultExpanded sx={{ backgroundColor: 'hsla(0, 100%, 0%, 0.3)' }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon sx={{ color: 'white' }}/>}
           aria-controls="panel2a-content"

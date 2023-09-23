@@ -25,10 +25,10 @@ export default function TMPCard() {
             <Typography variant="h6" component="div" className={utils.descriptionText}>
               Software Engineer
             </Typography>
-            <Typography className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               The Mom Project
             </Typography>
-            <Typography className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               11/2021 – 9/2023
             </Typography>
           </Grid>

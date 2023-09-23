@@ -25,10 +25,10 @@ export default function UberCard() {
             <Typography variant="h6" component="div" className={utils.descriptionText}>
               Data Analyst
             </Typography>
-            <Typography className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               Uber
             </Typography>
-            <Typography className={utils.descriptionText}>
+            <Typography variant="subtitle2" className={utils.descriptionText}>
               9/2018 – 3/2019
             </Typography>
           </Grid>
