@@ -1,17 +1,36 @@
-import * as React from 'react';
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import utils from '/styles/utils.module.css'
+import KeyboardDoubleArrowUp from '@mui/icons-material/KeyboardDoubleArrowUp';
+import KeyboardDoubleArrowDown from '@mui/icons-material/KeyboardDoubleArrowDown';
+import Grid from '@mui/material/Grid';
 
 export default function SkillsAccordion() {
+
+  const [expandAll, setExpandAll] = useState(true);
+
+  const [doubleArrowUpIcon, setDoubleArrowUpIcon] = useState(true);
+
+  const handleClick = () => {
+    setExpandAll(!expandAll);
+    // setDoubleArrowUpIcon(!doubleArrowUpIcon)
+  };
+
   return (
     <div>
+      <Grid container sx={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Grid item><Typography className={utils.headingMd}>Skills</Typography></Grid>
+        {/* <Grid item>{doubleArrowUpIcon ? (<KeyboardDoubleArrowUp onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />) : (<KeyboardDoubleArrowDown onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />)}</Grid> */}
+        {/* <Grid item><button onClick={handleClick}>Expand/Collapse</button></Grid> */}
+      </Grid>
       <Accordion defaultExpanded sx={{ backgroundColor: 'hsla(0, 100%, 0%, 0.3)' }}>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon sx={{ color: 'white' }}/>}
+          expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -83,4 +102,4 @@ export default function SkillsAccordion() {
       </Accordion>
     </div>
   );
-}
+};
