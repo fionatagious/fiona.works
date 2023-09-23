@@ -41,6 +41,11 @@
   color: white;
 }
 
+.fullNameText {
+  color: white;
+  margin-left: 15px;
+}
+
 .overviewText {
   color: white;
   text-align: left;
