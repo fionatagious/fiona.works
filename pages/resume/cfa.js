@@ -3,23 +3,37 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import Image from 'next/image';
+import utils from '/styles/utils.module.css'
 
 export default function CFACard() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', opacity: 0.8 }}>
-        <CardContent>
-        <Typography variant="h6" component="div">
-          Software Engineering Fellow
-        </Typography>
-        <Grid sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Typography color="text.secondary">
-            Code for America
-          </Typography>
-          <Typography color="text.secondary">
-            10/2020 – 7/2021
-          </Typography>
+    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
+      <CardContent>
+        <Grid container sx={{ display: 'flex' }}>
+          <Grid item>
+            <Image
+              priority
+              src="/images/cfa-logo.jpg"
+              className={utils.borderLogo}
+              height={80}
+              width={80}
+              alt="profile-image"
+            />
+          </Grid>
+          <Grid item sx={{ marginLeft: '10px'}}>
+            <Typography variant="h6" component="div" className={utils.descriptionText}>
+              Software Engineering Fellow
+            </Typography>
+            <Typography className={utils.descriptionText}>
+              Code for America
+            </Typography>
+            <Typography className={utils.descriptionText}>
+              10/2020 – 7/2021
+            </Typography>
+          </Grid>
         </Grid>
-        <Typography variant="body2">
+        <Typography variant="body2" className={utils.descriptionText}>
           <ul>
             <li>Researched, project managed, designed, and developed a web app that streamlines the intake process to help people experiencing homelessness access shelter during cold weather periods, in partnership with Adams County, Colorado.</li>
             <li>Expanded the app&apos;s admin functionality to allow for storage of non-contiguous intake periods (Rails).</li>

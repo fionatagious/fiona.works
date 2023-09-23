@@ -3,23 +3,37 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import Image from 'next/image';
+import utils from '/styles/utils.module.css'
 
-export default function CFACard() {
+export default function UberCard() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', opacity: 0.8 }}>
+    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
       <CardContent>
-        <Typography variant="h6" component="div">
-          Data Analyst
-        </Typography>
-        <Grid sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Typography color="text.secondary">
-            Uber
-          </Typography>
-          <Typography color="text.secondary">
-            9/2018 – 3/2019
-          </Typography>
+        <Grid container sx={{ display: 'flex' }}>
+          <Grid item>
+            <Image
+              priority
+              src="/images/uber-eats-logo.jpg"
+              className={utils.borderLogo}
+              height={80}
+              width={80}
+              alt="profile-image"
+            />
+          </Grid>
+          <Grid item sx={{ marginLeft: '10px'}}>
+            <Typography variant="h6" component="div" className={utils.descriptionText}>
+              Data Analyst
+            </Typography>
+            <Typography className={utils.descriptionText}>
+              Uber
+            </Typography>
+            <Typography className={utils.descriptionText}>
+              9/2018 – 3/2019
+            </Typography>
+          </Grid>
         </Grid>
-        <Typography variant="body2">
+        <Typography variant="body2" className={utils.descriptionText}>
           <ul>
             <li>Wrote advanced queries to build dashboard on growth KPIs, such as retention and average revenue per user (SQL).</li>
             <li>Visualized platform activity of engaged users. Informed decision on whether to pursue targeted marketing (SQL, Tableau).</li>

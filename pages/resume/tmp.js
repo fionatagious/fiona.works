@@ -3,23 +3,37 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
+import Image from 'next/image';
+import utils from '/styles/utils.module.css'
 
 export default function TMPCard() {
   return (
-    <Card mt={5} sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', opacity: 0.8 }}>
+    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
       <CardContent>
-        <Typography variant="h6" component="div">
-          Software Engineer
-        </Typography>
-        <Grid sx={{ display: 'flex', justifyContent: 'space-between' }}>
-          <Typography color="text.secondary">
-            The Mom Project
-          </Typography>
-          <Typography color="text.secondary">
-            11/2021 – 9/2023
-          </Typography>
+        <Grid container sx={{ display: 'flex' }}>
+          <Grid item>
+            <Image
+              priority
+              src="/images/tmp-logo.jpg"
+              className={utils.borderLogo}
+              height={80}
+              width={80}
+              alt="profile-image"
+            />
+          </Grid>
+          <Grid item sx={{ marginLeft: '10px'}}>
+            <Typography variant="h6" component="div" className={utils.descriptionText}>
+              Software Engineer
+            </Typography>
+            <Typography className={utils.descriptionText}>
+              The Mom Project
+            </Typography>
+            <Typography className={utils.descriptionText}>
+              11/2021 – 9/2023
+            </Typography>
+          </Grid>
         </Grid>
-        <Typography variant="body2">
+        <Typography variant="body2" className={utils.descriptionText}>
           <ul>
             <li>Built features to enhance user flows impacting acquisition and retention: log in, sign up, and job post creation (Rails).</li>
             <li>Served as a technical bridge between Product and Engineering for new features, synthesizing feature requests and

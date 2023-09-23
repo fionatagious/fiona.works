@@ -1,13 +1,6 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Drawer from '@mui/material/Drawer';
 import Grid from '@mui/material/Grid';
-import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 // Work Experience Cards
 import Overview from './overview'
@@ -20,29 +13,46 @@ import CMCard from './cm'
 import Skills from './skills'
 // Education section
 import Education from './education'
+// Top-level header
+import Toolbar from '@mui/material/Toolbar';
+import Image from 'next/image';
+import utils from '/styles/utils.module.css'
 
 export default function Resume() {
   return (
-    <Container maxWidth={false} sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #ef745c 40%, #34073d 60%, #34073d 100%)'}}>
-      <Grid container rowSpacing={{ xs: 2, md: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={8} sx={{ maxHeight: '100vh', overflow: 'auto', marginTop: '24px', paddingBottom: '24px' }}>
-          <Typography variant="h6">Overview</Typography>
-          <Overview />
-          <Typography variant="h6">Work Experience</Typography>
-          <TMPCard />
-          <CFACard />
-          <AcumenCard />
-          <UberCard />
-          <CMCard />
-          <Typography variant="h6">Education</Typography>
-          <Education />
+    <>
+      <Toolbar variant='regular' sx={{ position: 'sticky', zIndex: '5', backgroundColor: 'hsla(0, 100%, 0%, 0.8)' }}>
+        <Image
+          priority
+          src="/images/headshot.jpg"
+          className={utils.borderCircle}
+          height={60}
+          width={60}
+          alt="profile-image"
+        />
+        <h2 className={utils.descriptionText}>Fiona Tang</h2>
+      </Toolbar>
+      <Container maxWidth={false} sx={{ position: 'relative', minHeight: '90vh', background: 'linear-gradient(155deg, #F79256 10%, #FBD1A2 30%, #7DCFB6 50%, #00B2CA 100%)' }}>
+        <Grid container rowSpacing={{ xs: 2, md: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid item xs={3} sx={{ maxHeight: '100vh', overflow: 'auto', marginTop: '24px', paddingBottom: '24px' }}>
+            <Typography variant="h6">Skills</Typography>
+            <Skills />
+          </Grid>
+          <Grid item xs={9} sx={{ maxHeight: '100vh', overflow: 'auto', marginTop: '24px', paddingBottom: '24px' }}>
+            <Typography variant="h6">Overview</Typography>
+            <Overview />
+            <Typography variant="h6">Work Experience</Typography>
+            <TMPCard />
+            <CFACard />
+            <AcumenCard />
+            <UberCard />
+            <CMCard />
+            <Typography variant="h6">Education</Typography>
+            <Education />
+          </Grid>
         </Grid>
-        <Grid item xs={4} sx={{ maxHeight: '100vh', overflow: 'auto', marginTop: '24px', paddingBottom: '24px' }}>
-          <Typography variant="h6">Skills</Typography>
-          <Skills />
-        </Grid>
-      </Grid>
-    </Container>
+      </Container>
+    </>
   );
 }
 
