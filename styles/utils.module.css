@@ -1,3 +1,9 @@
+.email {
+  color: #b5e4d5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
