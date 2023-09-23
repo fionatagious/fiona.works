@@ -22,7 +22,7 @@ export default function ACLUCard() {
             />
         </Grid>
         <Grid item sx={{ marginLeft: '10px'}}>
-          <Typography variant="h6" component="div" className={utils.descriptionText}>
+          <Typography variant="h6" component="div" className={utils.positionTitleText}>
             Paralegal
           </Typography>
           <Typography variant="subtitle2" className={utils.descriptionText}>
