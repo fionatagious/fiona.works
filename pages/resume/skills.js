@@ -6,7 +6,7 @@ import SkillsAccordion from '/components/accordion';
 
   export default function Skills() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
+    <Card sx={{ minWidth: 275, maxWidth: 1200, backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
       <CardContent>
         <SkillsAccordion />
       </CardContent>

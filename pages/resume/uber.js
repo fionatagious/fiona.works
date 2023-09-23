@@ -18,7 +18,7 @@ export default function UberCard() {
               className={utils.borderLogo}
               height={80}
               width={80}
-              alt="profile-image"
+              alt="uber-eats-logo"
             />
           </Grid>
           <Grid item sx={{ marginLeft: '10px'}}>

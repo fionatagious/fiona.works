@@ -18,7 +18,7 @@ export default function TMPCard() {
               className={utils.borderLogo}
               height={80}
               width={80}
-              alt="profile-image"
+              alt="the-mom-project-logo"
             />
           </Grid>
           <Grid item sx={{ marginLeft: '10px'}}>

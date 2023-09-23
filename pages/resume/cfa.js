@@ -18,7 +18,7 @@ export default function CFACard() {
               className={utils.borderLogo}
               height={80}
               width={80}
-              alt="profile-image"
+              alt="cfa-logo"
             />
           </Grid>
           <Grid item sx={{ marginLeft: '10px'}}>

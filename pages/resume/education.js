@@ -18,7 +18,7 @@ export default function Education() {
               className={utils.borderLogo}
               height={80}
               width={80}
-              alt="acumen-logo"
+              alt="uc-berkeley-logo"
             />
           </Grid>
           <Grid item sx={{ marginLeft: '10px'}}>
