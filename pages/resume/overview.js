@@ -9,7 +9,7 @@ export default function Overview() {
     <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '1.2rem', marginBottom: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
       <CardContent>
         <Typography className={utils.descriptionText}>
-          👋🏽&nbsp;&nbsp;I&apos;m a collaborative and committed full-stack software engineer passionate about using my skills to to equip organizations with the technology they need to better serve their communities. My work experiences span non-profits, government consulting firms, and mid- to late-stage startups.
+          👋🏽&nbsp;&nbsp;I&apos;m a collaborative and committed full-stack software engineer passionate about using my skills to equip organizations with the technology they need to better serve their communities. My work experiences span non-profits, government consulting firms, and mid- to late-stage startups.
         </Typography>
         <br/>
         <Typography className={utils.descriptionText}>
