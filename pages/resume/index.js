@@ -16,7 +16,7 @@ import Skills from './skills'
 // Education section
 import Education from './education'
 // Media Carousel
-import MediaCarousel from 'components/carousel'
+// import MediaCarousel from 'components/carousel'
 // Top-level header
 import Toolbar from '@mui/material/Toolbar';
 import Image from 'next/image';
@@ -54,8 +54,8 @@ export default function Resume() {
             <ACLUCard />
             <Typography className={utils.headingMd}>Education</Typography>
             <Education />
-            <Typography className={utils.headingMd}>Media</Typography>
-            <MediaCarousel />
+            {/* <Typography className={utils.headingMd}>Media</Typography> */}
+            {/* <MediaCarousel /> */}
           </Grid>
         </Grid>
       </Container>
