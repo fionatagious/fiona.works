@@ -6,7 +6,7 @@ import utils from '/styles/utils.module.css'
 
 export default function Overview() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '1.2rem', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
+    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '1.2rem', marginBottom: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
       <CardContent>
         <Typography className={utils.descriptionText}>
           👋🏽&nbsp;&nbsp;I&apos;m a collaborative and committed full-stack software engineer passionate about using my skills to to equip organizations with the technology they need to better serve their communities. My work experiences span non-profits, government consulting firms, and mid- to late-stage startups.

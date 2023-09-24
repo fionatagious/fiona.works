@@ -8,7 +8,7 @@ import utils from '/styles/utils.module.css'
 
 export default function ACLUCard() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
+    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', marginBottom: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
       <CardContent>
         <Grid container sx={{ display: 'flex' }}>
           <Grid item>
