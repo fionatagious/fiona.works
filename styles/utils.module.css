@@ -1,3 +1,30 @@
+/* home page */
+.homepageHelloText {
+  color: #4B3B47;
+  text-align: center;
+  font-family: "Trebuchet MS";
+  font-size: 50px;
+}
+
+.homepageDescriptionText {
+  text-align: center;
+  color: black;
+  font-size: 23px;
+  font-family: "Trebuchet MS";
+}
+
+.linkToResume {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkToResume:hover {
+  color: #4B3B47;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /* top-level header */
 .fullNameText {
   color: white;
