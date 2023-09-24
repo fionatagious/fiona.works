@@ -36,7 +36,7 @@ export default function AcumenCard() {
         <Typography variant="body2" className={utils.descriptionText}>
           <ul>
             <li>Analyzed claim line-level data to produce summary statistics (SAS) pertaining to weight loss and attendance outcomes under the Medicare Diabetes Prevention Program, administered by the Centers for Medicare and Medicaid Services.</li>
-            <li>Produced reports to monitor beneficiary and claim trends, flag adverse/positive selection by suppliers, and audit program compliance. Conduct outreach to suppliers to clarify compliance requirements and offer support (SQL, SAS).</li>
+            <li>Produced reports to monitor beneficiary and claim trends, flag adverse/positive selection by suppliers, and audit program compliance. Conducted outreach to suppliers to clarify compliance requirements and offer support during the Covid-19 pandemic (SQL, SAS).</li>
           </ul>
         </Typography>
       </CardContent>

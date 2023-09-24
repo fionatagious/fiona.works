@@ -1,9 +1,49 @@
+/* top-level header */
+.fullNameText {
+  color: white;
+  font-family: "Trebuchet MS";
+  margin-left: 15px;
+  font-size: 26px;
+}
+
+/* overview */
 .email {
-  color: #b5e4d5;
+  color: #d79eff;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* experience */
+.positionTitleText {
+  color: #d79eff;
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.descriptionText {
+  color: white;
+  font-family: "Trebuchet MS";
+}
+
+/* education */
+.educationTitleText {
+  font-family: "Trebuchet MS";
+  color: white;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+/* icons, avatars */
+.borderCircle {
+  border-radius: 50%;
+}
+
+.borderLogo {
+  border-radius: 50%;
+}
+
+/* heading sizes */
 .heading2Xl {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -30,39 +70,15 @@
 
 .headingMd {
   font-size: 1.2rem;
+  font-family: "Trebuchet MS";
   line-height: 1.5;
   color: white;
   margin-top: 1.2rem;
 }
 
-.borderCircle {
-  border-radius: 50%;
-}
-
-.borderLogo {
-  border-radius: 2%;
-}
-
-.positionTitleText {
-  color: white;
-  line-height: 1.4;
-}
-
-.descriptionText {
-  color: white;
-}
-
-.fullNameText {
-  color: white;
-  margin-left: 15px;
-}
-
+/* misc */
 .colorInherit {
   color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
 }
 
 .list {
@@ -73,8 +89,4 @@
 
 .listItem {
   margin: 0 0 1.25rem;
-}
-
-.lightText {
-  color: #666;
 }

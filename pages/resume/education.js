@@ -22,7 +22,7 @@ export default function Education() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: '10px'}}>
-            <Typography variant="h6" component="div" className={utils.positionTitleText}>
+            <Typography variant="h6" component="div" className={utils.educationTitleText}>
               University of California, Berkeley
             </Typography>
             <Typography variant="subtitle2" className={utils.descriptionText}>

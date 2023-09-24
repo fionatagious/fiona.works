@@ -35,9 +35,8 @@ export default function ACLUCard() {
         </Grid>
         <Typography variant="body2" className={utils.descriptionText}>
           <ul>
-            <li>Validated data claims made by the ACLU in U.S. v. Gilton and in the U.S. Supreme Court case, U.S. v. Carpenter, through analysis of cell site location information and electronic search warrant notifications, respectively (Excel, python).</li>
-            <li>Wrote and filed Freedom of Information Act requests and appeals with over 30 government agencies.</li>
-            <li>Edited and cite-checked legal briefs, adhering to the a detailed system of citation rules.</li>
+            <li>Edited and cite-checked legal briefs, adhering to the a detailed system of citation rules. Wrote and filed Freedom of Information Act requests and appeals with over 30 government agencies.</li>
+            <li>Validated data claims made by the ACLU in <i>U.S. v. Gilton</i> and in the U.S. Supreme Court case, <i>U.S. v. Carpenter</i>, through analysis of cell site location information and electronic search warrant notifications, respectively (Excel, python).</li>
           </ul>
         </Typography>
       </CardContent>
