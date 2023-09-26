@@ -22,7 +22,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Image from 'next/image';
 import utils from '/styles/utils.module.css'
 
+
 export default function Resume() {
+  const skillsData = [
+    { languages: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
+    { frameworks: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
+    { tools: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
+    { softSkills: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
+  ];
+
+  console.log("skillsData", skillsData.frameworks)
   return (
     <>
       <Container fluid disableGutters maxWidth={false} sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #4B3B47 20%, #7E6377 40%, #00B2CA 75%, #7DCFB6 100%)' }}>
@@ -35,15 +44,13 @@ export default function Resume() {
             width={50}
             alt="profile-image"
           />
-          <div>
-            <h2 className={utils.fullNameText}>Fiona Tang</h2>
-          </div>
+          <h2 className={utils.fullNameText}>Fiona Tang</h2>
         </Toolbar>
-        <Grid container rowSpacing={{ xs: 2, md: 3 }} columnSpacing={{ xs: 2, sm: 3, md: 5 }}>
-          <Grid item xs={3} sx={{ maxHeight: '100vh', overflow: 'auto' }}>
-            <Skills />
+        <Grid container>
+          <Grid item xs={2} sx={{ maxHeight: '100vh', overflow: 'auto' }}>
+            <Skills skillsData={skillsData}/>
           </Grid>
-          <Grid item xs={9} sx={{ maxHeight: '100vh', overflow: 'auto', paddingRight: '2.3rem' }}>
+          <Grid item xs={10} sx={{ display: 'grid', justifyContent: 'center', maxHeight: '100vh', overflow: 'auto', padding: '0' }}>
             <Overview />
             <Typography className={utils.headingMd}>Work Experience</Typography>
             <TMPCard />
