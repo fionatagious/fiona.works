@@ -1,7 +1,17 @@
 // These styles apply to every route in the application
 import '/styles/global.css'
-import type { AppProps } from 'next/app'
+import React from 'react';
+import { Inter } from 'next/font/google'
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const inter = Inter({
+  weight: '400',
+  subsets: ['latin'],
+})
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <main className={inter.className}>
+      <Component {...pageProps} />
+    </main>
+  )
 }
