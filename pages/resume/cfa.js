@@ -1,17 +1,25 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 
-import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
-import Image from 'next/image';
-import utils from '/styles/utils.module.css'
+import Typography from "@mui/material/Typography";
+import Grid from "@mui/material/Grid";
+import Image from "next/image";
+import utils from "/styles/utils.module.css";
 
 export default function CFACard() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
+    <Card
+      sx={{
+        minWidth: 275,
+        maxWidth: 1200,
+        marginTop: "10px",
+        backgroundColor: "hsla(0, 100%, 0%, 0.7)",
+        color: "white",
+      }}
+    >
       <CardContent>
-        <Grid container sx={{ display: 'flex' }}>
+        <Grid container sx={{ display: "flex" }}>
           <Grid item>
             <Image
               priority
@@ -22,8 +30,12 @@ export default function CFACard() {
               alt="cfa-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: '10px'}}>
-            <Typography variant="h6" component="div" className={utils.positionTitleText}>
+          <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
+            <Typography
+              variant="h6"
+              component="div"
+              className={utils.positionTitleText}
+            >
               Software Engineering Fellow
             </Typography>
             <Typography variant="subtitle2" className={utils.descriptionText}>
@@ -34,11 +46,22 @@ export default function CFACard() {
             </Typography>
           </Grid>
         </Grid>
-        <Typography variant="body2" className={utils.descriptionText}>
+        <Typography className="text-sm">
           <ul>
-            <li>Researched, project managed, designed, and developed a web app that streamlines the intake process to help people experiencing homelessness access shelter during cold weather periods, in partnership with Adams County, Colorado.</li>
-            <li>Expanded the app&apos;s admin functionality to allow for storage of non-contiguous intake periods (Rails).</li>
-            <li>Wrote unit tests and validations for program activation dates and intake dates to expand application test coverage (Rails).</li>
+            <li>
+              Researched, project managed, designed, and developed a web app
+              that streamlines the intake process to help people experiencing
+              homelessness access shelter during cold weather periods, in
+              partnership with Adams County, Colorado.
+            </li>
+            <li>
+              Expanded the app&apos;s admin functionality to allow for storage
+              of non-contiguous intake periods (Rails).
+            </li>
+            <li>
+              Wrote unit tests and validations for program activation dates and
+              intake dates to expand application test coverage (Rails).
+            </li>
           </ul>
           {/* <CardMedia component="picture" height="300" sx={{ border: 'solid white' }}>
             <source media="https://codeforamerica.org/news/limits-technology-homelessness/" />
