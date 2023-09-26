@@ -1,33 +1,47 @@
-import * as React from 'react';
-import Container from '@mui/material/Container';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Container from "@mui/material/Container";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import Head from "next/head";
-import utils from '/styles/utils.module.css'
+import utils from "/styles/utils.module.css";
 
 export default function Home() {
   return (
-    <Container fluid disableGutters maxWidth={false} sx={{ height: "100vh", margin: 0, background: 'linear-gradient(135deg, #4B3B47 20%, #7E6377 40%, #00B2CA 75%, #7DCFB6 100%)' }}>
+    <Container
+      fluid
+      disableGutters
+      maxWidth={false}
+      sx={{
+        height: "100vh",
+        margin: 0,
+        background:
+          "linear-gradient(135deg, #4B3B47 20%, #7E6377 40%, #00B2CA 75%, #7DCFB6 100%)",
+      }}
+    >
       <Head>
-        <title>Fiona Tang's site</title>
-        <link rel="icon" href="/favicon.ico" sizes="any"/>
+        <title>Fiona Tang&apos;s site</title>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
       <main>
-        <Card sx={{ opacity: '50%', maxWidth: '36rem' }}>
+        <Card sx={{ opacity: "50%", maxWidth: "36rem" }}>
           <CardContent>
             <Grid container rowSpacing={{ xs: 1, md: 3 }}>
               <Grid item xs={12}>
-                <Typography className={utils.homepageHelloText}>
-                  Hello, I'm Fiona.
+                <Typography className="font-3xl">
+                  Hello, I&apos;m Fiona.
                 </Typography>
               </Grid>
               <Grid item xs={12}>
                 <Typography className={utils.homepageDescriptionText}>
-                  I'm a software engineer based in Chicago. <br />
-                  Click <a href="/resume" className={utils.linkToResume}>here</a> to learn more.
+                  I&apos;m a software engineer based in Chicago. <br />
+                  Click{" "}
+                  <a href="/resume" className={utils.linkToResume}>
+                    here
+                  </a>{" "}
+                  to learn more.
                 </Typography>
               </Grid>
             </Grid>
