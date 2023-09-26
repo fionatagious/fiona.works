@@ -1,8 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* home page */
 .homepageHelloText {
   color: #4B3B47;
   text-align: center;
-  font-family: "Trebuchet MS";
   font-size: 50px;
 }
 
@@ -10,7 +13,6 @@
   text-align: center;
   color: black;
   font-size: 23px;
-  font-family: "Trebuchet MS";
 }
 
 .linkToResume {
@@ -28,7 +30,6 @@
 /* top-level header */
 .fullNameText {
   color: white;
-  font-family: "Trebuchet MS";
   margin-left: 15px;
   font-size: 26px;
 }
@@ -43,19 +44,16 @@
 /* experience */
 .positionTitleText {
   color: #d79eff;
-  font-family: "Trebuchet MS";
   font-size: 20px;
   line-height: 1.4;
 }
 
 .descriptionText {
   color: white;
-  font-family: "Trebuchet MS";
 }
 
 /* education */
 .educationTitleText {
-  font-family: "Trebuchet MS";
   color: white;
   font-weight: bold;
   line-height: 1.4;
@@ -87,20 +85,12 @@
   margin: 1rem 0;
 }
 
-.headingLg {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: white;
-  margin: 0.5rem 0;
-  text-align: center;
-}
-
 .headingMd {
-  font-size: 1.2rem;
-  font-family: "Trebuchet MS";
-  line-height: 1.5;
+  font-size: 1.5rem;
+  line-height: 1;
   color: white;
-  margin-top: 1.2rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem
 }
 
 /* misc */
