@@ -37,12 +37,8 @@ export default function UberCard() {
             >
               Data Analyst
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              Uber
-            </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              9/2018 – 3/2019
-            </Typography>
+            <Typography variant="subtitle2">Uber</Typography>
+            <Typography variant="subtitle2">9/2018 – 3/2019</Typography>
           </Grid>
         </Grid>
         <Typography className="text-sm">

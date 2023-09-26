@@ -17,7 +17,7 @@ export default function Overview() {
       }}
     >
       <CardContent>
-        <Typography variant="body2" className={utils.descriptionText}>
+        <Typography className="text-sm">
           👋🏽&nbsp;&nbsp;I&apos;m a collaborative and committed full-stack
           software engineer passionate about using my skills to equip
           organizations with the technology they need to better serve their
@@ -25,11 +25,11 @@ export default function Overview() {
           consulting firms, and mid- to late-stage startups.
         </Typography>
         <br />
-        <Typography variant="body2" className={utils.descriptionText}>
+        <Typography className="text-sm">
           💬&nbsp;&nbsp;I’m looking to collaborate on: climate action, civic
           tech, public interest and social impact projects.
         </Typography>
-        <Typography variant="body2" className={utils.descriptionText}>
+        <Typography className="text-sm">
           📫&nbsp;&nbsp;Write to me at{" "}
           <a href="mailto: fionatang@alum.berkeley.edu" className={utils.email}>
             fionatang@alum.berkeley.edu

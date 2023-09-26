@@ -37,12 +37,8 @@ export default function TMPCard() {
             >
               Software Engineer
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              The Mom Project
-            </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              11/2021 – 9/2023
-            </Typography>
+            <Typography variant="subtitle2">The Mom Project</Typography>
+            <Typography variant="subtitle2">11/2021 – 9/2023</Typography>
           </Grid>
         </Grid>
         <Typography className="text-sm">

@@ -38,12 +38,10 @@ export default function ACLUCard() {
             >
               Paralegal
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
+            <Typography variant="subtitle2">
               American Civil Liberties Union
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              4/2016 – 10/2017
-            </Typography>
+            <Typography variant="subtitle2">4/2016 – 10/2017</Typography>
           </Grid>
         </Grid>
         <Typography className="text-sm">

@@ -38,12 +38,8 @@ export default function CFACard() {
             >
               Software Engineering Fellow
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              Code for America
-            </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              10/2020 – 7/2021
-            </Typography>
+            <Typography variant="subtitle2">Code for America</Typography>
+            <Typography variant="subtitle2">10/2020 – 7/2021</Typography>
           </Grid>
         </Grid>
         <Typography className="text-sm">

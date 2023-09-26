@@ -38,12 +38,8 @@ export default function Education() {
             >
               University of California, Berkeley
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              B.A. Legal Studies
-            </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              3.76/4.00, cum laude
-            </Typography>
+            <Typography variant="subtitle2">B.A. Legal Studies</Typography>
+            <Typography variant="subtitle2">3.76/4.00, cum laude</Typography>
           </Grid>
         </Grid>
       </CardContent>

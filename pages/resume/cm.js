@@ -37,12 +37,10 @@ export default function CMCard() {
             >
               Data Associate
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
+            <Typography variant="subtitle2">
               Change Machine (formerly The Financial Clinic)
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              10/2017 – 4/2018
-            </Typography>
+            <Typography variant="subtitle2">10/2017 – 4/2018</Typography>
           </Grid>
         </Grid>
         <Typography className="text-sm">

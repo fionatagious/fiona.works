@@ -37,12 +37,8 @@ export default function AcumenCard() {
             >
               Data and Policy Analyst—Statistical Programmer
             </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              Acumen, LLC
-            </Typography>
-            <Typography variant="subtitle2" className={utils.descriptionText}>
-              1/2020 – 2/2021
-            </Typography>
+            <Typography variant="subtitle2">Acumen, LLC</Typography>
+            <Typography variant="subtitle2">1/2020 – 2/2021</Typography>
           </Grid>
         </Grid>
         <Typography className="text-sm">
