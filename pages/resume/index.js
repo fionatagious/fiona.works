@@ -24,14 +24,7 @@ import utils from '/styles/utils.module.css'
 
 
 export default function Resume() {
-  const skillsData = [
-    { languages: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
-    { frameworks: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
-    { tools: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
-    { softSkills: ['Tailwind', 'Bootstrap', 'Next.js', 'React', 'Ruby on Rails', 'Material UI'],},
-  ];
 
-  console.log("skillsData", skillsData.frameworks)
   return (
     <>
       <Container fluid disableGutters maxWidth={false} sx={{ minHeight: '100vh', background: 'linear-gradient(135deg, #4B3B47 20%, #7E6377 40%, #00B2CA 75%, #7DCFB6 100%)' }}>
@@ -48,20 +41,20 @@ export default function Resume() {
         </Toolbar>
         <Grid container>
           <Grid item xs={2} sx={{ maxHeight: '100vh', overflow: 'auto' }}>
-            <Skills skillsData={skillsData}/>
+            <Skills />
           </Grid>
-          <Grid item xs={10} sx={{ display: 'grid', justifyContent: 'center', maxHeight: '100vh', overflow: 'auto', padding: '0' }}>
+          <Grid item xs={10} sx={{ display: 'grid', justifyContent: 'center', maxHeight: '100vh', overflow: 'auto', padding: '0', color: 'white' }}>
             <Overview />
-            <Typography className={utils.headingMd}>Work Experience</Typography>
+            <Typography className="text-2xl">Experience</Typography>
             <TMPCard />
             <CFACard />
             <AcumenCard />
             <UberCard />
             <CMCard />
             <ACLUCard />
-            <Typography className={utils.headingMd}>Education</Typography>
+            <Typography className="text-2xl">Education</Typography>
             <Education />
-            {/* <Typography className={utils.headingMd}>Media</Typography> */}
+            {/* <Typography className="text-2xl">Media</Typography> */}
             {/* <MediaCarousel /> */}
           </Grid>
         </Grid>

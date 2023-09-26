@@ -30,21 +30,21 @@ export default function SkillsAccordion() {
   return (
     <div>
       <Grid container sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Grid item><Typography className={utils.headingMd}>Skills</Typography></Grid>
+        <Grid item><Typography className="text-2xl">Skills</Typography></Grid>
         {/* <Grid item>{doubleArrowUpIcon ? (<KeyboardDoubleArrowUp onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />) : (<KeyboardDoubleArrowDown onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />)}</Grid> */}
         {/* <Grid item><button onClick={handleClick}>Expand/Collapse</button></Grid> */}
       </Grid>
       {skillsData.map((item, id)=>(
-        <Accordion defaultExpanded sx={{ backgroundColor: 'hsla(0, 100%, 0%, 0.3)' }}>
+        <Accordion defaultExpanded sx={{ backgroundColor: 'hsla(0, 100%, 0%, 0.3)', color: 'white' }}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon sx={{ color: 'white' }}/>}
             aria-controls="panel-content"
             id="panel-header"
           >
-            <Typography className={utils.descriptionText} key={id}>{item.name}</Typography>
+            <Typography className="text-sm" key={id}>{item.name}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            {item.children.map((child, id)=>(<Typography key={id} className={utils.descriptionText}>{child}</Typography>))}
+            {item.children.map((child, id)=>(<Typography key={id} className="text-sm">{child}</Typography>))}
           </AccordionDetails>
         </Accordion>
       ))}

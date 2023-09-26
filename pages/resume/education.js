@@ -8,7 +8,7 @@ import utils from '/styles/utils.module.css'
 
 export default function Education() {
   return (
-    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', marginBottom: '1.2rem', backgroundColor: 'hsla(0, 100%, 0%, 0.7)' }}>
+    <Card sx={{ minWidth: 275, maxWidth: 1200, marginTop: '10px', marginBottom: '1.2rem', backgroundColor: 'hsla(0, 100%, 0%, 0.7)', color: 'white' }}>
       <CardContent>
         <Grid container sx={{ display: 'flex' }}>
           <Grid item>
@@ -21,7 +21,7 @@ export default function Education() {
               alt="uc-berkeley-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: '10px'}}>
+          <Grid item sx={{ marginLeft: '0.75rem', alignSelf: 'center' }}>
             <Typography variant="h6" component="div" className={utils.educationTitleText}>
               University of California, Berkeley
             </Typography>
