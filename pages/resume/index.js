@@ -1,7 +1,7 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
-
 import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 // Work Experience Cards
 import Overview from "./overview";
 import TMPCard from "./tmp";
@@ -65,7 +65,13 @@ export default function Resume() {
               <Overview className="min-h-full mt-3" />
             </Grid>
 
-            <div className={utils.sectionHeadingText}>Experience</div>
+            <Typography
+              sx={{ display: "flex", justifyContent: "left", width: "100%" }}
+              className={utils.sectionHeadingText}
+            >
+              Experience
+            </Typography>
+
             <Grid item>
               <TMPCard className="min-h-full" />
               <CFACard className="min-h-full" />
@@ -90,7 +96,13 @@ export default function Resume() {
             <Grid item>
             </Grid> */}
 
-            <div className={utils.sectionHeadingText}>Education</div>
+            <Typography
+              sx={{ display: "flex", justifyContent: "left", width: "100%" }}
+              className={utils.sectionHeadingText}
+            >
+              Education
+            </Typography>
+
             <Grid item>
               <Education className="min-h-full" />
             </Grid>
