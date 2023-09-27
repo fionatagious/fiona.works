@@ -44,7 +44,7 @@ export default function ACLUCard() {
           </Grid>
         </Grid>
         <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm mt-2">
+          <Grid item className="text-sm pl-3 mt-2">
             <ListItem sx={{ display: "list-item" }}>
               Edited and cite-checked legal briefs, adhering to the a detailed
               system of citation rules. Wrote and filed Freedom of Information

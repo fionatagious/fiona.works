@@ -67,7 +67,7 @@ export default function Resume() {
             </Grid>
 
             <Grid item>
-              <Typography className="text-xl mt-2 pt-2">Experience</Typography>
+              <div className="text-xl ml-2 mt-2 pt-2">Experience</div>
               <TMPCard className="min-h-full" />
             </Grid>
 
@@ -92,8 +92,8 @@ export default function Resume() {
             </Grid>
 
             <Grid item>
-              <Typography className="text-xl mt-2 pt-2">Education</Typography>
-              <Education />
+              <div className="text-xl ml-2 mt-2 pt-2">Education</div>
+              <Education className="min-h-full" />
             </Grid>
 
             {/* <Typography className="text-2xl">Media</Typography> */}

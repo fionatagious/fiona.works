@@ -15,7 +15,7 @@ export default function TMPCard() {
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}
-      className=" my-2"
+      className="my-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>
@@ -42,7 +42,7 @@ export default function TMPCard() {
           </Grid>
         </Grid>
         <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm mt-2">
+          <Grid item className="text-sm pl-3 mt-2">
             <ListItem sx={{ display: "list-item" }}>
               Built features to enhance user flows impacting acquisition and
               retention: log in, sign up, and job post creation (Rails).

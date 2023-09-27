@@ -15,7 +15,7 @@ export default function CMCard() {
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}
-      className=" my-2"
+      className="my-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>
@@ -44,7 +44,7 @@ export default function CMCard() {
           </Grid>
         </Grid>
         <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm mt-2">
+          <Grid item className="text-sm pl-3 mt-2">
             <ListItem sx={{ display: "list-item" }}>
               Developed reports to track achievement in financial outcomes of
               70,000 low-income New York City residents. Created dashboards on

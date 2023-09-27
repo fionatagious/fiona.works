@@ -16,7 +16,7 @@ export default function UberCard() {
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}
-      className=" my-2"
+      className="my-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>
@@ -43,7 +43,7 @@ export default function UberCard() {
           </Grid>
         </Grid>
         <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm  mt-2">
+          <Grid item className="text-sm pl-3 mt-2">
             <ListItem sx={{ display: "list-item" }}>
               Wrote advanced queries to build dashboard on growth KPIs, such as
               retention and average revenue per user (SQL).
