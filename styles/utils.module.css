@@ -48,11 +48,14 @@
   color: white;
 }
 
-/* education */
-.educationTitleText {
+/* Section Headings */
+.sectionHeadingText {
   color: white;
-  font-weight: bold;
   line-height: 1.4;
+  margin-left: 3px;
+  margin-top: 2px;
+  padding-top: 2px;
+  font-size: 1.5rem;
 }
 
 /* icons, avatars */

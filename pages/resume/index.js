@@ -65,34 +65,34 @@ export default function Resume() {
               <Overview className="min-h-full mt-3" />
             </Grid>
 
+            <div className={utils.sectionHeadingText}>Experience</div>
             <Grid item>
-              <div className="text-xl ml-5 mt-2 pt-2">Experience</div>
               <TMPCard className="min-h-full" />
-            </Grid>
-
-            <Grid item>
               <CFACard className="min-h-full" />
-            </Grid>
-
-            <Grid item>
               <AcumenCard className="min-h-full" />
-            </Grid>
-
-            <Grid item>
               <UberCard className="min-h-full" />
-            </Grid>
-
-            <Grid item>
               <CMCard className="min-h-full" />
-            </Grid>
-
-            <Grid item>
               <ACLUCard className="min-h-full" />
             </Grid>
+            {/* 
+            <Grid item>
+            </Grid>
 
             <Grid item>
-              <div className="text-xl ml-5 mt-2 pt-2">Education</div>
-              <Education className="min-h-full w-full" />
+            </Grid>
+
+            <Grid item>
+            </Grid>
+
+            <Grid item>
+            </Grid>
+
+            <Grid item>
+            </Grid> */}
+
+            <div className={utils.sectionHeadingText}>Education</div>
+            <Grid item>
+              <Education className="min-h-full" />
             </Grid>
 
             {/* <Typography className="text-2xl">Media</Typography> */}
