@@ -4,7 +4,7 @@
 
 /* home page */
 .homepageHelloText {
-  color: #4B3B47;
+  color: #4b3b47;
   text-align: center;
   font-size: 50px;
 }
@@ -22,7 +22,7 @@
 }
 
 .linkToResume:hover {
-  color: #4B3B47;
+  color: #4b3b47;
   text-decoration: none;
   font-weight: bold;
 }
@@ -30,8 +30,8 @@
 /* top-level header */
 .fullNameText {
   color: white;
-  margin-left: 15px;
-  font-size: 26px;
+  margin-left: 1.2rem;
+  font-size: 1.625rem;
 }
 
 /* overview */
@@ -90,7 +90,7 @@
   line-height: 1;
   color: white;
   margin-left: 0.5rem;
-  margin-top: 0.5rem
+  margin-top: 0.5rem;
 }
 
 /* misc */
