@@ -26,7 +26,7 @@ export default function Resume() {
   return (
     <>
       <Container
-        fluid
+        fluid={true}
         disableGutters
         maxWidth={false}
         sx={{
@@ -54,31 +54,49 @@ export default function Resume() {
           <h2 className={utils.fullNameText}>Fiona Tang</h2>
         </Toolbar>
         <Grid container>
-          <Grid item xs={2} sx={{ maxHeight: "100vh", overflow: "auto" }}>
+          <Grid item xs={2} className="max-h-screen overflow-auto">
             <Skills />
           </Grid>
           <Grid
-            item
+            container
             xs={10}
-            sx={{
-              display: "grid",
-              justifyContent: "center",
-              maxHeight: "100vh",
-              overflow: "auto",
-              padding: "0",
-              color: "white",
-            }}
+            className="grid justify-center max-h-screen pb-3 text-white overflow-auto"
           >
-            <Overview />
-            <Typography className="text-8xl">Experience</Typography>
-            <TMPCard />
-            <CFACard />
-            <AcumenCard />
-            <UberCard />
-            <CMCard />
-            <ACLUCard />
-            <Typography className="text-2xl">Education</Typography>
-            <Education />
+            <Grid item>
+              <Overview className="mt-3" />
+            </Grid>
+            <Grid item>
+              <Typography className="text-xl mt-2 pt-2">Experience</Typography>
+            </Grid>
+            <Grid item>
+              <TMPCard className="min-h-full" />
+            </Grid>
+            <Grid item>
+              <CFACard className="min-h-full" />
+            </Grid>
+
+            <Grid item>
+              <AcumenCard className="min-h-full" />
+            </Grid>
+
+            <Grid item>
+              <UberCard className="min-h-full" />
+            </Grid>
+
+            <Grid item>
+              <CMCard className="min-h-full" />
+            </Grid>
+
+            <Grid item>
+              <ACLUCard className="min-h-full" />
+            </Grid>
+
+            <Grid item>
+              <Typography className="text-xl mt-2 pt-2">Education</Typography>
+
+              <Education />
+            </Grid>
+
             {/* <Typography className="text-2xl">Media</Typography> */}
             {/* <MediaCarousel /> */}
           </Grid>

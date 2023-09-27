@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* home page */
 .homepageHelloText {
   color: #4b3b47;

@@ -5,17 +5,16 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import utils from "/styles/utils.module.css";
-
+import ListItem from "@mui/material/ListItem";
 export default function CMCard() {
   return (
     <Card
       sx={{
         minWidth: 275,
         maxWidth: 1200,
-        marginTop: "10px",
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
-        color: "white",
       }}
+      className="text-white my-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>
@@ -43,28 +42,28 @@ export default function CMCard() {
             <Typography variant="subtitle2">10/2017 – 4/2018</Typography>
           </Grid>
         </Grid>
-        <Typography className="text-sm">
-          <ul>
-            <li>
+        <Grid container sx={{ display: "flex" }}>
+          <Grid item className="text-sm mt-2">
+            <ListItem sx={{ display: "list-item" }}>
               Developed reports to track achievement in financial outcomes of
               70,000 low-income New York City residents. Created dashboards on
               deliverables to support continued funding and partnerships
               (Salesforce, Excel, SQL).
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Queried and visualized financial-coaching data to aid in the
               production of fact sheets, publications, and policy proposals.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Clarified and fulfilled data requests from Direct Services,
               Product, and Executive teams, juggling competing priorities.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Examined financial-coaching data for trends in consumer behavior
               (Python) to develop the Clinic’s policy agenda.
-            </li>
-          </ul>
-        </Typography>
+            </ListItem>
+          </Grid>
+        </Grid>
       </CardContent>
     </Card>
   );

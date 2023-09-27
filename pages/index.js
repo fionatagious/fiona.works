@@ -10,7 +10,7 @@ import utils from "/styles/utils.module.css";
 export default function Home() {
   return (
     <Container
-      fluid
+      fluid={true}
       disableGutters
       maxWidth={false}
       sx={{
@@ -27,10 +27,10 @@ export default function Home() {
 
       <main>
         <Card sx={{ opacity: "50%", maxWidth: "36rem" }}>
-          <CardContent>
+          <CardContent className="pt-6">
             <Grid container rowSpacing={{ xs: 1, md: 3 }}>
               <Grid item xs={12}>
-                <Typography className="font-3xl">
+                <Typography className="text-center text-3xl mt-2">
                   Hello, I&apos;m Fiona.
                 </Typography>
               </Grid>

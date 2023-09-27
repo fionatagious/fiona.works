@@ -5,17 +5,16 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import utils from "/styles/utils.module.css";
-
+import ListItem from "@mui/material/ListItem";
 export default function TMPCard() {
   return (
     <Card
       sx={{
         minWidth: 275,
         maxWidth: 1200,
-        marginTop: "10px",
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
-        color: "white",
       }}
+      className="text-white my-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>
@@ -41,33 +40,28 @@ export default function TMPCard() {
             <Typography variant="subtitle2">11/2021 – 9/2023</Typography>
           </Grid>
         </Grid>
-        <Typography className="text-sm">
-          <ul>
-            <li>
+        <Grid container sx={{ display: "flex" }}>
+          <Grid item className="text-sm mt-2">
+            <ListItem sx={{ display: "list-item" }}>
               Built features to enhance user flows impacting acquisition and
               retention: log in, sign up, and job post creation (Rails).
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Served as a technical bridge between Product and Engineering for
               new features, synthesizing feature requests and clarifying
               engineering effort and scope. Led technical planning and
               documented technical specifications.
-            </li>
-            <li>
-              Worked in a monolithic codebase (Rails) to migrate to a brand new
-              front-end architecture (Next.js, TypeScript), leveraging
-              integrations between our data structures, microservices, and APIs.
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Contributed to the creation and maintenance of a new design system
               and component UI library (Material UI, Storybook).
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Participated in feature prioritization, architecture discussions,
               and code reviews across four distinct repositories.
-            </li>
-          </ul>
-        </Typography>
+            </ListItem>
+          </Grid>
+        </Grid>
       </CardContent>
     </Card>
   );

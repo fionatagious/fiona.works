@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import utils from "/styles/utils.module.css";
+import ListItem from "@mui/material/ListItem";
 
 export default function UberCard() {
   return (
@@ -12,10 +13,9 @@ export default function UberCard() {
       sx={{
         minWidth: 275,
         maxWidth: 1200,
-        marginTop: "10px",
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
-        color: "white",
       }}
+      className="text-white my-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>
@@ -41,23 +41,23 @@ export default function UberCard() {
             <Typography variant="subtitle2">9/2018 – 3/2019</Typography>
           </Grid>
         </Grid>
-        <Typography className="text-sm">
-          <ul>
-            <li>
+        <Grid container sx={{ display: "flex" }}>
+          <Grid item className="text-sm mt-2">
+            <ListItem sx={{ display: "list-item" }}>
               Wrote advanced queries to build dashboard on growth KPIs, such as
               retention and average revenue per user (SQL).
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Visualized platform activity of engaged users. Informed decision
               on whether to pursue targeted marketing (SQL, Tableau).
-            </li>
-            <li>
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
               Analyzed week-over-week onboarding of Uber Eats sellers to better
               understand ramp time, enabling Sales Operations team to establish
               reasonable quota (SQL, Python).
-            </li>
-          </ul>
-        </Typography>
+            </ListItem>
+          </Grid>
+        </Grid>
       </CardContent>
     </Card>
   );
