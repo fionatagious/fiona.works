@@ -12,11 +12,12 @@ export default function Overview() {
           minWidth: 275,
           maxWidth: 1200,
           backgroundColor: "hsla(0, 100%, 0%, 0.7)",
+          color: "white",
         }}
-        className="text-white mt-3 mb-2"
+        className="mt-3 mb-2"
       >
         <CardContent className="d-flex pb-6">
-          <Typography className="text-sm">
+          <Typography className="text-sm ">
             👋🏽&nbsp;&nbsp;I&apos;m a collaborative and committed full-stack
             software engineer passionate about using my skills to equip
             organizations with the technology they need to better serve their

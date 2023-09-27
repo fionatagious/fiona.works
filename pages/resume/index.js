@@ -60,17 +60,17 @@ export default function Resume() {
           <Grid
             container
             xs={10}
-            className="grid justify-center max-h-screen pb-3 text-white overflow-auto"
+            className="grid justify-center max-h-screen pb-3  overflow-auto"
           >
             <Grid item>
-              <Overview className="mt-3" />
+              <Overview className="min-h-full mt-3" />
             </Grid>
+
             <Grid item>
               <Typography className="text-xl mt-2 pt-2">Experience</Typography>
-            </Grid>
-            <Grid item>
               <TMPCard className="min-h-full" />
             </Grid>
+
             <Grid item>
               <CFACard className="min-h-full" />
             </Grid>
@@ -93,7 +93,6 @@ export default function Resume() {
 
             <Grid item>
               <Typography className="text-xl mt-2 pt-2">Education</Typography>
-
               <Education />
             </Grid>
 

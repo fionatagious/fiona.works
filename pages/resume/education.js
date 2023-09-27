@@ -13,8 +13,9 @@ export default function Education() {
         minWidth: 275,
         maxWidth: 1200,
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
+        color: "white",
       }}
-      className="text-white mt-2 mb-3"
+      className=" mt-2 mb-3"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>

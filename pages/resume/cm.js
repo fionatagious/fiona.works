@@ -13,8 +13,9 @@ export default function CMCard() {
         minWidth: 275,
         maxWidth: 1200,
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
+        color: "white",
       }}
-      className="text-white my-2"
+      className=" my-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>
