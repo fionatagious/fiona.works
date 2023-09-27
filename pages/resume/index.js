@@ -2,13 +2,12 @@ import * as React from "react";
 import Container from "@mui/material/Container";
 
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 // Work Experience Cards
 import Overview from "./overview";
 import TMPCard from "./tmp";
 import CFACard from "./cfa";
 import AcumenCard from "./acumen";
-import UberCard from "./uber";
+import UberCard from "./uber-card";
 import CMCard from "./cm";
 import ACLUCard from "./aclu";
 // Skills section
@@ -60,14 +59,14 @@ export default function Resume() {
           <Grid
             container
             xs={10}
-            className="grid justify-center max-h-screen pb-3  overflow-auto"
+            className="grid justify-center max-h-screen pb-3 overflow-auto"
           >
             <Grid item>
               <Overview className="min-h-full mt-3" />
             </Grid>
 
             <Grid item>
-              <div className="text-xl ml-2 mt-2 pt-2">Experience</div>
+              <div className="text-xl ml-5 mt-2 pt-2">Experience</div>
               <TMPCard className="min-h-full" />
             </Grid>
 
@@ -92,8 +91,8 @@ export default function Resume() {
             </Grid>
 
             <Grid item>
-              <div className="text-xl ml-2 mt-2 pt-2">Education</div>
-              <Education className="min-h-full" />
+              <div className="text-xl ml-5 mt-2 pt-2">Education</div>
+              <Education className="min-h-full w-full" />
             </Grid>
 
             {/* <Typography className="text-2xl">Media</Typography> */}
