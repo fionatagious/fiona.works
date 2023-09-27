@@ -61,18 +61,17 @@ export default function Resume() {
             xs={10}
             className="grid justify-center max-h-screen pb-3 overflow-auto"
           >
-            <Grid item>
+            <Grid xs={12} item>
               <Overview className="min-h-full mt-3" />
             </Grid>
 
-            <Typography
-              sx={{ display: "flex", justifyContent: "left", width: "100%" }}
-              className={utils.sectionHeadingText}
-            >
-              Experience
-            </Typography>
-
-            <Grid item>
+            <Grid item xs={12}>
+              <Typography
+                sx={{ width: "100%" }}
+                className={utils.sectionHeadingText}
+              >
+                Experience
+              </Typography>
               <TMPCard className="min-h-full" />
               <CFACard className="min-h-full" />
               <AcumenCard className="min-h-full" />
@@ -96,14 +95,13 @@ export default function Resume() {
             <Grid item>
             </Grid> */}
 
-            <Typography
-              sx={{ display: "flex", justifyContent: "left", width: "100%" }}
-              className={utils.sectionHeadingText}
-            >
-              Education
-            </Typography>
-
-            <Grid item>
+            <Grid item xs={12}>
+              <Typography
+                sx={{ width: "100%" }}
+                className={utils.sectionHeadingText}
+              >
+                Education
+              </Typography>
               <Education className="min-h-full" />
             </Grid>
 
