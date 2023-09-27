@@ -57,11 +57,11 @@ export default function Resume() {
             <Skills />
           </Grid>
           <Grid
-            container
+            item
             xs={10}
             className="grid justify-center max-h-screen pb-3 overflow-auto"
           >
-            <Grid xs={12} item>
+            <Grid item xs={12}>
               <Overview className="min-h-full mt-3" />
             </Grid>
 
