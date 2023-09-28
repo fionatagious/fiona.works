@@ -1,4 +1,6 @@
 import * as React from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
@@ -23,7 +25,18 @@ import utils from "/styles/utils.module.css";
 
 export default function Resume() {
   return (
-    <>
+    <ThemeProvider
+      theme={createTheme({
+        breakpoints: {
+          values: {
+            laptop: 1024,
+            tablet: 640,
+            mobile: 0,
+            desktop: 1280,
+          },
+        },
+      })}
+    >
       <Container
         fluid={true}
         disableGutters
@@ -52,23 +65,28 @@ export default function Resume() {
           />
           <h2 className={utils.fullNameText}>Fiona Tang</h2>
         </Toolbar>
-        <Grid container>
-          <Grid item xs={2} className="max-h-screen overflow-auto">
+        <Grid container class="flex flex-column xs:flex-row">
+          <Grid
+            item
+            xs={2}
+            className="hidden xs:flex xs:max-h-screen xs:overflow-auto"
+          >
             <Skills />
           </Grid>
           <Grid
             item
+            mobile={12}
             xs={10}
-            className="grid justify-center max-h-screen pb-3 overflow-auto"
+            className="grid justify-center max-h-screen pb-2 overflow-auto"
           >
             <Grid item xs={12}>
               <Overview className="min-h-full mt-3" />
             </Grid>
-
             <Grid item xs={12}>
               <Typography
                 sx={{ width: "100%" }}
-                className={utils.sectionHeadingText}
+                class="text-white text-xl pt-2 mt-2 ml-5"
+                // className={utils.sectionHeadingText}
               >
                 Experience
               </Typography>
@@ -79,26 +97,11 @@ export default function Resume() {
               <CMCard className="min-h-full" />
               <ACLUCard className="min-h-full" />
             </Grid>
-            {/* 
-            <Grid item>
-            </Grid>
-
-            <Grid item>
-            </Grid>
-
-            <Grid item>
-            </Grid>
-
-            <Grid item>
-            </Grid>
-
-            <Grid item>
-            </Grid> */}
-
             <Grid item xs={12}>
               <Typography
                 sx={{ width: "100%" }}
-                className={utils.sectionHeadingText}
+                class="text-white text-xl pt-2 mt-2 ml-5"
+                // className={utils.sectionHeadingText}
               >
                 Education
               </Typography>
@@ -110,6 +113,6 @@ export default function Resume() {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </ThemeProvider>
   );
 }

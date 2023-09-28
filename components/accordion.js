@@ -80,7 +80,7 @@ export default function SkillsAccordion() {
         }}
       >
         {/* <Grid item> */}
-        <Typography className="text-xl ml-5">Skills</Typography>
+        <Typography class="text-xl ml-5">Skills</Typography>
         {/* </Grid> */}
         {/* <Grid item>{doubleArrowUpIcon ? (<KeyboardDoubleArrowUp onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />) : (<KeyboardDoubleArrowDown onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />)}</Grid> */}
         {/* <Grid item><button onClick={handleClick}>Expand/Collapse</button></Grid> */}
