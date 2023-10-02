@@ -30,10 +30,10 @@ export default function Resume() {
         breakpoints: {
           values: {
             xs: 0,
-            sm: 600,
-            md: 960,
-            lg: 1280,
-            xl: 1920,
+            sm: 640,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
           },
         },
       })}
@@ -54,6 +54,8 @@ export default function Resume() {
             position: "sticky",
             zIndex: "15",
             backgroundColor: "hsla(0, 100%, 0%, 0.8)",
+            paddingTop: "0.3rem",
+            paddingBottom: "0.3rem"
           }}
         >
           <Image
@@ -82,7 +84,7 @@ export default function Resume() {
             </Grid>
             <Grid item xs={12}>
               <div
-                className="text-xl text-white ml-3 lg:ml-2 xl:ml-0"
+                className="text-xl text-white ml-3 3xl:ml-0"
               >
                 Experience
               </div>
@@ -95,7 +97,7 @@ export default function Resume() {
             </Grid>
             <Grid item xs={12}>
               <div
-                className="text-xl text-white ml-3 mb-1 lg:ml-2 xl:ml-0"
+                className="text-xl text-white ml-3 mb-1 sm:ml-2 2xl:ml-0"
               >
                 Education
               </div>
