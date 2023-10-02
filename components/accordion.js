@@ -75,12 +75,11 @@ export default function SkillsAccordion() {
         container
         sx={{
           display: "flex",
-          justifyContent: "space-between",
-          color: "white",
+          justifyContent: "space-between"
         }}
       >
         {/* <Grid item> */}
-        <Typography class="text-xl ml-5">Skills</Typography>
+        <Typography className="hidden sm:inline sm:text-xl sm:ml-3">Skills</Typography>
         {/* </Grid> */}
         {/* <Grid item>{doubleArrowUpIcon ? (<KeyboardDoubleArrowUp onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />) : (<KeyboardDoubleArrowDown onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />)}</Grid> */}
         {/* <Grid item><button onClick={handleClick}>Expand/Collapse</button></Grid> */}

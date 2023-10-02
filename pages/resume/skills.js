@@ -7,8 +7,6 @@ export default function Skills() {
   return (
     <Card
       sx={{
-        minWidth: 275,
-        maxWidth: 1200,
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}

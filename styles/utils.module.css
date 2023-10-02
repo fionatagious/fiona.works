@@ -52,10 +52,10 @@
 .sectionHeadingText {
   color: white;
   line-height: 1.4;
-  margin-left: 3px;
+  margin-left: 0.5rem;
   margin-top: 3px;
   padding-top: 2px;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 /* icons, avatars */
@@ -64,7 +64,11 @@
 }
 
 .borderLogo {
+  display: inline-block;
   border-radius: 50%;
+  justify-content: center;
+  @media screen (min-device-width: 1200px) {
+  }
 }
 
 /* heading sizes */

@@ -16,12 +16,12 @@ import ACLUCard from "./aclu";
 import Skills from "./skills";
 // Education section
 import Education from "./education";
-// Media Carousel
-// import MediaCarousel from 'components/carousel'
 // Top-level header
 import Toolbar from "@mui/material/Toolbar";
 import Image from "next/image";
 import utils from "/styles/utils.module.css";
+// Media Carousel
+// import MediaCarousel from 'components/carousel'
 
 export default function Resume() {
   return (
@@ -29,10 +29,11 @@ export default function Resume() {
       theme={createTheme({
         breakpoints: {
           values: {
-            laptop: 1024,
-            tablet: 640,
-            mobile: 0,
-            desktop: 1280,
+            xs: 0,
+            sm: 600,
+            md: 960,
+            lg: 1280,
+            xl: 1920,
           },
         },
       })}
@@ -65,28 +66,23 @@ export default function Resume() {
           />
           <h2 className={utils.fullNameText}>Fiona Tang</h2>
         </Toolbar>
-        <Grid container class="flex flex-column xs:flex-row">
-          <Grid
-            item
-            xs={2}
-            className="hidden xs:flex xs:max-h-screen xs:overflow-auto"
-          >
+        <Grid container sx={{ display: "flex", flexDirection: { xs: "column-reverse", sm: "row" }, flexWrap: "nowrap" }}>
+          <Grid item xs={12} sm={4} md={3} sx={{ height: "100vh", overflow: "auto" }}>
             <Skills />
           </Grid>
           <Grid
             item
-            mobile={12}
-            xs={10}
-            className="grid justify-center max-h-screen pb-2 overflow-auto"
+            xs={12}
+            sm={8}
+            md={9}
+            sx={{ marginTop: "16px", display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: 2 }}
           >
             <Grid item xs={12}>
-              <Overview className="min-h-full mt-3" />
+              <Overview className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
               <Typography
-                sx={{ width: "100%" }}
-                class="text-white text-xl pt-2 mt-2 ml-5"
-                // className={utils.sectionHeadingText}
+                className="text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
               >
                 Experience
               </Typography>
@@ -99,13 +95,18 @@ export default function Resume() {
             </Grid>
             <Grid item xs={12}>
               <Typography
-                sx={{ width: "100%" }}
-                class="text-white text-xl pt-2 mt-2 ml-5"
-                // className={utils.sectionHeadingText}
+                className="text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
               >
                 Education
               </Typography>
               <Education className="min-h-full" />
+            </Grid>
+            <Grid item xs={12}>
+              <Typography
+                className="inline sm:hidden text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
+              >
+                Skills
+              </Typography>
             </Grid>
 
             {/* <Typography className="text-2xl">Media</Typography> */}
