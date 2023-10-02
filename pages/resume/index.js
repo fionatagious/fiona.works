@@ -75,14 +75,14 @@ export default function Resume() {
             xs={12}
             sm={8}
             md={9}
-            sx={{ display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: 2 }}
+            sx={{ display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: "1rem" }}
           >
             <Grid item xs={12}>
               <Overview className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
               <div
-                className="text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
+                className="text-xl text-white ml-3 lg:ml-2 xl:ml-0"
               >
                 Experience
               </div>
@@ -95,7 +95,7 @@ export default function Resume() {
             </Grid>
             <Grid item xs={12}>
               <div
-                className="text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
+                className="text-xl text-white ml-3 mb-1 lg:ml-2 xl:ml-0"
               >
                 Education
               </div>
@@ -103,7 +103,7 @@ export default function Resume() {
             </Grid>
             <Grid item xs={12}>
               <div
-                className="inline sm:hidden text-xl text-white mt-3 ml-3 lg:ml-2 xxl:ml-0"
+                className="block sm:hidden text-xl text-white mt-3 ml-3 lg:ml-2 xxl:ml-0"
               >
                 Skills
               </div>
