@@ -57,8 +57,6 @@
   display: inline-block;
   border-radius: 50%;
   justify-content: center;
-  @media screen (min-device-width: 1200px) {
-  }
 }
 
 /* heading sizes */
