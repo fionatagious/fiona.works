@@ -81,11 +81,11 @@ export default function Resume() {
               <Overview className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <Typography
+              <div
                 className="text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
               >
                 Experience
-              </Typography>
+              </div>
               <TMPCard className="min-h-full" />
               <CFACard className="min-h-full" />
               <AcumenCard className="min-h-full" />
@@ -94,19 +94,19 @@ export default function Resume() {
               <ACLUCard className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <Typography
+              <div
                 className="text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
               >
                 Education
-              </Typography>
+              </div>
               <Education className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <Typography
-                className="inline sm:hidden text-xl text-white ml-3 lg:ml-2 xxl:ml-0"
+              <div
+                className="inline sm:hidden text-xl text-white mt-3 ml-3 lg:ml-2 xxl:ml-0"
               >
                 Skills
-              </Typography>
+              </div>
             </Grid>
 
             {/* <Typography className="text-2xl">Media</Typography> */}
