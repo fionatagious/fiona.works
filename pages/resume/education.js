@@ -15,7 +15,6 @@ export default function Education() {
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}
-      className="my-2 mb-3"
     >
       <CardContent>
         <Grid container sx={{ display: "flex" }}>

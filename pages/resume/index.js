@@ -75,7 +75,7 @@ export default function Resume() {
             xs={12}
             sm={8}
             md={9}
-            sx={{ marginTop: "16px", display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: 2 }}
+            sx={{ display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: 2 }}
           >
             <Grid item xs={12}>
               <Overview className="min-h-full" />
