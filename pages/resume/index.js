@@ -1,9 +1,13 @@
 import * as React from "react";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-
+import utils from "/styles/utils.module.css";
 import Container from "@mui/material/Container";
+
+// Top-level header
+import Toolbar from "@mui/material/Toolbar";
+import Image from "next/image";
+// Experience section
 import Grid from "@mui/material/Grid";
-// Work Experience Cards
 import Overview from "./overview";
 import TMPCard from "./tmp";
 import CFACard from "./cfa";
@@ -15,10 +19,6 @@ import ACLUCard from "./aclu";
 import Skills from "./skills";
 // Education section
 import Education from "./education";
-// Top-level header
-import Toolbar from "@mui/material/Toolbar";
-import Image from "next/image";
-import utils from "/styles/utils.module.css";
 // Media Carousel
 // import MediaCarousel from 'components/carousel'
 

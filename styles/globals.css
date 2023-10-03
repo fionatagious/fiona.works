@@ -36,6 +36,11 @@ ul {
   list-style: none;
 }
 
+li {
+  display: list-item;
+  list-style: outside;
+}
+
 button {
   padding: 0.5rem 1rem;
   font-weight: bold;

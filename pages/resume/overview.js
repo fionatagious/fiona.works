@@ -1,8 +1,6 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import utils from "/styles/utils.module.css";
 
 export default function Overview() {
   return (
@@ -17,7 +15,7 @@ export default function Overview() {
         className="mt-3 mb-2"
       >
         <CardContent className="d-flex pb-6">
-          <Typography className="text-sm ">
+          <div className="text-sm">
             👋🏽&nbsp;&nbsp;I&apos;m a collaborative and committed full-stack
             software engineer passionate about using my skills to equip
             organizations with the technology they need to better serve their
@@ -28,15 +26,15 @@ export default function Overview() {
             💬&nbsp;&nbsp;I’m looking to collaborate on: climate action, civic
             tech, public interest and social impact projects.
             <br />
-            📫&nbsp;&nbsp;Write to me at{" "}
+            📫&nbsp;&nbsp;Write to me at&nbsp;
             <a
               href="mailto: fionatang@alum.berkeley.edu"
-              className={utils.email}
+              className="text-pink"
             >
               fionatang@alum.berkeley.edu
             </a>
             .
-          </Typography>
+          </div>
         </CardContent>
       </Card>
     </>

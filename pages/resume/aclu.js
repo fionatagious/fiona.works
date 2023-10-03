@@ -1,11 +1,10 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import utils from "/styles/utils.module.css";
-import ListItem from "@mui/material/ListItem";
+
 export default function ACLUCard() {
   return (
     <Card
@@ -13,7 +12,6 @@ export default function ACLUCard() {
         minWidth: 275,
         maxWidth: 1200,
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
-        color: "white",
       }}
       className="my-2"
     >
@@ -30,34 +28,26 @@ export default function ACLUCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
-            <Typography
-              variant="h6"
-              component="div"
-              className={utils.positionTitleText}
-            >
-              Paralegal
-            </Typography>
-            <Typography variant="subtitle2">
-              American Civil Liberties Union
-            </Typography>
-            <Typography variant="subtitle2">4/2016 – 10/2017</Typography>
+            <div className="text-xl text-pink leading-7">Paralegal</div>
+            <div className="text-sm text-white leading-5">American Civil Liberties Union</div>
+            <div className="text-sm text-white leading-5">4/2016 – 10/2017</div>
           </Grid>
         </Grid>
-        <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm pl-3 mt-2">
-            <ListItem sx={{ display: "list-item" }}>
+        <div className="text-sm text-white pl-3 mt-2">
+          <ul>
+            <li>
               Edited and cite-checked legal briefs, adhering to the a detailed
               system of citation rules. Wrote and filed Freedom of Information
               Act requests and appeals with over 30 government agencies.
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Validated data claims made by the ACLU in <i>U.S. v. Gilton</i>{" "}
               and in the U.S. Supreme Court case, <i>U.S. v. Carpenter</i>,
               through analysis of cell site location information and electronic
               search warrant notifications, respectively (Excel, python).
-            </ListItem>
-          </Grid>
-        </Grid>
+            </li>
+          </ul>
+        </div>
       </CardContent>
     </Card>
   );

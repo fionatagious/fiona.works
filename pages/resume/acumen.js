@@ -1,11 +1,10 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import Typography from "@mui/material/Typography";
 import utils from "/styles/utils.module.css";
-import ListItem from "@mui/material/ListItem";
 
 export default function AcumenCard() {
   return (
@@ -31,34 +30,28 @@ export default function AcumenCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
-            <Typography
-              variant="h6"
-              component="div"
-              className={utils.positionTitleText}
-            >
-              Data and Policy Analyst—Statistical Programmer
-            </Typography>
+            <div className="text-xl text-pink leading-7">Data and Policy Analyst—Statistical Programmer</div>
             <Typography variant="subtitle2">Acumen, LLC</Typography>
             <Typography variant="subtitle2">1/2020 – 2/2021</Typography>
           </Grid>
         </Grid>
-        <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm pl-3 mt-2">
-            <ListItem sx={{ display: "list-item" }}>
+        <div className="text-sm text-white pl-3 mt-2">
+          <ul>
+            <li>
               Analyzed claim line-level data to produce summary statistics (SAS)
               pertaining to weight loss and attendance outcomes under the
               Medicare Diabetes Prevention Program, administered by the Centers
               for Medicare and Medicaid Services.
-            </ListItem>{" "}
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Produced reports to monitor beneficiary and claim trends, flag
               adverse/positive selection by suppliers, and audit program
               compliance. Conducted outreach to suppliers to clarify compliance
               requirements and offer support during the Covid-19 pandemic (SQL,
               SAS).
-            </ListItem>
-          </Grid>
-        </Grid>
+            </li>
+          </ul>
+        </div>
       </CardContent>
     </Card>
   );

@@ -44,10 +44,6 @@
   line-height: 1.4;
 }
 
-.descriptionText {
-  color: white;
-}
-
 /* icons, avatars */
 .borderCircle {
   border-radius: 50%;
@@ -59,36 +55,7 @@
   justify-content: center;
 }
 
-/* heading sizes */
-.heading2Xl {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
-}
-
-.headingXl {
-  font-size: 2rem;
-  line-height: 1.3;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
-}
-
-.headingMd {
-  font-size: 1.5rem;
-  line-height: 1;
-  color: white;
-  margin-left: 0.5rem;
-  margin-top: 0.5rem;
-}
-
 /* misc */
-.colorInherit {
-  color: inherit;
-}
-
 .list {
   list-style: none;
   padding: 0;

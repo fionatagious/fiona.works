@@ -1,11 +1,10 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import utils from "/styles/utils.module.css";
-import ListItem from "@mui/material/ListItem";
+
 export default function TMPCard() {
   return (
     <Card
@@ -30,39 +29,33 @@ export default function TMPCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
-            <Typography
-              variant="h6"
-              component="div"
-              className={utils.positionTitleText}
-            >
-              Software Engineer
-            </Typography>
-            <Typography variant="subtitle2">The Mom Project</Typography>
-            <Typography variant="subtitle2">11/2021 – 9/2023</Typography>
+            <div className="text-xl text-pink leading-7">Software Engineer</div>
+            <div className="text-sm text-white leading-5">The Mom Project</div>
+            <div className="text-sm text-white leading-5">11/2021 – 9/2023</div>
           </Grid>
         </Grid>
-        <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm pl-3 mt-2">
-            <ListItem sx={{ display: "list-item" }}>
+        <div className="text-sm text-white pl-3 mt-2">
+          <ul>
+            <li>
               Built features to enhance user flows impacting acquisition and
               retention: log in, sign up, and job post creation (Rails).
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Served as a technical bridge between Product and Engineering for
               new features, synthesizing feature requests and clarifying
               engineering effort and scope. Led technical planning and
               documented technical specifications.
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Contributed to the creation and maintenance of a new design system
               and component UI library (Material UI, Storybook).
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Participated in feature prioritization, architecture discussions,
               and code reviews across four distinct repositories.
-            </ListItem>
-          </Grid>
-        </Grid>
+            </li>
+          </ul>
+        </div>
       </CardContent>
     </Card>
   );

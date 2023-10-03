@@ -2,11 +2,11 @@ import React from "react";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
-import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 // import KeyboardDoubleArrowUp from '@mui/icons-material/KeyboardDoubleArrowUp';
 // import KeyboardDoubleArrowDown from '@mui/icons-material/KeyboardDoubleArrowDown';
-import Grid from "@mui/material/Grid";
 
 export default function SkillsAccordion() {
   // const [expandAll, setExpandAll] = useState(true);
@@ -36,8 +36,8 @@ export default function SkillsAccordion() {
     {
       name: "Frameworks",
       children: [
-        "Tailwind",
-        "Bootstrap",
+        "Tailwind CSS",
+        "Bootstrap CSS",
         "Next.js",
         "React",
         "Ruby on Rails",

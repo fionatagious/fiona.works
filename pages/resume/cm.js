@@ -1,11 +1,11 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import Typography from "@mui/material/Typography";
 import utils from "/styles/utils.module.css";
-import ListItem from "@mui/material/ListItem";
+
 export default function CMCard() {
   return (
     <Card
@@ -30,41 +30,35 @@ export default function CMCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
-            <Typography
-              variant="h6"
-              component="div"
-              className={utils.positionTitleText}
-            >
-              Data Associate
-            </Typography>
+          <div className="text-xl text-pink leading-7">Data Associate</div>
             <Typography variant="subtitle2">
               Change Machine (formerly The Financial Clinic)
             </Typography>
             <Typography variant="subtitle2">10/2017 – 4/2018</Typography>
           </Grid>
         </Grid>
-        <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm pl-3 mt-2">
-            <ListItem sx={{ display: "list-item" }}>
+        <div className="text-sm text-white pl-3 mt-2">
+          <ul>
+            <li>
               Developed reports to track achievement in financial outcomes of
               70,000 low-income New York City residents. Created dashboards on
               deliverables to support continued funding and partnerships
               (Salesforce, Excel, SQL).
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Queried and visualized financial-coaching data to aid in the
               production of fact sheets, publications, and policy proposals.
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Clarified and fulfilled data requests from Direct Services,
               Product, and Executive teams, juggling competing priorities.
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Examined financial-coaching data for trends in consumer behavior
               (Python) to develop the Clinic’s policy agenda.
-            </ListItem>
-          </Grid>
-        </Grid>
+            </li>
+          </ul>
+        </div>
       </CardContent>
     </Card>
   );

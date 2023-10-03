@@ -1,12 +1,11 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import Typography from "@mui/material/Typography";
 import utils from "/styles/utils.module.css";
-import ListItem from "@mui/material/ListItem";
+
 export default function CFACard() {
   return (
     <Card
@@ -31,33 +30,27 @@ export default function CFACard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
-            <Typography
-              variant="h6"
-              component="div"
-              className={utils.positionTitleText}
-            >
-              Software Engineering Fellow
-            </Typography>
+            <div className="text-xl text-pink leading-7">Software Engineering Fellow</div>
             <Typography variant="subtitle2">Code for America</Typography>
             <Typography variant="subtitle2">10/2020 – 7/2021</Typography>
           </Grid>
         </Grid>
-        <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm pl-3 mt-2">
-            <ListItem sx={{ display: "list-item" }}>
+        <div className="text-sm text-white pl-3 mt-2">
+          <ul>
+            <li>
               Researched, project managed, designed, and developed a web app
               that streamlines the intake process to help people experiencing
               homelessness access shelter during cold weather periods, in
               partnership with Adams County, Colorado.
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Expanded the app&apos;s admin functionality to allow for storage
               of non-contiguous intake periods (Rails).
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Wrote unit tests and validations for program activation dates and
               intake dates to expand application test coverage (Rails).
-            </ListItem>
+            </li>
             {/* <CardMedia component="picture" height="300" sx={{ border: 'solid white' }}>
             <source media="https://codeforamerica.org/news/limits-technology-homelessness/" />
             <img
@@ -68,8 +61,8 @@ export default function CFACard() {
             <p>When a Cool, Shiny App Won’t Cut It: Recognizing the Limits of Technology in Addressing Homelessness — Code for America</p>
             <p>Working to find housing solutions for people experiencing homelessness shows that technology is just one piece of the puzzle</p>
           </CardMedia> */}
-          </Grid>
-        </Grid>
+          </ul>
+        </div>
       </CardContent>
     </Card>
   );

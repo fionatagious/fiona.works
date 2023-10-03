@@ -28,6 +28,11 @@ module.exports = {
       '3xl': '1640px',
       // => @media (min-width: 1540px) { ... }
     },
+    extend: {
+      colors: {
+        'pink': '#d79eff',
+      },
+    }
   },
   plugins: [],
 };

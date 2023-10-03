@@ -1,12 +1,10 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-
-import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import Typography from "@mui/material/Typography";
 import utils from "/styles/utils.module.css";
-import ListItem from "@mui/material/ListItem";
 
 export default function UberCard() {
   return (
@@ -32,34 +30,28 @@ export default function UberCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
-            <Typography
-              variant="h6"
-              component="div"
-              className={utils.positionTitleText}
-            >
-              Data Analyst
-            </Typography>
+            <div className="text-xl text-pink leading-7">Data Analyst</div>
             <Typography variant="subtitle2">Uber</Typography>
             <Typography variant="subtitle2">9/2018 – 3/2019</Typography>
           </Grid>
         </Grid>
-        <Grid container sx={{ display: "flex" }}>
-          <Grid item className="text-sm pl-3 mt-2">
-            <ListItem sx={{ display: "list-item" }}>
+        <div className="text-sm text-white pl-3 mt-2">
+          <ul>
+            <li>
               Wrote advanced queries to build dashboard on growth KPIs, such as
               retention and average revenue per user (SQL).
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Visualized platform activity of engaged users. Informed decision
               on whether to pursue targeted marketing (SQL, Tableau).
-            </ListItem>
-            <ListItem sx={{ display: "list-item" }}>
+            </li>
+            <li>
               Analyzed week-over-week onboarding of Uber Eats sellers to better
               understand ramp time, enabling Sales Operations team to establish
               reasonable quota (SQL, Python).
-            </ListItem>
-          </Grid>
-        </Grid>
+            </li>
+          </ul>
+        </div>
       </CardContent>
     </Card>
   );
