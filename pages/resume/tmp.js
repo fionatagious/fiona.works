@@ -17,20 +17,20 @@ export default function TMPCard() {
       className="my-2"
     >
       <CardContent>
-        <Grid container sx={{ display: "flex" }}>
+        <Grid container sx={{ display: "flex", alignItems: "center" }}>
           <Grid item>
             <Image
               priority
               src="/images/tmp-logo.jpg"
               className={utils.borderLogo}
-              height={80}
-              width={80}
+              height={65}
+              width={65}
               alt="the-mom-project-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
+          <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-xl text-pink leading-7">Software Engineer</div>
-            <div className="text-sm text-white leading-5">The Mom Project</div>
+            <div className="text-sm text-white leading-5">The Mom Project (Growth)</div>
             <div className="text-sm text-white leading-5">11/2021 – 9/2023</div>
           </Grid>
         </Grid>

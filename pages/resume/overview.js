@@ -20,7 +20,7 @@ export default function Overview() {
             software engineer passionate about using my skills to equip
             organizations with the technology they need to better serve their
             communities. My work experiences span non-profits, government
-            consulting firms, and mid- to late-stage startups.
+            consulting firms, and startups.
             <br />
             <br />
             💬&nbsp;&nbsp;I’m looking to collaborate on: climate action, civic

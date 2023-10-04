@@ -18,18 +18,18 @@ export default function CFACard() {
       className="my-2"
     >
       <CardContent>
-        <Grid container sx={{ display: "flex" }}>
+        <Grid container sx={{ display: "flex", alignItems: "center" }}>
           <Grid item>
             <Image
               priority
-              src="/images/cfa-logo.jpg"
+              src="/images/cfa.jpg"
               className={utils.borderLogo}
-              height={80}
-              width={80}
+              height={65}
+              width={65}
               alt="cfa-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
+          <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-xl text-pink leading-7">Software Engineering Fellow</div>
             <Typography variant="subtitle2">Code for America</Typography>
             <Typography variant="subtitle2">10/2020 – 7/2021</Typography>

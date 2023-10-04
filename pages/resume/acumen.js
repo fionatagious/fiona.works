@@ -18,18 +18,18 @@ export default function AcumenCard() {
       className="my-2"
     >
       <CardContent>
-        <Grid container sx={{ display: "flex" }}>
+        <Grid container sx={{ display: "flex", alignItems: "center" }}>
           <Grid item>
             <Image
               priority
               src="/images/acumen-logo.jpg"
               className={utils.borderLogo}
-              height={80}
-              width={80}
+              height={65}
+              width={65}
               alt="acumen-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
+          <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-xl text-pink leading-7">Data and Policy Analyst—Statistical Programmer</div>
             <Typography variant="subtitle2">Acumen, LLC</Typography>
             <Typography variant="subtitle2">1/2020 – 2/2021</Typography>

@@ -18,20 +18,20 @@ export default function UberCard() {
       className="my-2"
     >
       <CardContent>
-        <Grid container sx={{ display: "flex" }}>
+        <Grid container sx={{ display: "flex", alignItems: "center" }}>
           <Grid item>
             <Image
               priority
               src="/images/uber-eats-logo.jpg"
               className={utils.borderLogo}
-              height={80}
-              width={80}
+              height={65}
+              width={65}
               alt="uber-eats-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
+          <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-xl text-pink leading-7">Data Analyst</div>
-            <Typography variant="subtitle2">Uber</Typography>
+            <Typography variant="subtitle2">Uber (Sales Operations)</Typography>
             <Typography variant="subtitle2">9/2018 – 3/2019</Typography>
           </Grid>
         </Grid>

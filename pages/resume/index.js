@@ -68,7 +68,7 @@ export default function Resume() {
           <h2 className={utils.fullNameText}>Fiona Tang</h2>
         </Toolbar>
         <Grid container sx={{ display: "flex", flexDirection: { xs: "column-reverse", sm: "row" }, flexWrap: "nowrap" }}>
-          <Grid item xs={12} sm={4} md={3} sx={{ height: "100vh", overflow: "auto" }}>
+          <Grid item xs={12} sm={4} md={3} sx={{ height: "100vh", overflow: "auto" }} className={utils.skillsTransition}>
             <Skills />
           </Grid>
           <Grid
@@ -77,6 +77,7 @@ export default function Resume() {
             sm={8}
             md={9}
             sx={{ display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: "1rem" }}
+            className={utils.experiencesTransition}
           >
             <Grid item xs={12}>
               <Overview className="min-h-full" />

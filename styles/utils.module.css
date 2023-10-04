@@ -52,7 +52,6 @@
 .borderLogo {
   display: inline-block;
   border-radius: 50%;
-  justify-content: center;
 }
 
 /* misc */
@@ -64,4 +63,16 @@
 
 .listItem {
   margin: 0 0 1.25rem;
+}
+
+.experiencesTransition {
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-property: background-color,visibility;
+}
+
+.skillsTransition {
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-property: transform,margin-left,margin-right;
 }

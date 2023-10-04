@@ -18,18 +18,18 @@ export default function Education() {
       className="mt-2"
     >
       <CardContent>
-        <Grid container sx={{ display: "flex" }}>
+        <Grid container sx={{ display: "flex", alignItems: "center" }}>
           <Grid item>
             <Image
               priority
               src="/images/ucb.png"
               className={utils.borderLogo}
-              height={80}
-              width={80}
+              height={65}
+              width={65}
               alt="uc-berkeley-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
+          <Grid item sx={{ marginLeft: "0.75rem" }}>
             <Typography
               variant="h6"
               component="div"

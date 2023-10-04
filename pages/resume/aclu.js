@@ -16,20 +16,20 @@ export default function ACLUCard() {
       className="my-2"
     >
       <CardContent>
-        <Grid container sx={{ display: "flex" }}>
+        <Grid container sx={{ display: "flex", alignItems: "center" }}>
           <Grid item>
             <Image
               priority
               src="/images/aclu-logo.jpg"
               className={utils.borderLogo}
-              height={80}
-              width={80}
+              height={65}
+              width={65}
               alt="aclu-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: "0.75rem", alignSelf: "center" }}>
+          <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-xl text-pink leading-7">Paralegal</div>
-            <div className="text-sm text-white leading-5">American Civil Liberties Union</div>
+            <div className="text-sm text-white leading-5">ACLU (Speech, Privacy, and Technology Project)</div>
             <div className="text-sm text-white leading-5">4/2016 – 10/2017</div>
           </Grid>
         </Grid>
@@ -41,10 +41,7 @@ export default function ACLUCard() {
               Act requests and appeals with over 30 government agencies.
             </li>
             <li>
-              Validated data claims made by the ACLU in <i>U.S. v. Gilton</i>{" "}
-              and in the U.S. Supreme Court case, <i>U.S. v. Carpenter</i>,
-              through analysis of cell site location information and electronic
-              search warrant notifications, respectively (Excel, python).
+              Validated data claims made by the ACLU in <i>U.S. v. Gilton</i> and in the U.S. Supreme Court case, <i>U.S. v. Carpenter</i>, through analysis of cell site location information and electronic search warrant notifications, respectively (Excel, python).
             </li>
           </ul>
         </div>
