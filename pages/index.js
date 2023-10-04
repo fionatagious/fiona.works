@@ -30,18 +30,17 @@ export default function Home() {
           <CardContent className="pt-6">
             <Grid container rowSpacing={{ xs: 1, md: 3 }}>
               <Grid item xs={12}>
-                <Typography className="text-center text-3xl mt-2">
-                  Hello, I&apos;m Fiona.
-                </Typography>
+                <div className="text-center text-3xl mt-2">
+                  Hello! I&apos;m Fiona.
+                </div>
               </Grid>
               <Grid item xs={12}>
                 <Typography className={utils.homepageDescriptionText}>
-                  I&apos;m a software engineer based in Chicago. <br />
-                  Click{" "}
+                  I&apos;m a software engineer based in Chicago.<br />
+                  My site is still in development, but while you're here, you can check out&nbsp;
                   <a href="/resume" className={utils.linkToResume}>
-                    here
-                  </a>{" "}
-                  to learn more.
+                    my resume
+                  </a>.
                 </Typography>
               </Grid>
             </Grid>
