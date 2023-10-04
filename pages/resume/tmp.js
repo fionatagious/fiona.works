@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import Typography from "@mui/material/Typography";
 import utils from "/styles/utils.module.css";
 
 export default function TMPCard() {
@@ -30,8 +31,8 @@ export default function TMPCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-xl text-pink leading-7">Full-stack Software Engineer</div>
-            <div className="text-sm text-white leading-5">The Mom Project (Growth)</div>
-            <div className="text-sm text-white leading-5">11/2021 – 9/2023</div>
+            <Typography variant="subtitle2">The Mom Project (Growth)</Typography>
+            <Typography variant="subtitle2">11/2021 – 9/2023</Typography>
           </Grid>
         </Grid>
         <div className="text-sm text-white pl-3 mt-2">

@@ -30,10 +30,8 @@ export default function CMCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
-          <div className="text-xl text-pink leading-7">Data Associate</div>
-            <Typography variant="subtitle2">
-              Change Machine (formerly The Financial Clinic)
-            </Typography>
+            <div className="text-xl text-pink leading-7">Data Associate</div>
+            <Typography variant="subtitle2">Change Machine</Typography>
             <Typography variant="subtitle2">10/2017 – 4/2018</Typography>
           </Grid>
         </Grid>

@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import Typography from "@mui/material/Typography";
 import utils from "/styles/utils.module.css";
 
 export default function ACLUCard() {
@@ -12,6 +13,7 @@ export default function ACLUCard() {
         minWidth: 275,
         maxWidth: 1200,
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
+        color: "white",
       }}
       className="my-2"
     >
@@ -29,8 +31,9 @@ export default function ACLUCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-xl text-pink leading-7">Paralegal</div>
-            <div className="text-sm text-white leading-5">ACLU (Speech, Privacy, and Technology Project)</div>
-            <div className="text-sm text-white leading-5">4/2016 – 10/2017</div>
+            <Typography variant="subtitle2">The American Civil Liberties Union</Typography>
+            <Typography variant="subtitle2">Speech, Privacy, and Technology Project</Typography>
+            <Typography variant="subtitle2">4/2016 – 10/2017</Typography>
           </Grid>
         </Grid>
         <div className="text-sm text-white pl-3 mt-2">

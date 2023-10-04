@@ -29,14 +29,10 @@ export default function Education() {
               alt="uc-berkeley-logo"
             />
           </Grid>
-          <Grid item sx={{ marginLeft: "0.75rem" }}>
-            <Typography
-              variant="h6"
-              component="div"
-              className={utils.educationTitleText}
-            >
+          <Grid item sx={{ display: "flex", flexDirection: "column", flexWrap: "nowrap", marginLeft: "0.75rem" }}>
+            <div className="text-lg sm:text-xl leading-7">
               University of California, Berkeley
-            </Typography>
+            </div>
             <Typography variant="subtitle2">B.A. Legal Studies</Typography>
             <Typography variant="subtitle2">3.76/4.00, cum laude</Typography>
           </Grid>
