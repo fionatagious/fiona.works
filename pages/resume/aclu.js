@@ -39,12 +39,12 @@ export default function ACLUCard() {
         <div className="text-sm text-white pl-3 mt-2">
           <ul>
             <li>
-              Edited and cite-checked legal briefs, adhering to the a detailed
+              Edited and cite-checked legal briefs, adhering to a detailed
               system of citation rules. Wrote and filed Freedom of Information
               Act requests and appeals with over 30 government agencies.
             </li>
             <li>
-              Validated data claims made by the ACLU in <i>U.S. v. Gilton</i> and in the U.S. Supreme Court case, <i>U.S. v. Carpenter</i>, through analysis of cell site location information and electronic search warrant notifications, respectively (Excel, python).
+              Validated data claims made by the ACLU in <i>U.S. v. Gilton</i> and in the U.S. Supreme Court case, <i>U.S. v. Carpenter</i>, through analysis of cell site location information and electronic search warrant notifications, respectively (Excel, Python).
             </li>
           </ul>
         </div>
