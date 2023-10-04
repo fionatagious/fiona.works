@@ -34,10 +34,11 @@ export default function Home() {
                   Hello! I&apos;m Fiona.
                 </div>
               </Grid>
-              <Grid item xs={12}>
-                <div className="text-center text-xl mt-2 p-4">
-                  I&apos;m a software engineer based in Chicago.<br />
-                  My site is in development, but while you're here, you can check out&nbsp;
+              <Grid item xs={12} className="mt-2 p-4">
+                <div className="text-left sm:text-center text-xl mb-2">
+                  I&apos;m a software engineer based in Chicago.
+                </div>
+                <div className="text-left sm:text-center text-xl">My full site is still in development, but while you&apos;re here, you can check out&nbsp;
                   <a href="/resume" className={utils.linkToResume}>
                     my resume
                   </a>.

@@ -76,7 +76,7 @@ export default function Resume() {
             xs={12}
             sm={8}
             md={9}
-            sx={{ display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: "1rem" }}
+            sx={{ display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: "0.5rem" }}
             className={utils.experiencesTransition}
           >
             <Grid item xs={12}>
