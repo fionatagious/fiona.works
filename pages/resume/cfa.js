@@ -30,7 +30,7 @@ export default function CFACard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
-            <div className="text-xl text-pink leading-7">Software Engineering Fellow</div>
+            <div className="text-lg sm:text-xl text-pink leading-7">Software Engineering Fellow</div>
             <Typography variant="subtitle2">Code for America</Typography>
             <Typography variant="subtitle2">10/2020 – 7/2021</Typography>
           </Grid>

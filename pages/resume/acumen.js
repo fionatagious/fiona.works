@@ -31,8 +31,8 @@ export default function AcumenCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="hidden sm:block sm:text-xl sm:text-pink sm:leading-7">Data and Policy Analyst - Statistical Programmer</div>
-            <div className="block sm:hidden text-xl text-pink leading-7">Data and Policy Analyst - </div>
-            <div className="block sm:hidden text-xl text-pink leading-7">Statistical Programmer</div>
+            <div className="block sm:hidden text-lg sm:text-xl text-pink leading-7">Data and Policy Analyst - </div>
+            <div className="block sm:hidden text-lg sm:text-xl text-pink leading-7">Statistical Programmer</div>
             <Typography variant="subtitle2">Acumen, LLC</Typography>
             <Typography variant="subtitle2">1/2020 – 2/2021</Typography>
           </Grid>

@@ -30,9 +30,9 @@ export default function ACLUCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
-            <div className="text-xl text-pink leading-7">Paralegal</div>
+            <div className="text-lg sm:text-xl text-pink leading-7">Paralegal</div>
             <Typography variant="subtitle2">The American Civil Liberties Union</Typography>
-            <Typography variant="subtitle2">Speech, Privacy, and Technology Project</Typography>
+            <Typography variant="subtitle2">Speech, Privacy, and Technology</Typography>
             <Typography variant="subtitle2">4/2016 – 10/2017</Typography>
           </Grid>
         </Grid>

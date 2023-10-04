@@ -30,7 +30,7 @@ export default function UberCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
-            <div className="text-xl text-pink leading-7">Data Analyst</div>
+            <div className="text-lg sm:text-xl text-pink leading-7">Data Analyst</div>
             <Typography variant="subtitle2">Uber (Sales Operations)</Typography>
             <Typography variant="subtitle2">9/2018 – 3/2019</Typography>
           </Grid>
