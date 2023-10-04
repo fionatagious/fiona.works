@@ -29,7 +29,7 @@ export default function TMPCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
-            <div className="text-xl text-pink leading-7">Software Engineer</div>
+            <div className="text-xl text-pink leading-7">Full-stack Software Engineer</div>
             <div className="text-sm text-white leading-5">The Mom Project (Growth)</div>
             <div className="text-sm text-white leading-5">11/2021 – 9/2023</div>
           </Grid>

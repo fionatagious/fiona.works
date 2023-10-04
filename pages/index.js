@@ -35,13 +35,13 @@ export default function Home() {
                 </div>
               </Grid>
               <Grid item xs={12}>
-                <Typography className={utils.homepageDescriptionText}>
+                <div className="text-center text-xl mt-2 p-4">
                   I&apos;m a software engineer based in Chicago.<br />
-                  My site is still in development, but while you're here, you can check out&nbsp;
+                  My site is in development, but while you're here, you can check out&nbsp;
                   <a href="/resume" className={utils.linkToResume}>
                     my resume
                   </a>.
-                </Typography>
+                </div>
               </Grid>
             </Grid>
           </CardContent>
