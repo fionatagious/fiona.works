@@ -30,12 +30,14 @@ export default function CMCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
-            <div className="text-lg sm:text-xl text-pink leading-7">Data Associate</div>
+            <div className="text-lg sm:text-xl text-pink leading-7">
+              Data Associate
+            </div>
             <Typography variant="subtitle2">Change Machine</Typography>
             <Typography variant="subtitle2">10/2017 – 4/2018</Typography>
           </Grid>
         </Grid>
-        <div className="text-sm text-white pl-3 mt-2">
+        <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul>
             <li>
               Developed reports to track achievement in financial outcomes of

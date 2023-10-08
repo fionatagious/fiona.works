@@ -30,12 +30,14 @@ export default function UberCard() {
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
-            <div className="text-lg sm:text-xl text-pink leading-7">Data Analyst</div>
+            <div className="text-lg sm:text-xl text-pink leading-7">
+              Data Analyst
+            </div>
             <Typography variant="subtitle2">Uber (Sales Operations)</Typography>
             <Typography variant="subtitle2">9/2018 – 3/2019</Typography>
           </Grid>
         </Grid>
-        <div className="text-sm text-white pl-3 mt-2">
+        <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul>
             <li>
               Wrote advanced queries to build dashboard on growth KPIs, such as

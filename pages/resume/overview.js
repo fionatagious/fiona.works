@@ -15,7 +15,7 @@ export default function Overview() {
         className="mt-3 mb-2"
       >
         <CardContent className="d-flex pb-6">
-          <div className="text-sm">
+          <div className="text-sm sm:text-md">
             👋🏽&nbsp;&nbsp;I&apos;m a collaborative and committed full-stack
             software engineer passionate about using my skills to equip
             organizations with the technology they need to better serve their
@@ -27,10 +27,7 @@ export default function Overview() {
             tech, public interest and social impact projects.
             <br />
             📫&nbsp;&nbsp;Write to me at&nbsp;
-            <a
-              href="mailto: fionatang@alum.berkeley.edu"
-              className="text-pink"
-            >
+            <a href="mailto: fionatang@alum.berkeley.edu" className="text-pink">
               fionatang@alum.berkeley.edu
             </a>
             .
