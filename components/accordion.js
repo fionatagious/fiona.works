@@ -29,7 +29,6 @@ export default function SkillsAccordion() {
         "TypeScript",
         "Ruby",
         "Python",
-        "SAS",
         "R",
       ],
     },
@@ -39,22 +38,27 @@ export default function SkillsAccordion() {
         "Tailwind CSS",
         "Bootstrap CSS",
         "Next.js",
-        "React",
+        "React.js",
         "Ruby on Rails",
         "Material UI",
+        "Sidekiq",
       ],
     },
     {
-      name: "Tools",
-      children: [
-        "Jest",
-        "Rspec",
-        "Capybara",
-        "Sidekiq",
-        "Logz.io",
-        "Honeybadger",
-        "SendGrid",
-      ],
+      name: "Testing",
+      children: ["Jest", "Rspec", "Capybara"],
+    },
+    {
+      name: "Version control",
+      children: ["Git"],
+    },
+    {
+      name: "Observability",
+      children: ["Logz.io", "Honeybadger"],
+    },
+    {
+      name: "Third-party APIs",
+      children: ["Hubspot", "SendGrid", "Salesforce"],
     },
     {
       name: "Soft skills",
@@ -75,11 +79,13 @@ export default function SkillsAccordion() {
         container
         sx={{
           display: "flex",
-          justifyContent: "space-between"
+          justifyContent: "space-between",
         }}
       >
         {/* <Grid item> */}
-        <Typography className="hidden sm:inline sm:text-xl sm:ml-3">Skills</Typography>
+        <Typography className="hidden sm:inline sm:text-xl sm:ml-3">
+          Skills
+        </Typography>
         {/* </Grid> */}
         {/* <Grid item>{doubleArrowUpIcon ? (<KeyboardDoubleArrowUp onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />) : (<KeyboardDoubleArrowDown onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />)}</Grid> */}
         {/* <Grid item><button onClick={handleClick}>Expand/Collapse</button></Grid> */}

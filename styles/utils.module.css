@@ -67,11 +67,11 @@
 .experiencesTransition {
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-property: background-color,visibility;
+  transition-property: background-color, visibility;
 }
 
 .skillsTransition {
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-property: transform,margin-left,margin-right;
+  transition-property: transform, margin-left, margin-right;
 }

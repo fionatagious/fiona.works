@@ -54,7 +54,7 @@ export default function Resume() {
             zIndex: "15",
             backgroundColor: "hsla(0, 100%, 0%, 0.8)",
             paddingTop: "0.3rem",
-            paddingBottom: "0.3rem"
+            paddingBottom: "0.3rem",
           }}
         >
           <Image
@@ -67,8 +67,22 @@ export default function Resume() {
           />
           <h2 className={utils.fullNameText}>Fiona Tang</h2>
         </Toolbar>
-        <Grid container sx={{ display: "flex", flexDirection: { xs: "column-reverse", sm: "row" }, flexWrap: "nowrap" }}>
-          <Grid item xs={12} sm={4} md={3} sx={{ height: "100vh", overflow: "auto" }} className={utils.skillsTransition}>
+        <Grid
+          container
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column-reverse", sm: "row" },
+            flexWrap: "nowrap",
+          }}
+        >
+          <Grid
+            item
+            xs={12}
+            sm={4}
+            md={3}
+            sx={{ height: "100vh", overflow: "auto" }}
+            className={utils.skillsTransition}
+          >
             <Skills />
           </Grid>
           <Grid
@@ -76,18 +90,21 @@ export default function Resume() {
             xs={12}
             sm={8}
             md={9}
-            sx={{ display: "grid", height: "100vh", overflowY: "auto", overflowX: "hidden", justifyContent: "center", paddingBottom: "0.5rem" }}
+            sx={{
+              display: "grid",
+              height: "100vh",
+              overflowY: "auto",
+              overflowX: "hidden",
+              justifyContent: "center",
+              paddingBottom: "0.5rem",
+            }}
             className={utils.experiencesTransition}
           >
             <Grid item xs={12}>
               <Overview className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <div
-                className="text-xl text-white ml-3 3xl:ml-0"
-              >
-                Experience
-              </div>
+              <div className="text-xl text-white ml-3 3xl:ml-0">Experience</div>
               <TMPCard className="min-h-full" />
               <CFACard className="min-h-full" />
               <AcumenCard className="min-h-full" />
@@ -96,17 +113,13 @@ export default function Resume() {
               <ACLUCard className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <div
-                className="text-xl text-white ml-3 mb-1 sm:ml-2 2xl:ml-0"
-              >
+              <div className="text-xl text-white ml-3 mb-1 sm:ml-2 2xl:ml-0">
                 Education
               </div>
               <Education className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <div
-                className="block sm:hidden text-xl text-white mt-3 ml-3 lg:ml-2 xxl:ml-0"
-              >
+              <div className="block sm:hidden text-xl text-white mt-3 ml-3 lg:ml-2 xxl:ml-0">
                 Skills
               </div>
             </Grid>

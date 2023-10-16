@@ -42,14 +42,20 @@ export default function TMPCard() {
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul>
             <li>
-              Built features to enhance user flows impacting acquisition and
-              retention: log in, sign up, and job post creation (Rails).
+              Built, tested, and debugged features to enhance user flows to
+              improve user acquisition and retention: log in, sign up, and job
+              post creation (Rails, React.js).
             </li>
             <li>
-              Served as a technical bridge between Product and Engineering for
-              new features, synthesizing feature requests and clarifying
-              engineering effort and scope. Led technical planning and
-              documented technical specifications.
+              Led technical planning and documentation for several high-impact
+              epics. Developed acceptance criteria and user stories. Synthesized
+              feature requests and product requirements.
+            </li>
+            <li>
+              Built reusable components for a migration from Rails codebase to a
+              brand new front-end architecture (Next.js, React.js, TypeScript),
+              leveraging integrations between our data structures,
+              microservices, and APIs.
             </li>
             <li>
               Contributed to the creation and maintenance of a new design system
