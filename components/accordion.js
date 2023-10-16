@@ -57,17 +57,13 @@ export default function SkillsAccordion() {
       children: ["Logz.io", "Honeybadger"],
     },
     {
-      name: "Third-party APIs",
-      children: ["Hubspot", "SendGrid", "Salesforce"],
-    },
-    {
       name: "Soft skills",
       children: [
         "Attention to detail",
         "Communication",
         "Curiosity",
         "Dedication",
-        "Empathy ",
+        "Empathy",
         "Organization",
       ],
     },

@@ -65,6 +65,12 @@ export default function TMPCard() {
               Participated in feature prioritization, architecture discussions,
               and code reviews across four distinct repositories.
             </li>
+            <li>
+              Updated transactional emails with new content and designs
+              following two major company re-brands. Wrote application logic to
+              implement email-related workers and triggers (Rails, SendGrid,
+              Sidekiq).
+            </li>
           </ul>
         </div>
       </CardContent>
