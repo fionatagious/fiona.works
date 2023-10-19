@@ -19,6 +19,7 @@ import ACLUCard from "./aclu";
 import Skills from "./skills";
 // Education section
 import Education from "./education";
+import Leadership from "./leadership";
 // Media Carousel
 // import MediaCarousel from 'components/carousel'
 
@@ -104,7 +105,9 @@ export default function Resume() {
               <Overview className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <div className="text-xl text-white ml-3 3xl:ml-0">Experience</div>
+              <div className="text-xl text-white ml-3 3xl:ml-0 my-2">
+                Experience
+              </div>
               <TMPCard className="min-h-full" />
               <CFACard className="min-h-full" />
               <AcumenCard className="min-h-full" />
@@ -113,7 +116,13 @@ export default function Resume() {
               <ACLUCard className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
-              <div className="text-xl text-white ml-3 mb-1 sm:ml-2 2xl:ml-0">
+              <div className="text-xl text-white my-2 ml-3 sm:ml-2 2xl:ml-0">
+                Leadership and Activities
+              </div>
+              <Leadership className="min-h-full" />
+            </Grid>
+            <Grid item xs={12}>
+              <div className="text-xl text-white my-2 ml-3 sm:ml-2 2xl:ml-0">
                 Education
               </div>
               <Education className="min-h-full" />

@@ -15,7 +15,7 @@ export default function Education() {
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}
-      className="mt-2"
+      className="mb-2"
     >
       <CardContent>
         <Grid container sx={{ display: "flex", alignItems: "center" }}>
@@ -29,7 +29,15 @@ export default function Education() {
               alt="uc-berkeley-logo"
             />
           </Grid>
-          <Grid item sx={{ display: "flex", flexDirection: "column", flexWrap: "nowrap", marginLeft: "0.75rem" }}>
+          <Grid
+            item
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              flexWrap: "nowrap",
+              marginLeft: "0.75rem",
+            }}
+          >
             <div className="text-lg sm:text-xl leading-7">
               University of California, Berkeley
             </div>
