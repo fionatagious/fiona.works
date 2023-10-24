@@ -65,7 +65,7 @@ export default function CFACard() {
               intake dates to expand application test coverage (Rails).
             </li>
             <li>
-               Problem solved a technical tradeoff by writing optimized SQL to
+              Problem solved a technical tradeoff by writing optimized SQL to
               query data that was unattainable using ActiveRecord.
             </li>
             {/* <CardMedia component="picture" height="300" sx={{ border: 'solid white' }}>
