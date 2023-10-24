@@ -40,6 +40,10 @@ export default function UberCard() {
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul>
             <li>
+              Built pipelines for querying and analysis using Uber&apos;s
+              internal ingestion tools, Watchtower and Kirby.
+            </li>
+            <li>
               Wrote advanced queries to build dashboard on growth KPIs, such as
               retention and average revenue per user (SQL).
             </li>
@@ -51,6 +55,10 @@ export default function UberCard() {
               Analyzed week-over-week onboarding of Uber Eats sellers to better
               understand ramp time, enabling Sales Operations team to establish
               reasonable quota (SQL, Python).
+            </li>
+            <li>
+              Assessed the influence of a payment-code program on spending
+              behaviors of new and existing customers (SQL, R).
             </li>
           </ul>
         </div>

@@ -46,14 +46,18 @@ export default function CMCard() {
               (Salesforce, Excel, SQL).
             </li>
             <li>
+              Streamlined the intake of raw datasets from internal and external
+              data stores. Cleaned, queried, and visualized financial-coaching
+              data to help produce fact sheets and publications (SQL, Python).
+            </li>
+            <li>
+              Provided technical support and fulfilled data requests from
+              caseworkers, product managers, and Executive leadership, juggling
+              competing priorities.
+            </li>
+            <li>
               Queried and visualized financial-coaching data to aid in the
               production of fact sheets, publications, and policy proposals.
-            </li>
-            <li>
-              Clarified and fulfilled data requests from Direct Services,
-              Product, and Executive teams, juggling competing priorities.
-            </li>
-            <li>
               Examined financial-coaching data for trends in consumer behavior
               (Python) to develop the Clinic’s policy agenda.
             </li>

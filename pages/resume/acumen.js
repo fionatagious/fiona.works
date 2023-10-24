@@ -54,9 +54,13 @@ export default function AcumenCard() {
             <li>
               Produced reports to monitor beneficiary and claim trends, flag
               adverse/positive selection by suppliers, and audit program
-              compliance. Conducted outreach to suppliers to clarify compliance
-              requirements and offer support during the Covid-19 pandemic (SQL,
-              SAS).
+              compliance.
+            </li>
+            <li>
+              Transformed datasets to create contact lists of suppliers,
+              enabling the business to contact these suppliers and enforce
+              compliance requirements, in accordance with federal data
+              governance and policies (SQL, SAS).
             </li>
           </ul>
         </div>
