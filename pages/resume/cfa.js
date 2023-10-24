@@ -46,12 +46,27 @@ export default function CFACard() {
               partnership with Adams County, Colorado.
             </li>
             <li>
+              Performed user research to better understand the social services
+              needs of people experiencing homelessness, and to better
+              understand the technology needs of caseworkers working to help the
+              unhoused.
+            </li>
+            <li>
+              Investigated customer issues and supported data integrity of our
+              database. Identified and addressed a data quality issue in which a
+              portion of intake form responses were not being collected (SQL).
+            </li>
+            <li>
               Expanded the app&apos;s admin functionality to allow for storage
               of non-contiguous intake periods (Rails).
             </li>
             <li>
               Wrote unit tests and validations for program activation dates and
               intake dates to expand application test coverage (Rails).
+            </li>
+            <li>
+               Problem solved a technical tradeoff by writing optimized SQL to
+              query data that was unattainable using ActiveRecord.
             </li>
             {/* <CardMedia component="picture" height="300" sx={{ border: 'solid white' }}>
             <source media="https://codeforamerica.org/news/limits-technology-homelessness/" />
