@@ -1,13 +1,14 @@
 import * as React from "react";
 
-import Button from "/components/button";
-import Footer from "/components/navigation/footer";
+// import Button from "/components/button";
+// import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
 import Head from "next/head";
-import Navbar from "/components/navigation/navbar";
+// import Navbar from "/components/navigation/navbar";
 import GithubIcon from "/components/icons/GithubIcon";
 import LinkedInIcon from "/components/icons/LinkedInIcon";
 import TwitterIcon from "/components/icons/TwitterIcon";
+import utils from "/styles/utils.module.css";
 
 export default function Home() {
   return (
@@ -17,8 +18,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
-      <Navbar />
-      <Grid container className="min-h-1/2 px-8 pt-4 sm:pt-32">
+      {/* <Navbar /> */}
+      <Grid container className="min-h-1/2 px-8 pt-16 sm:pt-32">
         <Grid item xs={12} className="grid content-center">
           <div className="text-left text-pink text-xl my-2">
             Hello! My name is
@@ -36,19 +37,36 @@ export default function Home() {
             specializing in building technology solutions that help individuals
             and organizations advance social and economic equity.
           </div>
-          <Button />
+          <div className="text-left text-slate-400 text-xl my-2">
+            My full site is in development, but while you're here, you can check
+            out my&nbsp;
+            <a href="/resume" className={utils.linkToResume}>
+              resume
+            </a>
+            .
+          </div>
         </Grid>
-        <Grid item xs={12} className="mt-20">
-          <div className="pt-20 flex flex-row">
-            <a href="https://github.com/fionatagious">
+        {/* <Button /> */}
+        <Grid item xs={12} className="py-6">
+          <div className="flex flex-row">
+            <a
+              href="https://github.com/fionatagious"
+              className={utils.socialMediaIcons}
+            >
               <GithubIcon />
             </a>
             &nbsp;
-            <a href="https://linkedin.com/in/fionaroni">
+            <a
+              href="https://linkedin.com/in/fionaroni"
+              className={utils.socialMediaIcons}
+            >
               <LinkedInIcon />
             </a>
             &nbsp;
-            <a href="https://twitter.com/fionatagious">
+            <a
+              href="https://twitter.com/fionatagious"
+              className={utils.socialMediaIcons}
+            >
               <TwitterIcon />
             </a>
           </div>
