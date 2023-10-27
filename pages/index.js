@@ -4,7 +4,7 @@ import * as React from "react";
 // import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
 import Head from "next/head";
-// import Navbar from "/components/navigation/navbar";
+import Navbar from "/components/navigation/navbar";
 import GithubIcon from "/components/icons/GithubIcon";
 import LinkedInIcon from "/components/icons/LinkedInIcon";
 import TwitterIcon from "/components/icons/TwitterIcon";
@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
 
-      {/* <Navbar /> */}
+      <Navbar />
       <Grid container className="min-h-1/2 px-8 pt-16 sm:pt-32">
         <Grid item xs={12} className="grid content-center">
           <div className="text-left text-pink text-xl my-2">

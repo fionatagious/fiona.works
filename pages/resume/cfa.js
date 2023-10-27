@@ -68,16 +68,6 @@ export default function CFACard() {
               Problem solved a technical tradeoff by writing optimized SQL to
               query data that was unattainable using ActiveRecord.
             </li>
-            {/* <CardMedia component="picture" height="300" sx={{ border: 'solid white' }}>
-            <source media="https://codeforamerica.org/news/limits-technology-homelessness/" />
-            <img
-              src="https://files.codeforamerica.org/2021/05/09204729/swap-e1621447855163.jpg"
-              alt="people experiencing homelessness lined up for shelter"
-              height="150"
-            />
-            <p>When a Cool, Shiny App Won’t Cut It: Recognizing the Limits of Technology in Addressing Homelessness — Code for America</p>
-            <p>Working to find housing solutions for people experiencing homelessness shows that technology is just one piece of the puzzle</p>
-          </CardMedia> */}
           </ul>
         </div>
       </CardContent>

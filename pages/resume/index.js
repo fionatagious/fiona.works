@@ -5,6 +5,7 @@ import Container from "@mui/material/Container";
 
 // Top-level header
 import Toolbar from "@mui/material/Toolbar";
+import HomeButton from "/components/buttons/HomeButton";
 import Image from "next/image";
 // Experience section
 import Grid from "@mui/material/Grid";
@@ -45,6 +46,9 @@ export default function Resume() {
         maxWidth={false}
         sx={{
           minHeight: "100vh",
+          margin: 0,
+          background:
+            "linear-gradient(135deg, #4B3B47 20%, #7E6377 40%, #00B2CA 75%, #7DCFB6 100%)",
         }}
       >
         <Toolbar
@@ -55,17 +59,21 @@ export default function Resume() {
             backgroundColor: "hsla(0, 100%, 0%, 0.8)",
             paddingTop: "0.3rem",
             paddingBottom: "0.3rem",
+            justifyContent: "space-between",
           }}
         >
-          <Image
-            priority
-            src="/images/headshot.jpg"
-            className={utils.borderCircle}
-            height={50}
-            width={50}
-            alt="profile-image"
-          />
-          <h2 className={utils.fullNameText}>Fiona Tang</h2>
+          <div className="flex flex-row">
+            <Image
+              priority
+              src="/images/headshot.jpg"
+              className={utils.borderCircle}
+              height={50}
+              width={50}
+              alt="profile-image"
+            />
+            <h2 className={utils.fullNameText}>Fiona Tang</h2>
+          </div>
+          <HomeButton />
         </Toolbar>
         <Grid
           container

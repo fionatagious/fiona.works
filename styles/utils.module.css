@@ -2,7 +2,6 @@
 .linkToResume {
   color: #d79eff;
   text-decoration: none;
-  font-weight: bold;
   position: relative;
   display: inline-block;
 }
@@ -33,6 +32,8 @@
 
 /* top-level header */
 .fullNameText {
+  display: grid;
+  align-content: center;
   color: white;
   margin-left: 1.2rem;
   font-size: 1.625rem;
