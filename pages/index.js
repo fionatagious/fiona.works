@@ -9,6 +9,7 @@ import GithubIcon from "/components/icons/GithubIcon";
 import LinkedInIcon from "/components/icons/LinkedInIcon";
 import TwitterIcon from "/components/icons/TwitterIcon";
 import utils from "/styles/utils.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,9 +41,9 @@ export default function Home() {
           <div className="text-left text-slate-400 text-xl my-2">
             My full site is in development, but while you're here, you can check
             out my&nbsp;
-            <a href="/resume" className={utils.linkToResume}>
+            <Link href="/resume" className={utils.linkToResume}>
               resume
-            </a>
+            </Link>
             .
           </div>
         </Grid>

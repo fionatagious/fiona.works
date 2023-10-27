@@ -23,9 +23,12 @@ export default function Writings() {
               I am open to freelance writing, prototyping and wireframing, web
               development, and any other business opportunities.
             </div>
-            <div className="text-pink text-lg my-2">
+            <a
+              href="mailto: fionatang@alum.berkeley.edu"
+              className="text-pink font-semibold text-lg my-2"
+            >
               fionatang@alum.berkeley.edu
-            </div>
+            </a>
           </Grid>
           <Grid item xs={12} className="py-6">
             <div className="flex flex-row">
