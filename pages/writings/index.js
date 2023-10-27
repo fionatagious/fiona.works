@@ -55,16 +55,6 @@ export default function Writings() {
             <div className="text-left text-md text-white my-2">
               <a
                 className={utils.linkToResume}
-                href="https://digitalprivacy.news/2021/04/13/a-terrible-idea/"
-              >
-                &apos;A Terrible Idea&apos; Amazon Expands Contactless
-                &apos;Palm&apos; Technology During Pandemic&nbsp;
-              </a>
-              — Digital Privacy News, 2021
-            </div>
-            <div className="text-left text-md text-white my-2">
-              <a
-                className={utils.linkToResume}
                 href="https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/"
               >
                 &apos;Giving It Out Like Candy&apos; Calif. Bill Seeks to Stop
