@@ -11,10 +11,10 @@ import TwitterIcon from "/components/icons/TwitterIcon";
 
 export default function Writings() {
   return (
-    <div className="h-screen mx-0 px-4 sm:px-32 bg-indigo-950">
+    <div className="h-screen mx-0 bg-indigo-950">
       <Navbar />
-      <div className="px-4 sm:px-32 bg-indigo-950">
-        <Grid container className="px-8 py-20">
+      <div className="h-screen px-4 sm:px-32 bg-indigo-950">
+        <Grid container className="px-4 py-20">
           <Grid item xs={12} sm={12} md={6} className="grid content-end mb-4">
             <div className="text-left text-slate-300 text-3xl my-2">
               Contact

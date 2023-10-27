@@ -20,12 +20,12 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <Grid container className="min-h-1/2 px-8 pt-16 sm:pt-32">
+      <Grid container className="min-h-1/2 px-4 sm:px-8 pt-16 sm:pt-32">
         <Grid item xs={12} className="grid content-center">
           <div className="text-left text-pink text-xl my-2">
             Hello! My name is
           </div>
-          <div className="font-bold text-left text-slate-50 text-7xl my-2">
+          <div className="font-bold text-left text-slate-50 text-5xl sm:text-7xl my-2">
             Fiona Tang
           </div>
           <div className="text-left text-slate-300 text-3xl my-2">
@@ -47,7 +47,6 @@ export default function Home() {
             .
           </div>
         </Grid>
-        {/* <Button /> */}
         <Grid item xs={12} className="py-6">
           <div className="flex flex-row">
             <a
