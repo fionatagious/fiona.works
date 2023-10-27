@@ -43,7 +43,7 @@ export default function ACLUCard() {
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
-          <ul>
+          <ul className="list-disc">
             <li>
               Edited and cite-checked legal briefs, adhering to a detailed
               system of citation rules. Wrote and filed Freedom of Information

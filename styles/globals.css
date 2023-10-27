@@ -26,19 +26,8 @@ img {
 
 h1,
 h2,
-p,
-ul {
+p {
   margin: 0;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  display: list-item;
-  list-style: outside;
 }
 
 button {

@@ -40,12 +40,11 @@ export default function Resume() {
     >
       <Container
         fluid={true}
+        className="bg-indigo-950"
         disableGutters
         maxWidth={false}
         sx={{
           minHeight: "100vh",
-          background:
-            "linear-gradient(135deg, #4B3B47 20%, #7E6377 40%, #00B2CA 75%, #7DCFB6 100%)",
         }}
       >
         <Toolbar

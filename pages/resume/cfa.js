@@ -38,7 +38,7 @@ export default function CFACard() {
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
-          <ul>
+          <ul className="list-disc">
             <li>
               Researched, project managed, designed, and developed a web app
               that streamlines the intake process to help people experiencing

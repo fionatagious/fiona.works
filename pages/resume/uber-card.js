@@ -38,7 +38,7 @@ export default function UberCard() {
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
-          <ul>
+          <ul className="list-disc">
             <li>
               Built pipelines for querying and analysis using Uber&apos;s
               internal ingestion tools, Watchtower and Kirby.

@@ -38,7 +38,7 @@ export default function CMCard() {
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
-          <ul>
+          <ul className="list-disc">
             <li>
               Developed reports to track achievement in financial outcomes of
               70,000 low-income New York City residents. Created dashboards on

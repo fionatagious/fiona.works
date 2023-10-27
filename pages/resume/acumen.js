@@ -44,7 +44,7 @@ export default function AcumenCard() {
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
-          <ul>
+          <ul className="list-disc">
             <li>
               Analyzed claim line-level data to produce summary statistics (SAS)
               pertaining to weight loss and attendance outcomes under the

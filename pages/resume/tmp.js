@@ -40,7 +40,7 @@ export default function TMPCard() {
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
-          <ul>
+          <ul className="list-disc">
             <li>
               Built, tested, and debugged features to enhance user flows to
               improve user acquisition and retention: log in, sign up, and job
