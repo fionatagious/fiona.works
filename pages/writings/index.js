@@ -22,7 +22,7 @@ export default function Writings() {
               writings.
             </div>
           </Grid>
-          <Grid item xs={12} className="grid content-start">
+          <Grid item xs={12} className="grid content-start mt-4">
             <div className="text-left text-md text-white my-2">
               <a
                 className={utils.linkToResume}
@@ -61,6 +61,16 @@ export default function Writings() {
                 Police From Unbridled License-Plate Data Collection&nbsp;
               </a>
               — Digital Privacy News, 2021
+            </div>
+            <div className="text-left text-md text-white my-2">
+              <a
+                className={utils.linkToResume}
+                href="https://change-machine.org/when-is-more-not-extra-effective-strategies-for-financial-security/"
+              >
+                When is More Not Extra? Effective Strategies for Financial
+                Security&nbsp;
+              </a>
+              — The Financial Clinic, 2017
             </div>
             <div className="text-left text-md text-white my-2">
               <a
