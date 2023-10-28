@@ -1,8 +1,5 @@
 import * as React from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
-import utils from "/styles/utils.module.css";
 import Container from "@mui/material/Container";
-
 // Top-level header
 import Toolbar from "@mui/material/Toolbar";
 import HomeButton from "/components/buttons/HomeButton";
@@ -23,6 +20,8 @@ import Education from "./education";
 import Leadership from "./leadership";
 // Media Carousel
 // import MediaCarousel from 'components/carousel'
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import utils from "/styles/utils.module.css";
 
 export default function Resume() {
   return (
@@ -139,9 +138,6 @@ export default function Resume() {
                 Skills
               </div>
             </Grid>
-
-            {/* <Typography className="text-2xl">Media</Typography> */}
-            {/* <MediaCarousel /> */}
           </Grid>
         </Grid>
       </Container>

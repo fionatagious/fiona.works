@@ -1,12 +1,12 @@
 /* home page */
-.linkToResume {
+.linkAnimation {
   color: #d79eff;
   text-decoration: none;
   position: relative;
   display: inline-block;
 }
 
-.linkToResume:after {
+.linkAnimation:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -19,7 +19,7 @@
   transition: transform 0.25s ease-out;
 }
 
-.linkToResume:hover:after {
+.linkAnimation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

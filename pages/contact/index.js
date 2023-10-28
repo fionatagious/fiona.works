@@ -1,58 +1,35 @@
 import * as React from "react";
-import utils from "/styles/utils.module.css";
+import Link from "next/link";
 
-// import Button from "/components/button";
-// import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
 import Navbar from "/components/navigation/navbar";
-import GithubIcon from "/components/icons/GithubIcon";
-import LinkedInIcon from "/components/icons/LinkedInIcon";
-import TwitterIcon from "/components/icons/TwitterIcon";
+import SocialMedia from "/components/SocialMedia";
+import utils from "/styles/utils.module.css";
 
 export default function Writings() {
   return (
     <div className="h-screen mx-0 bg-indigo-950">
       <Navbar />
       <div className="px-4 sm:px-32 bg-indigo-950">
-        <Grid container className="px-4 py-20">
+        <Grid container className="flex flex-col px-4 py-20">
           <Grid item xs={12} sm={12} md={6} className="grid content-end mb-4">
             <div className="text-left text-slate-300 text-3xl my-2">
               Contact
             </div>
-            <div className="text-left text-slate-400 text-xl">
+            <div className="text-left text-slate-400 text-xl mb-6">
               I am open to freelance writing, prototyping and wireframing, web
               development, and any other business opportunities.
             </div>
-            <a
-              href="mailto: fionatang@alum.berkeley.edu"
-              className="text-pink font-semibold text-lg my-2"
-            >
-              fionatang@alum.berkeley.edu
-            </a>
-          </Grid>
-          <Grid item xs={12} className="py-6">
-            <div className="flex flex-row">
-              <a
-                href="https://github.com/fionatagious"
-                className={utils.socialMediaIcons}
+            <div className="text-left text-slate-400 text-xl mt-6 mb-4">
+              <Link
+                href="mailto: fionatang@alum.berkeley.edu"
+                //   className="text-pink font-semibold text-lg my-2"
+                className={utils.linkAnimation}
               >
-                <GithubIcon />
-              </a>
-              &nbsp;
-              <a
-                href="https://linkedin.com/in/fionaroni"
-                className={utils.socialMediaIcons}
-              >
-                <LinkedInIcon />
-              </a>
-              &nbsp;
-              <a
-                href="https://twitter.com/fionatagious"
-                className={utils.socialMediaIcons}
-              >
-                <TwitterIcon />
-              </a>
+                fionatang@alum.berkeley.edu
+              </Link>
             </div>
+            <SocialMedia />
           </Grid>
         </Grid>
       </div>

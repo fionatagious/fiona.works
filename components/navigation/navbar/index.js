@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+
 // import Logo from "./Logo";
 import ResumeButton from "/components/buttons/ResumeButton";
 import utils from "/styles/utils.module.css";
@@ -13,22 +14,22 @@ const Navbar = () => {
             {/* <Logo /> */}
             <ul className="list-none sm:flex gap-x-8 text-pink">
               <li>
-                <Link className={utils.linkToResume} href="/">
+                <Link className={utils.linkAnimation} href="/">
                   <p>Home</p>
                 </Link>
               </li>
               <li>
-                <Link className={utils.linkToResume} href="/writings">
+                <Link className={utils.linkAnimation} href="/writings">
                   <p>Writings</p>
                 </Link>
               </li>
               {/* <li>
-                <Link className={utils.linkToResume} href="/projects">
+                <Link className={utils.linkAnimation} href="/projects">
                   <p>Projects</p>
                 </Link>
               </li> */}
               <li>
-                <Link className={utils.linkToResume} href="/contact">
+                <Link className={utils.linkAnimation} href="/contact">
                   <p>Contact</p>
                 </Link>
               </li>

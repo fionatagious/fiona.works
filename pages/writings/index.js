@@ -1,7 +1,6 @@
 import * as React from "react";
+import Link from "next/link";
 
-// import Button from "/components/button";
-// import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
 import Navbar from "/components/navigation/navbar";
 import utils from "/styles/utils.module.css";
@@ -24,89 +23,89 @@ export default function Writings() {
           </Grid>
           <Grid item xs={12} className="grid content-start mt-8">
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://codeforamerica.org/news/limits-technology-homelessness/"
               >
                 When A Cool Shiny App Won't Cut It: Recognizing the Limits of
                 Technology in Addressing Homelessness&nbsp;
-              </a>
+              </Link>
               — Code for America, 2021
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://codeforamerica.org/news/meet-the-community-fellows-team-adams-county/"
               >
                 Meet the Community Fellows: Team Adams County&nbsp;
-              </a>
+              </Link>
               — Code for America, 2021
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://digitalprivacy.news/2021/04/13/a-terrible-idea/"
               >
                 &apos;A Terrible Idea&apos; Amazon Expands Contactless
                 &apos;Palm&apos; Technology During Pandemic&nbsp;
-              </a>
+              </Link>
               — Digital Privacy News, 2021
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/"
               >
                 &apos;Giving It Out Like Candy&apos; Calif. Bill Seeks to Stop
                 Police From Unbridled License-Plate Data Collection&nbsp;
-              </a>
+              </Link>
               — Digital Privacy News, 2021
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://change-machine.org/change-matters-the-financial-clinics-customer-insights/"
               >
                 Change Matters: The Financial Clinic’s Customer Insights&nbsp;
-              </a>
+              </Link>
               — The Financial Clinic, 2018
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://change-machine.org/when-is-more-not-extra-effective-strategies-for-financial-security/"
               >
                 When is More Not Extra? Effective Strategies for Financial
                 Security&nbsp;
-              </a>
+              </Link>
               — The Financial Clinic, 2017
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://www.aclu.org/cases/trump-conflicts-interest-foia?document=trump-conflicts-interest-foia-request#"
               >
                 Trump Conflicts of Interest FOIA&nbsp;
-              </a>
+              </Link>
               — ACLU, 2017
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://www.aclu.org/news/privacy-technology/aclu-foia-seeks-information-about-how-government"
               >
                 ACLU FOIA Seeks Information About How Government Launders
                 Evidence&nbsp;
-              </a>
+              </Link>
               — ACLU, 2016
             </div>
             <div className="text-left text-lg text-white my-2">
-              <a
-                className={utils.linkToResume}
+              <Link
+                className={utils.linkAnimation}
                 href="https://www.aclu.org/legal-document/foia-request-under-freedom-information-act"
               >
                 Parallel Construction FOIA&nbsp;
-              </a>
+              </Link>
               — ACLU, 2016
             </div>
           </Grid>
