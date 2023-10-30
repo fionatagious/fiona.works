@@ -16,11 +16,11 @@ export default function Contact() {
               Contact
             </div>
             <div className="text-left text-slate-400 text-xl mb-6">
-              I am open to freelance opportunities in writing and web
+              I'm open to freelance opportunities in writing and web
               development.
             </div>
             <div className="text-left text-slate-400 text-xl mb-6">
-              If you are interested in working on projects related to climate
+              If you're interested in working on projects related to climate
               change, civic tech, or data visualization/journalism, I'd love to
               hear from you!
             </div>

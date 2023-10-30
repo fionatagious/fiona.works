@@ -10,13 +10,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="h-screen mx-0 px-4 sm:px-32 bg-indigo-950">
+    <div className="h-screen mx-0 bg-indigo-950">
       <Navbar />
       <Grid
         container
         className="flex flex-col min-h-1/2 px-4 sm:px-32 pt-6 sm:pt-32"
       >
-        <Grid item xs={12} className="grid content-center">
+        <Grid item xs={12} className="grid content-center px-4 sm:pl-32">
           <h1 className="text-left text-pink text-xl my-2">
             Hello! My name is
           </h1>
@@ -27,13 +27,19 @@ export default function Home() {
             software engineer & civic technologist
           </div>
         </Grid>
-        <Grid item xs={12} md={8} lg={6} className="grid content-start mb-4">
+        <Grid
+          item
+          xs={12}
+          md={8}
+          lg={6}
+          className="grid content-start mb-4 px-4 sm:pl-32"
+        >
           <div className="text-left text-slate-400 text-xl my-2">
             I&apos;m a user-focused, results-driven software engineer
             specializing in building technology solutions that help individuals
             and organizations advance social and economic equity.
           </div>
-          <div className="text-left text-slate-400 text-xl my-2">
+          <div className="text-left text-slate-400 text-xl mt-2 mb-6">
             My full site is in development, but while you're here, you can check
             out my&nbsp;
             <Link href="/resume" className="link-animation">
@@ -41,55 +47,10 @@ export default function Home() {
             </Link>
             .
           </div>
-        </Grid>
-        <Grid item>
           <SocialMedia />
         </Grid>
       </Grid>
       {/* <Footer /> */}
-
-      {/* <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid black;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style> */}
     </div>
   );
 }
