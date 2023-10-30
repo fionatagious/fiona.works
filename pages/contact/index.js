@@ -16,8 +16,8 @@ export default function Writings() {
               Contact
             </div>
             <div className="text-left text-slate-400 text-xl mb-6">
-              I am open to freelance writing, prototyping and wireframing, web
-              development, and any other business opportunities.
+              I am open to any freelance opportunities in writing, prototyping
+              and wireframing, and web development.
             </div>
             <div className="text-left text-slate-400 text-xl mt-6 mb-4">
               <Link
