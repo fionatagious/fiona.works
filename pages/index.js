@@ -42,7 +42,9 @@ export default function Home() {
             .
           </div>
         </Grid>
-        <SocialMedia />
+        <Grid item>
+          <SocialMedia />
+        </Grid>
       </Grid>
       {/* <Footer /> */}
 

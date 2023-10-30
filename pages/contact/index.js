@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import Navbar from "/components/navigation/navbar";
 import SocialMedia from "/components/SocialMedia";
 
-export default function Writings() {
+export default function Contact() {
   return (
     <div className="h-screen mx-0 bg-indigo-950">
       <Navbar />
@@ -16,17 +16,23 @@ export default function Writings() {
               Contact
             </div>
             <div className="text-left text-slate-400 text-xl mb-6">
-              I am open to any freelance opportunities in writing, prototyping
-              and wireframing, and web development.
+              I am open to freelance opportunities in writing and web
+              development.
+            </div>
+            <div className="text-left text-slate-400 text-xl mb-6">
+              If you are interested in working on projects related to climate
+              change, civic tech, or data visualization/journalism, I'd love to
+              hear from you!
             </div>
             <div className="text-left text-slate-400 text-xl mt-6 mb-4">
+              Write to me at&nbsp;
               <Link
                 href="mailto: fionatang@alum.berkeley.edu"
-                //   className="text-pink font-semibold text-lg my-2"
                 className="link-animation"
               >
                 fionatang@alum.berkeley.edu
               </Link>
+              .
             </div>
             <SocialMedia />
           </Grid>
