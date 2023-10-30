@@ -4,7 +4,6 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
-import utils from "/styles/utils.module.css";
 
 export default function TMPCard() {
   return (
@@ -23,7 +22,7 @@ export default function TMPCard() {
             <Image
               priority
               src="/images/tmp-logo.jpg"
-              className={utils.borderLogo}
+              className="company-logo"
               height={65}
               width={65}
               alt="the-mom-project-logo"

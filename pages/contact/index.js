@@ -4,7 +4,6 @@ import Link from "next/link";
 import Grid from "@mui/material/Grid";
 import Navbar from "/components/navigation/navbar";
 import SocialMedia from "/components/SocialMedia";
-import utils from "/styles/utils.module.css";
 
 export default function Writings() {
   return (
@@ -24,7 +23,7 @@ export default function Writings() {
               <Link
                 href="mailto: fionatang@alum.berkeley.edu"
                 //   className="text-pink font-semibold text-lg my-2"
-                className={utils.linkAnimation}
+                className="link-animation"
               >
                 fionatang@alum.berkeley.edu
               </Link>

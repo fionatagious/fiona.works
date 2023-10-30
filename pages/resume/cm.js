@@ -4,7 +4,6 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
-import utils from "/styles/utils.module.css";
 
 export default function CMCard() {
   return (
@@ -23,7 +22,7 @@ export default function CMCard() {
             <Image
               priority
               src="/images/cm-logo.jpg"
-              className={utils.borderLogo}
+              className="company-logo"
               height={65}
               width={65}
               alt="change-machine-logo"

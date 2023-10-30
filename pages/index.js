@@ -3,29 +3,23 @@ import * as React from "react";
 // import Button from "/components/button";
 // import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
-import Head from "next/head";
 import Navbar from "/components/navigation/navbar";
 import SocialMedia from "/components/SocialMedia";
-import utils from "/styles/utils.module.css";
+
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="h-screen mx-0 px-4 sm:px-32 bg-indigo-950">
-      <Head>
-        <title>Fiona Tang</title>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </Head>
-
       <Navbar />
       <Grid
         container
         className="flex flex-col min-h-1/2 px-4 sm:px-32 pt-6 sm:pt-32"
       >
         <Grid item xs={12} className="grid content-center">
-          <div className="text-left text-pink text-xl my-2">
+          <h1 className="text-left text-pink text-xl my-2">
             Hello! My name is
-          </div>
+          </h1>
           <div className="font-bold text-left text-slate-50 text-4xl sm:text-7xl my-2">
             Fiona Tang
           </div>
@@ -42,7 +36,7 @@ export default function Home() {
           <div className="text-left text-slate-400 text-xl my-2">
             My full site is in development, but while you're here, you can check
             out my&nbsp;
-            <Link href="/resume" className={utils.linkAnimation}>
+            <Link href="/resume" className="link-animation">
               resume
             </Link>
             .

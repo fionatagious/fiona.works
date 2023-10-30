@@ -10,7 +10,7 @@ import Overview from "./overview";
 import TMPCard from "./tmp";
 import CFACard from "./cfa";
 import AcumenCard from "./acumen";
-import UberCard from "./uber-card";
+import UberCard from "./uber";
 import CMCard from "./cm";
 import ACLUCard from "./aclu";
 // Skills section
@@ -21,7 +21,6 @@ import Leadership from "./leadership";
 // Media Carousel
 // import MediaCarousel from 'components/carousel'
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import utils from "/styles/utils.module.css";
 
 export default function Resume() {
   return (
@@ -65,12 +64,12 @@ export default function Resume() {
             <Image
               priority
               src="/images/headshot.jpg"
-              className={utils.borderCircle}
+              className="profile-image"
               height={50}
               width={50}
               alt="profile-image"
             />
-            <h2 className={utils.fullNameText}>Fiona Tang</h2>
+            <h2 className="full-name-text">Fiona Tang</h2>
           </div>
           <HomeButton />
         </Toolbar>
@@ -88,7 +87,6 @@ export default function Resume() {
             sm={4}
             md={3}
             sx={{ height: "100vh", overflow: "auto" }}
-            className={utils.skillsTransition}
           >
             <Skills />
           </Grid>
@@ -105,7 +103,6 @@ export default function Resume() {
               justifyContent: "center",
               paddingBottom: "0.5rem",
             }}
-            className={utils.experiencesTransition}
           >
             <Grid item xs={12}>
               <Overview className="min-h-full" />

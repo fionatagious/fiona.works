@@ -1,5 +1,4 @@
 import * as React from "react";
-import utils from "/styles/utils.module.css";
 
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";

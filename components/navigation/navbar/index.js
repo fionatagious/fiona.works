@@ -3,7 +3,6 @@ import Link from "next/link";
 
 // import Logo from "./Logo";
 import ResumeButton from "/components/buttons/ResumeButton";
-import utils from "/styles/utils.module.css";
 
 const Navbar = () => {
   return (
@@ -14,22 +13,22 @@ const Navbar = () => {
             {/* <Logo /> */}
             <ul className="list-none sm:flex gap-x-8 text-pink">
               <li>
-                <Link className={utils.linkAnimation} href="/">
+                <Link className="link-animation" href="/">
                   <p>Home</p>
                 </Link>
               </li>
               <li>
-                <Link className={utils.linkAnimation} href="/writings">
+                <Link className="link-animation" href="/writings">
                   <p>Writings</p>
                 </Link>
               </li>
               {/* <li>
-                <Link className={utils.linkAnimation} href="/projects">
+                <Link className="link-animation" href="/projects">
                   <p>Projects</p>
                 </Link>
               </li> */}
               <li>
-                <Link className={utils.linkAnimation} href="/contact">
+                <Link className="link-animation" href="/contact">
                   <p>Contact</p>
                 </Link>
               </li>
