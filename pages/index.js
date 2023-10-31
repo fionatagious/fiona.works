@@ -20,12 +20,12 @@ export default function Home() {
       >
         <Intro />
         <section id="about">
-          <Grid item xs={12} className="px-0 sm:pl-32 py-20 my-20">
+          <div className="px-0 md:pl-32 py-20 my-20">
             <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
               About me
             </div>
-            <Grid item xs={12} sm={12}>
-              <Grid item xs={12} sm={6}>
+            <Grid container className="flex flex-col sm:flex-row">
+              <Grid item xs={12} sm={6} className="px-3">
                 <div className="text-left text-slate-400 text-lg my-2 mb-6">
                   My most recent work experiences are at Code for America, where
                   I partnered with the government of Adams County, Colorado and
@@ -41,27 +41,33 @@ export default function Home() {
                   stationery hobbyist and a coffee enthusiast.
                 </div>
               </Grid>
-              {/* <Grid item xs={12} sm={6} className="about-photo">
+              {/* <Grid
+                item
+                xs={12}
+                sm={6}
+                className="photo-container flex justify-center mx-auto sm:ml-4 mt-2"
+              >
+                <div className="about-photo-border"></div>
                 <Image
                   priority
-                  src="/public/images/headshot.jpg"
+                  src="/images/headshot.jpg"
                   height={350}
                   width={350}
                   alt="profile-photo"
                 />
-              </Grid> */}
+              </Grid>*/}
             </Grid>
-          </Grid>
+          </div>
         </section>
         <section id="experience">
-          <Grid item xs={10} className="px-0 sm:pl-32 py-20 my-20">
+          <Grid item xs={10} className="px-0 md:pl-32 py-20 my-20">
             <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
               Experience
             </div>
             <ExperiencePanel />
           </Grid>
         </section>
-        <Grid item xs={12} className="px-0 sm:pl-32 py-20 my-20">
+        <Grid item xs={12} className="px-0 md:pl-32 py-20 my-20">
           <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
             Written Works
           </div>

@@ -3,15 +3,16 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className="w-full h-20">
-        <div className="container mx-auto px-6 bg-indigo-950 items-center gap-x-8 text-white mt-6">
+      <div className="w-full h-20 z-50 ">
+        <div className="container mx-auto px-6 gap-x-8 mt-6">
           <hr />
-          <div className="justify-right text-pink">
-            Built using Next and Tailwind. I used&nbsp;
-            <a target="_blank" href="https://icons8.com">
-              Icons8
-            </a>
-            for social media icons.
+          <div className="flex justify-center text-slate-400 py-6">
+            <span>
+              Designed and built by Fiona Tang, using&nbsp;
+              <a href="https://nextjs.org/">Next</a>,{" "}
+              <a href="https://mui.com/">Material</a>, and&nbsp;
+              <a href="https://tailwindcss.com">Tailwind CSS</a>.
+            </span>
           </div>
         </div>
       </div>

@@ -2,20 +2,56 @@ import { createGlobalStyle } from "styled-components";
 // import fonts from "./fonts";
 // import variables from "./variables";
 
+// .nav-animation a {
+// 	position: relative;
+// 	display: inline-block;
+// 	color: #fecaca;
+// }
+
+// .nav-animation a:focus,
+// .nav-animation a:hover {
+// 	position: relative;
+// 	display: inline-block;
+// 	color: #d79eff;
+// }
+
 const GlobalStyle = createGlobalStyle`
-
-	* {
-		box-sizing: border-box;
-	}
-
-	a:hover {
+	.heading {
+		font-size: 2rem;
 		color: white;
-		text-decoration: none;
 	}
 
-	/* home page */
+	.heading::after {
+		content: "";
+		display: inline-block;
+		position: relative;
+		top: -5px;
+		width: 350px;
+		height: 1px;
+		margin-left: 20px;
+		background-color: rgb(148 163 184);
+	}
+
+	.photo-container {
+		position: relative;
+		max-width: 350px;
+		max-height: 350px;
+	}
+
+	.about-photo-border {
+		position: absolute;
+		margin-top: -1rem;
+		margin-left: 1rem;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		flex-shrink: 1;
+		background-color: transparent;
+		border: solid 2px #fecaca;
+	}
+
 	.link-animation {
-		color: #d79eff;
+		color: #fecaca;
 		text-decoration: none;
 		position: relative;
 		display: inline-block;
@@ -29,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
 		height: 2px;
 		bottom: 0;
 		left: 0;
-		background-color: #d79eff;
+		background-color: #fecaca;
 		transform-origin: bottom right;
 		transition: transform 0.25s ease-out;
 	}
@@ -95,7 +131,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	/* resume: icons, avatars */
-	.profile-image {
+	.profile-image-small {
 		border-radius: 50%;
 	}
 
