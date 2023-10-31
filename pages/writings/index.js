@@ -2,25 +2,19 @@ import * as React from "react";
 import Link from "next/link";
 
 import Grid from "@mui/material/Grid";
-import Navbar from "/components/navigation/navbar";
 
 export default function Writings() {
   return (
     <div className="h-full sm:h-screen mx-0 bg-indigo-950">
-      <Navbar />
-      <div className="h-full sm:h-screen px-4 sm:px-32 bg-indigo-950">
-        <Grid container className="px-4 py-20">
-          <Grid item xs={12} sm={12} md={6} className="grid content-end mb-4">
-            <div className="text-left text-slate-300 text-3xl my-2">
-              Written works
+      <div className="h-full sm:h-screen px-4 bg-indigo-950">
+        <Grid container className="px-4">
+          {/* <Grid item xs={12} sm={12} md={12}>
+            <div className="text-left text-slate-400 text-xl mb-6">
+              blog posts, FOIA requests, news articles, essays, and other
+              miscellaneous writings
             </div>
-            <div className="text-left text-slate-400 text-xl">
-              This is a collection of my written works, including blog posts,
-              FOIA requests, news articles, essays, and other miscellaneous
-              writings.
-            </div>
-          </Grid>
-          <Grid item xs={12} className="grid content-start mt-8">
+          </Grid> */}
+          <Grid item xs={12}>
             <div className="text-left text-lg text-white my-2">
               <Link
                 className="link-animation"

@@ -13,7 +13,7 @@ export default function Intro() {
           Fiona Tang
         </div>
         <span>
-          <div className="text-left text-red-200 text-xl my-2">I am a</div>
+          {/* <div className="text-left text-red-200 text-xl my-2">I am a</div> */}
           <div className="text-left text-slate-300 text-3xl my-2">
             software engineer & civic technologist
           </div>
