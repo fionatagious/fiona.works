@@ -31,6 +31,11 @@ export default function Intro() {
           in building technology solutions that help individuals and
           organizations advance social and economic equity.
         </div>
+        <div className="text-left text-slate-400 text-xl my-2 mb-6">
+          My full site is in development, but while you're here, check out
+          my&nbsp;
+          <a href="/resume">resume</a>
+        </div>
         <SocialMedia />
       </Grid>
     </>
