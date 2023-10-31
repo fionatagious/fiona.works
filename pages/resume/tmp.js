@@ -46,9 +46,11 @@ export default function TMPCard() {
               post creation (Rails, React.js).
             </li>
             <li>
-              Led technical planning and documentation for several high-impact
-              epics. Developed acceptance criteria and user stories. Synthesized
-              feature requests and product requirements.
+              Planned and led engineering work for several high-impact epics.
+              Clarified engineering effort and scope, synthesized feature
+              requests, and documented technical specifications. Synthesized
+              feature requests and product requirements. Developed acceptance
+              criteria and wrote user stories for ticket creation.
             </li>
             <li>
               Built reusable components for a migration from Rails codebase to a
@@ -65,10 +67,11 @@ export default function TMPCard() {
               and code reviews across four distinct repositories.
             </li>
             <li>
-              Updated transactional emails with new content and designs
+              Built new site navigation (top-level header and footer) and
+              updated transactional emails with new content and designs,
               following two major company re-brands. Wrote application logic to
-              implement email-related workers and triggers (Rails, SendGrid,
-              Sidekiq).
+              implement email-related workers and triggers (React, Rails,
+              SendGrid, Sidekiq).
             </li>
           </ul>
         </div>

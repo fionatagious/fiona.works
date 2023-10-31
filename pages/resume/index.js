@@ -61,14 +61,16 @@ export default function Resume() {
           }}
         >
           <div className="flex flex-row">
-            <Image
-              priority
-              src="/images/headshot.jpg"
-              className="profile-image"
-              height={50}
-              width={50}
-              alt="profile-image"
-            />
+            <a href="/">
+              <Image
+                priority
+                src="/images/headshot.jpg"
+                className="profile-image-small"
+                height={50}
+                width={50}
+                alt="profile-image-small"
+              />
+            </a>
             <h2 className="full-name-text">Fiona Tang</h2>
           </div>
           <HomeButton />

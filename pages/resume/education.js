@@ -17,7 +17,10 @@ export default function Education() {
       className="mb-2"
     >
       <CardContent>
-        <Grid container sx={{ display: "flex", alignItems: "center" }}>
+        <Grid
+          container
+          sx={{ display: "flex", flexWrap: "nowrap", alignItems: "center" }}
+        >
           <Grid item>
             <Image
               priority
@@ -33,11 +36,10 @@ export default function Education() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              flexWrap: "nowrap",
               marginLeft: "0.75rem",
             }}
           >
-            <div className="text-lg sm:text-xl leading-7">
+            <div className="text-md text-pink sm:text-xl">
               University of California, Berkeley
             </div>
             <Typography variant="subtitle2">B.A. Legal Studies</Typography>

@@ -17,14 +17,14 @@ export default function Overview() {
       >
         <CardContent className="d-flex pb-6">
           <div className="text-sm sm:text-md calibre">
-            👋🏽&nbsp;&nbsp;I&apos;m a highly collaborative and committed
-            full-stack software engineer passionate about using my skills to
-            equip organizations with the technology they need to better serve
-            their communities. My work experiences span non-profits, government
+            👋🏽&nbsp;&nbsp;I&apos;m a collaborative and dedicated full-stack
+            software engineer passionate about using my skills to equip
+            organizations with the technology they need to better serve their
+            communities. My work experiences span non-profits, government
             consulting firms, and startups.
             <br />
             <br />
-            📫&nbsp;&nbsp;Write to me at&nbsp;
+            📫&nbsp;&nbsp;
             <a
               href="mailto: fionatang@alum.berkeley.edu"
               className="text-pink font-semibold"
