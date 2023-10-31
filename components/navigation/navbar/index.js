@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import ResumeButton from "/components/buttons/ResumeButton";
 // import Logo from "./Logo";
 
