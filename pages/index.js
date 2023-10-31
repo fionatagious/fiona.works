@@ -1,56 +1,74 @@
 import * as React from "react";
+import Image from "next/image";
 
 // import Button from "/components/button";
-// import Footer from "/components/navigation/footer";
+// import About from "/pages/about/index.js";
+import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
+import Intro from "/pages/intro/index.js";
 import Navbar from "/components/navigation/navbar";
-import SocialMedia from "/components/SocialMedia";
-
-import Link from "next/link";
+import ExperiencePanel from "/components/ExperiencePanel";
+import Writings from "/pages/writings/index.js";
 
 export default function Home() {
   return (
-    <div className="h-screen mx-0 bg-indigo-950">
+    <div className="mx-0 bg-indigo-950">
       <Navbar />
       <Grid
         container
         className="flex flex-col min-h-1/2 px-4 sm:px-32 pt-6 sm:pt-32"
       >
-        <Grid item xs={12} className="grid content-center px-4 sm:pl-32">
-          <h1 className="text-left text-pink text-xl my-2">
-            Hello! My name is
-          </h1>
-          <div className="font-bold text-left text-slate-50 text-4xl sm:text-7xl my-2">
-            Fiona Tang
+        <Intro />
+        <section id="about">
+          <Grid item xs={12} className="px-0 sm:pl-32 py-20 my-20">
+            <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
+              About me
+            </div>
+            <Grid item xs={12} sm={12}>
+              <Grid item xs={12} sm={6}>
+                <div className="text-left text-slate-400 text-lg my-2 mb-6">
+                  My most recent work experiences are at Code for America, where
+                  I partnered with the government of Adams County, Colorado and
+                  caseworkers, to build a web app that helped people
+                  experiencing homelessness access temporary shelter. After my
+                  fellowship, I worked as a Software Engineer at The Mom
+                  Project, a platform that connects moms, dads, and other
+                  caretakers with employers who offer flexible work.
+                </div>
+                <div className="text-left text-slate-400 text-lg my-2 mb-6">
+                  When I'm not coding, I enjoy cooking, learning new drum beats,
+                  and spending time with friends and family. I also am a
+                  stationery hobbyist and a coffee enthusiast.
+                </div>
+              </Grid>
+              {/* <Grid item xs={12} sm={6} className="about-photo">
+                <Image
+                  priority
+                  src="/public/images/headshot.jpg"
+                  height={350}
+                  width={350}
+                  alt="profile-photo"
+                />
+              </Grid> */}
+            </Grid>
+          </Grid>
+        </section>
+        <section id="experience">
+          <Grid item xs={10} className="px-0 sm:pl-32 py-20 my-20">
+            <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
+              Experience
+            </div>
+            <ExperiencePanel />
+          </Grid>
+        </section>
+        <Grid item xs={12} className="px-0 sm:pl-32 py-20 my-20">
+          <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
+            Written Works
           </div>
-          <div className="text-left text-slate-300 text-2xl my-2">
-            software engineer & civic technologist
-          </div>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          md={8}
-          lg={6}
-          className="grid content-start mb-4 px-4 sm:pl-32"
-        >
-          <div className="text-left text-slate-400 text-xl my-2">
-            I&apos;m a user-focused, results-driven software engineer
-            specializing in building technology solutions that help individuals
-            and organizations advance social and economic equity.
-          </div>
-          <div className="text-left text-slate-400 text-xl mt-2 mb-6">
-            My full site is in development, but while you're here, you can check
-            out my&nbsp;
-            <Link href="/resume" className="link-animation">
-              resume
-            </Link>
-            .
-          </div>
-          <SocialMedia />
+          <Writings />
         </Grid>
       </Grid>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
