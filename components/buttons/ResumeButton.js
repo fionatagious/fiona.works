@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const StyledButton = styled.button`
-  color: #d79eff;
+  color: #fecaca;
   background-color: transparent;
-  border: 1px solid #d79eff;
+  border: 1px solid #fecaca;
   border-radius: 8%;
   padding: 0.75rem 1rem;
   line-height: 1;
@@ -15,7 +15,7 @@ const StyledButton = styled.button`
 
   &:hover {
     outline: none;
-    box-shadow: 3px 3px 0 0 #d79eff;
+    box-shadow: 3px 3px 0 0 #fecaca;
     transform: translate(-4px, -4px);
   }
 `;

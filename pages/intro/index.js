@@ -26,12 +26,12 @@ export default function Intro() {
         lg={6}
         className="grid content-start mb-4 px-4 md:pl-32"
       >
-        <div className="text-left text-slate-400 text-xl my-2 mb-6">
+        <div className="text-left text-slate-400 text-lg sm:text-xl my-2 mb-6">
           I&apos;m a user-focused, results-driven software engineer specializing
           in building technology solutions that help individuals and
           organizations advance social and economic equity.
         </div>
-        <div className="text-left text-slate-400 text-xl my-2 mb-6">
+        <div className="text-left text-slate-400 text-lg sm:text-xl my-2 mb-6">
           My full site is in development, but while you're here, check out
           my&nbsp;
           <a className="text-red-200" href="/resume">

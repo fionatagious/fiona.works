@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div className="h-screen mx-0 bg-indigo-950">
       <Navbar />
-      <div className="px-4 sm:px-32 bg-indigo-950">
+      <div className="px-4 sm:pl-32 bg-indigo-950">
         <Grid container className="flex flex-col px-4 py-20">
           <Grid item xs={12} sm={12} md={6} className="grid content-end mb-4">
             <div className="text-left text-slate-300 text-3xl my-2">

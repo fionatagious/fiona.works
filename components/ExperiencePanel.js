@@ -87,7 +87,7 @@ export default function VerticalTabs() {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <section id="experience">
+    <>
       <Box
         sx={{
           flexGrow: 1,
@@ -178,7 +178,7 @@ export default function VerticalTabs() {
           <div className="text-red-200 text-lg">
             Software Engineering Fellow, Code for America
           </div>
-          <div className="text-md sm:text-md text-white pl-3 mt-2">
+          <div className="text-sm sm:text-md text-white pl-3 mt-2">
             <ul className="list-disc">
               <li>
                 Researched, project managed, designed, and developed a web app
@@ -217,7 +217,7 @@ export default function VerticalTabs() {
           <div className="text-red-200 text-lg">
             Data and Policy Analyst, Acumen
           </div>
-          <div className="text-md sm:text-md text-white pl-3 mt-2">
+          <div className="text-sm sm:text-md text-white pl-3 mt-2">
             <ul className="list-disc">
               <li>
                 Analyzed claim line-level data to produce summary statistics
@@ -241,7 +241,7 @@ export default function VerticalTabs() {
         </ExperiencePanel>
         <ExperiencePanel value={value} index={3}>
           <div className="text-red-200 text-lg">Data Analyst, Uber</div>
-          <div className="text-md sm:text-md text-white pl-3 mt-2">
+          <div className="text-sm sm:text-md text-white pl-3 mt-2">
             <ul className="list-disc">
               <li>
                 Built pipelines for querying and analysis using Uber&apos;s
@@ -271,7 +271,7 @@ export default function VerticalTabs() {
           <div className="text-red-200 text-lg">
             Data Associate, Change Machine{" "}
           </div>
-          <div className="text-md sm:text-md text-white pl-3 mt-2">
+          <div className="text-sm sm:text-md text-white pl-3 mt-2">
             <ul className="list-disc">
               <li>
                 Developed reports to track achievement in financial outcomes of
@@ -301,7 +301,7 @@ export default function VerticalTabs() {
         </ExperiencePanel>
         <ExperiencePanel value={value} index={5}>
           <div className="text-red-200 text-lg">Paralegal, ACLU</div>
-          <div className="text-md sm:text-md text-white pl-3 mt-2">
+          <div className="text-sm sm:text-md text-white pl-3 mt-2">
             <ul className="list-disc">
               <li>
                 Edited and cite-checked legal briefs, adhering to a detailed
@@ -327,6 +327,6 @@ export default function VerticalTabs() {
         View my full resume&nbsp;
         <ExternalLinkIcon />
       </a>
-    </section>
+    </>
   );
 }

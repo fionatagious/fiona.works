@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
 		display: inline-block;
 		position: relative;
 		top: -5px;
-		width: 350px;
+		width: 80%;
 		height: 1px;
 		margin-left: 20px;
 		background-color: rgb(148 163 184);
