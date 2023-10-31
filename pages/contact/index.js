@@ -20,9 +20,9 @@ export default function Contact() {
               development.
             </div>
             <div className="text-left text-slate-400 text-xl mb-6">
-              If you're interested in working on projects related to climate
-              change, civic tech, or data visualization/journalism, I'd love to
-              hear from you!
+              If you're interested in collaborating on projects related to
+              climate change, civic tech, or data visualization / data
+              journalism, I'd love to hear from you.
             </div>
             <div className="text-left text-slate-400 text-xl mt-6 mb-4">
               Write to me at&nbsp;
