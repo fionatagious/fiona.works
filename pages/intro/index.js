@@ -6,14 +6,14 @@ export default function Intro() {
   return (
     <>
       <Grid item xs={12} className="grid content-center px-4 sm:pl-32">
-        <div className="text-left text-red-200 text-xl my-2">
+        <div className="text-left text-pink text-xl my-2">
           Hello! My name is
         </div>
         <div className="font-bold text-left text-slate-50 text-4xl sm:text-7xl my-2">
           Fiona Tang
         </div>
         <span>
-          {/* <div className="text-left text-red-200 text-xl my-2">I am a</div> */}
+          {/* <div className="text-left text-pink text-xl my-2">I am a</div> */}
           <div className="text-left text-slate-300 text-3xl my-2">
             software engineer & civic technologist
           </div>
@@ -34,7 +34,9 @@ export default function Intro() {
         <div className="text-left text-slate-400 text-xl my-2 mb-6">
           My full site is in development, but while you're here, check out
           my&nbsp;
-          <a href="/resume">resume</a>
+          <a className="text-pink" href="/resume">
+            resume
+          </a>
         </div>
         <SocialMedia />
       </Grid>
