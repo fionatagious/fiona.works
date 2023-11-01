@@ -136,7 +136,7 @@ export default function VerticalTabs() {
           <div className="text-red-200 text-lg">
             Software Engineer, The Mom Project
           </div>
-          <div className="text-md sm:text-md text-white mt-2">
+          <div className="text-sm sm:text-md text-white mt-2">
             <ul className="list-disc">
               <li>
                 Built, tested, and debugged features to enhance user flows to

@@ -15,7 +15,7 @@ export default function Writings() {
             </div>
           </Grid> */}
           <Grid item xs={12}>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://codeforamerica.org/news/limits-technology-homelessness/"
@@ -25,7 +25,7 @@ export default function Writings() {
               </Link>
               — Code for America, 2021
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://codeforamerica.org/news/meet-the-community-fellows-team-adams-county/"
@@ -34,7 +34,7 @@ export default function Writings() {
               </Link>
               — Code for America, 2021
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://digitalprivacy.news/2021/04/13/a-terrible-idea/"
@@ -44,7 +44,7 @@ export default function Writings() {
               </Link>
               — Digital Privacy News, 2021
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/"
@@ -54,7 +54,7 @@ export default function Writings() {
               </Link>
               — Digital Privacy News, 2021
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://change-machine.org/change-matters-the-financial-clinics-customer-insights/"
@@ -63,7 +63,7 @@ export default function Writings() {
               </Link>
               — The Financial Clinic, 2018
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://change-machine.org/when-is-more-not-extra-effective-strategies-for-financial-security/"
@@ -73,7 +73,7 @@ export default function Writings() {
               </Link>
               — The Financial Clinic, 2017
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://www.aclu.org/cases/trump-conflicts-interest-foia?document=trump-conflicts-interest-foia-request#"
@@ -82,7 +82,7 @@ export default function Writings() {
               </Link>
               — ACLU, 2017
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://www.aclu.org/news/privacy-technology/aclu-foia-seeks-information-about-how-government"
@@ -92,7 +92,7 @@ export default function Writings() {
               </Link>
               — ACLU, 2016
             </div>
-            <div className="text-left text-lg text-white my-2">
+            <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
                 className="link-animation"
                 href="https://www.aclu.org/legal-document/foia-request-under-freedom-information-act"
