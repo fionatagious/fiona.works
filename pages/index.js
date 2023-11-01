@@ -1,13 +1,11 @@
 import * as React from "react";
-import Image from "next/image";
 
-// import Button from "/components/button";
-// import About from "/pages/about/index.js";
+import About from "/pages/about/index.js";
+import ExperiencePanel from "/components/ExperiencePanel";
 import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
 import Intro from "/pages/intro/index.js";
 import Navbar from "/components/navigation/navbar";
-import ExperiencePanel from "/components/ExperiencePanel";
 import Writings from "/pages/writings/index.js";
 
 export default function Home() {
@@ -19,45 +17,19 @@ export default function Home() {
         className="flex flex-col min-h-1/2 px-4 sm:px-32 pt-6 sm:pt-32"
       >
         <Intro />
-        <Grid item xs={12} className="px-0 sm:pl-32 py-20 my-20">
+        <Grid item xs={12} className="px-0 sm:px-32 py-20 my-20">
           <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
             About me
           </div>
-          <Grid item className="flex flex-row sm:flex-col">
-            <Grid item xs={12} sm={6} className="px-2">
-              <div className="text-left text-slate-400 text-sm sm:text-md md:text-lg my-2 mb-6">
-                My most recent work experiences are at Code for America and The
-                Mom Project. While at CfA, I partnered with the government of
-                Adams County, Colorado, to build a web app that helped people
-                experiencing homelessness access temporary shelter. At The Mom
-                Project, I helped to build a platform that connects moms, dads,
-                and caretakers with employers that offer flexible work.
-              </div>
-              <div className="text-left text-slate-400 text-sm sm:text-md md:text-lg my-2 mb-6">
-                When I'm not coding, I enjoy cooking, learning new drum beats,
-                and spending time with friends and family. I'm also a stationery
-                hobbyist and a coffee enthusiast.
-              </div>
-            </Grid>
-            {/* <div className="about-photo-border"></div> */}
-            <div className="hidden">
-              <Image
-                priority
-                src="/images/headshot.jpg"
-                height={350}
-                width={350}
-                alt="profile-photo"
-              />
-            </div>
-          </Grid>
+          <About />
         </Grid>
-        <Grid item xs={12} className="px-0 sm:pl-32 py-20 my-20">
+        <Grid item xs={12} className="px-0 sm:px-32 py-20 my-20">
           <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
             Experience
           </div>
           <ExperiencePanel />
         </Grid>
-        <Grid item xs={12} className="px-0 sm:pl-32 py-20 my-20">
+        <Grid item xs={12} className="px-0 sm:px-32 pt-20 mt-20">
           <div className="heading text-slate-400 font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4">
             Written Works
           </div>

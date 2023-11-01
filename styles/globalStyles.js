@@ -32,22 +32,10 @@ const GlobalStyle = createGlobalStyle`
 		background-color: rgb(148 163 184);
 	}
 
-	.photo-container {
-		position: relative;
-		max-width: 350px;
-		max-height: 350px;
-	}
-
 	.about-photo-border {
-		position: absolute;
-		margin-top: -1rem;
-		margin-left: 1rem;
-		display: inline-block;
-		width: 100%;
-		height: 100%;
-		flex-shrink: 1;
-		background-color: transparent;
-		border: solid 2px #fecaca;
+		position: relative;
+  		background-color: transparent;
+  		border: 2px solid rgb(254, 202, 202);
 	}
 
 	.link-animation {
