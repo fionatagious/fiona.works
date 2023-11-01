@@ -5,9 +5,9 @@ import Grid from "@mui/material/Grid";
 export default function About() {
   return (
     <Grid item className="flex flex-col sm:flex-row px-4 justify-center">
-      <Grid item xs={12} sm={6}>
+      <Grid item xs={12} sm={12} md={8} lg={8} xl={6}>
         <div className="text-left text-slate-400 text-sm sm:text-md md:text-lg mt-2 mb-6">
-          My most recent work experiences are at Code for America and The Mom
+          My most recent work experiences are at Code for America and at The Mom
           Project. While at CfA, I partnered with the government of Adams
           County, Colorado, to build a web app that helped people experiencing
           homelessness access temporary shelter. At The Mom Project, I helped to
@@ -20,13 +20,14 @@ export default function About() {
           and a coffee enthusiast.
         </div>
       </Grid>
-      <div className="ml-4 hidden sm:inline-block sm:ml-6 z-40 about-photo-border">
+      <div className="hidden xl:inline-block ml-4 sm:ml-6 my-auto z-40">
         <Image
           priority
           src="/images/headshot.jpg"
           height={350}
           width={350}
           alt="profile-photo"
+          style={{ border: "2px solid rgb(254, 202, 202)" }}
         />
       </div>
     </Grid>

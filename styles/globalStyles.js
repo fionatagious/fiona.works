@@ -32,12 +32,6 @@ const GlobalStyle = createGlobalStyle`
 		background-color: rgb(148 163 184);
 	}
 
-	.about-photo-border {
-		position: relative;
-  		background-color: transparent;
-  		border: 2px solid rgb(254, 202, 202);
-	}
-
 	.link-animation {
 		color: #fecaca;
 		text-decoration: none;
@@ -104,13 +98,6 @@ const GlobalStyle = createGlobalStyle`
 		font-size: 1.625rem;
 	}
 
-	/* resume: overview */
-	.email {
-		color: #d79eff;
-		text-decoration: none;
-		font-weight: bold;
-	}
-
 	/* resume: experience */
 	.position-title {
 		color: #d79eff;
@@ -118,7 +105,7 @@ const GlobalStyle = createGlobalStyle`
 		line-height: 1.4;
 	}
 
-	/* resume: icons, avatars */
+	/* resume: avatar */
 	.profile-image-small {
 		border-radius: 50%;
 	}

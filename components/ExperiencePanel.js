@@ -167,9 +167,11 @@ export default function VerticalTabs() {
               <li>
                 Built new site navigation (top-level header and footer) and
                 updated transactional emails with new content and designs,
-                following two major company re-brands. Wrote application logic
-                to implement email-related workers and triggers (React, Rails,
-                SendGrid, Sidekiq).
+                following two major company re-brands.
+              </li>
+              <li>
+                Wrote application logic to implement email-related workers and
+                triggers (React, Rails, SendGrid, Sidekiq).
               </li>
             </ul>
           </div>
