@@ -37,6 +37,7 @@ export default function Intro() {
           <a className="text-red-200" href="/resume">
             resume
           </a>
+          .
         </div>
         <SocialMedia />
       </Grid>

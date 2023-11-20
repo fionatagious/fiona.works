@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import { aclu } from "../../consts";
 import Typography from "@mui/material/Typography";
 
 export default function ACLUCard() {
@@ -30,30 +31,18 @@ export default function ACLUCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-lg sm:text-xl text-pink leading-7">
-              Legal Assistant
+              {aclu.jobTitle}
             </div>
-            <Typography variant="subtitle2">
-              The American Civil Liberties Union
-            </Typography>
-            <Typography variant="subtitle2">
-              Speech, Privacy, and Technology
-            </Typography>
-            <Typography variant="subtitle2">4/2016 – 10/2017</Typography>
+            <Typography variant="subtitle2">{aclu.organization}</Typography>
+            <Typography variant="subtitle2">{aclu.team}</Typography>
+            <Typography variant="subtitle2">{aclu.datesWorked}</Typography>
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul className="list-disc">
-            <li>
-              Edited and cite-checked legal briefs, adhering to a detailed
-              system of citation rules. Wrote and filed Freedom of Information
-              Act requests and appeals with over 30 government agencies.
-            </li>
-            <li>
-              Validated data claims made by the ACLU in <i>U.S. v. Gilton</i>{" "}
-              and in the U.S. Supreme Court case, <i>U.S. v. Carpenter</i>,
-              through analysis of cell site location information and electronic
-              search warrant notifications, respectively (Excel, Python).
-            </li>
+            {aclu.children.map((child) => (
+              <li key={child.id}>{child.bullet}</li>
+            ))}
           </ul>
         </div>
       </CardContent>

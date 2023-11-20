@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import { cm } from "../../consts";
 import Typography from "@mui/material/Typography";
 
 export default function CMCard() {
@@ -30,36 +31,17 @@ export default function CMCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-lg sm:text-xl text-pink leading-7">
-              Data Associate
+              {cm.jobTitle}
             </div>
-            <Typography variant="subtitle2">Change Machine</Typography>
-            <Typography variant="subtitle2">10/2017 – 4/2018</Typography>
+            <Typography variant="subtitle2">{cm.organization}</Typography>
+            <Typography variant="subtitle2">{cm.datesWorked}</Typography>
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul className="list-disc">
-            <li>
-              Developed reports to track achievement in financial outcomes of
-              70,000 low-income New York City residents. Created dashboards on
-              deliverables to support continued funding and partnerships
-              (Salesforce, Excel, SQL).
-            </li>
-            <li>
-              Streamlined the intake of raw datasets from internal and external
-              data stores. Cleaned, queried, and visualized financial-coaching
-              data to help produce fact sheets and publications (SQL, Python).
-            </li>
-            <li>
-              Provided technical support and fulfilled data requests from
-              caseworkers, product managers, and Executive leadership, juggling
-              competing priorities.
-            </li>
-            <li>
-              Queried and visualized financial-coaching data to aid in the
-              production of fact sheets, publications, and policy proposals.
-              Examined financial-coaching data for trends in consumer behavior
-              (Python) to develop the Clinic’s policy agenda.
-            </li>
+            {cm.children.map((child) => (
+              <li key={child.id}>{child.bullet}</li>
+            ))}
           </ul>
         </div>
       </CardContent>

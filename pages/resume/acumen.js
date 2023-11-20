@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Typography from "@mui/material/Typography";
+import { acumen } from "../../consts";
 
 export default function AcumenCard() {
   return (
@@ -30,37 +31,20 @@ export default function AcumenCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="hidden sm:block sm:text-xl sm:text-pink sm:leading-7">
-              Data and Policy Analyst - Statistical Programmer
+              {acumen.jobTitle}
             </div>
             <div className="block sm:hidden text-lg sm:text-xl text-pink leading-7">
-              Data and Policy Analyst -{" "}
+              {acumen.jobTitle}
             </div>
-            <div className="block sm:hidden text-lg sm:text-xl text-pink leading-7">
-              Statistical Programmer
-            </div>
-            <Typography variant="subtitle2">Acumen, LLC</Typography>
-            <Typography variant="subtitle2">1/2020 – 2/2021</Typography>
+            <Typography variant="subtitle2">{acumen.organization}</Typography>
+            <Typography variant="subtitle2">{acumen.datesWorked}</Typography>
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul className="list-disc">
-            <li>
-              Analyzed claim line-level data to produce summary statistics (SAS)
-              pertaining to weight loss and attendance outcomes under the
-              Medicare Diabetes Prevention Program, administered by the Centers
-              for Medicare and Medicaid Services.
-            </li>
-            <li>
-              Produced reports to monitor beneficiary and claim trends, flag
-              adverse/positive selection by suppliers, and audit program
-              compliance.
-            </li>
-            <li>
-              Transformed datasets to create contact lists of suppliers,
-              enabling the business to contact these suppliers and enforce
-              compliance requirements, in accordance with federal data
-              governance and policies (SQL, SAS).
-            </li>
+            {acumen.children.map((child) => (
+              <li key={child.id}>{child.bullet}</li>
+            ))}
           </ul>
         </div>
       </CardContent>

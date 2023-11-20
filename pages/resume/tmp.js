@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import { tmp } from "../../consts";
 import Typography from "@mui/material/Typography";
 
 export default function TMPCard() {
@@ -30,49 +31,17 @@ export default function TMPCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-lg sm:text-xl text-pink leading-7">
-              Software Engineer
+              {tmp.jobTitle}
             </div>
-            <Typography variant="subtitle2">
-              The Mom Project (Growth)
-            </Typography>
-            <Typography variant="subtitle2">11/2021 – 9/2023</Typography>
+            <Typography variant="subtitle2">{tmp.organization}</Typography>
+            <Typography variant="subtitle2">{tmp.datesWorked}</Typography>
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul className="list-disc">
-            <li>
-              Built, tested, and debugged features to enhance user flows to
-              improve user acquisition and retention: log in, sign up, and job
-              post creation (Rails, React.js).
-            </li>
-            <li>
-              Planned and led engineering work for several high-impact epics.
-              Clarified engineering effort and scope, synthesized feature
-              requests, and documented technical specifications. Synthesized
-              feature requests and product requirements. Developed acceptance
-              criteria and wrote user stories for ticket creation.
-            </li>
-            <li>
-              Built reusable components for a migration from Rails codebase to a
-              brand new front-end architecture (Next.js, React.js, TypeScript),
-              leveraging integrations between our data structures,
-              microservices, and APIs.
-            </li>
-            <li>
-              Contributed to the creation and maintenance of a new design system
-              and component UI library (Material UI, Storybook).
-            </li>
-            <li>
-              Participated in feature prioritization, architecture discussions,
-              and code reviews across four distinct repositories.
-            </li>
-            <li>
-              Built new site navigation (top-level header and footer) and
-              updated transactional emails with new content and designs,
-              following two major company re-brands. Wrote application logic to
-              implement email-related workers and triggers (React, Rails,
-              SendGrid, Sidekiq).
-            </li>
+            {tmp.children.map((child) => (
+              <li key={child.id}>{child.bullet}</li>
+            ))}
           </ul>
         </div>
       </CardContent>

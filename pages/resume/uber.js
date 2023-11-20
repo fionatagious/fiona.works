@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
+import { uber } from "../../consts";
 import Typography from "@mui/material/Typography";
 
 export default function UberCard() {
@@ -30,35 +31,17 @@ export default function UberCard() {
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>
             <div className="text-lg sm:text-xl text-pink leading-7">
-              Data Analyst
+              {uber.jobTitle}
             </div>
-            <Typography variant="subtitle2">Uber (Sales Operations)</Typography>
-            <Typography variant="subtitle2">9/2018 – 3/2019</Typography>
+            <Typography variant="subtitle2">{uber.organization}</Typography>
+            <Typography variant="subtitle2">{uber.datesWorked}</Typography>
           </Grid>
         </Grid>
         <div className="text-sm sm:text-md text-white pl-3 mt-2">
           <ul className="list-disc">
-            <li>
-              Built pipelines for querying and analysis using Uber&apos;s
-              internal ingestion tools, Watchtower and Kirby.
-            </li>
-            <li>
-              Wrote advanced queries to build dashboard on growth KPIs, such as
-              retention and average revenue per user (SQL).
-            </li>
-            <li>
-              Visualized platform activity of engaged users. Informed decision
-              on whether to pursue targeted marketing (SQL, Tableau).
-            </li>
-            <li>
-              Analyzed week-over-week onboarding of Uber Eats sellers to better
-              understand ramp time, enabling Sales Operations team to establish
-              reasonable quota (SQL, Python).
-            </li>
-            <li>
-              Assessed the influence of a payment-code program on spending
-              behaviors of new and existing customers (SQL, R).
-            </li>
+            {uber.children.map((child) => (
+              <li key={child.id}>{child.bullet}</li>
+            ))}
           </ul>
         </div>
       </CardContent>

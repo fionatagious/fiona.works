@@ -5,6 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import { skillsData } from "../consts";
 // import KeyboardDoubleArrowUp from '@mui/icons-material/KeyboardDoubleArrowUp';
 // import KeyboardDoubleArrowDown from '@mui/icons-material/KeyboardDoubleArrowDown';
 
@@ -17,59 +18,6 @@ export default function SkillsAccordion() {
   // setExpandAll(!expandAll);
   // setDoubleArrowUpIcon(!doubleArrowUpIcon)
   // };
-
-  const skillsData = [
-    {
-      name: "Languages",
-      children: [
-        "HTML5",
-        "CSS3",
-        "Javascript",
-        "SQL",
-        "TypeScript",
-        "Ruby",
-        "Python",
-        "R",
-      ],
-    },
-    {
-      name: "Frameworks",
-      children: [
-        "Tailwind CSS",
-        "Bootstrap CSS",
-        "Next.js",
-        "React.js",
-        "Ruby on Rails",
-        "Material UI",
-        "Sidekiq",
-      ],
-    },
-    {
-      name: "Testing",
-      children: ["Jest", "Rspec", "Capybara"],
-    },
-    {
-      name: "Version control",
-      children: ["Git"],
-    },
-    {
-      name: "Observability",
-      children: ["Logz.io", "Honeybadger"],
-    },
-    {
-      name: "Soft skills",
-      children: [
-        "Attention to detail",
-        "Communication",
-        "Creativity",
-        "Curiosity",
-        "Dedication",
-        "Empathy",
-        "Organization",
-        "Resourcefulness",
-      ],
-    },
-  ];
 
   return (
     <div>
@@ -88,7 +36,7 @@ export default function SkillsAccordion() {
         {/* <Grid item>{doubleArrowUpIcon ? (<KeyboardDoubleArrowUp onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />) : (<KeyboardDoubleArrowDown onClick={handleClick} sx={{ color: 'white', marginTop: '1.2rem', cursor: 'pointer' }} />)}</Grid> */}
         {/* <Grid item><button onClick={handleClick}>Expand/Collapse</button></Grid> */}
       </Grid>
-      {skillsData.map((item, id) => (
+      {skillsData.map((item) => (
         <Accordion
           defaultExpanded
           sx={{ backgroundColor: "hsla(0, 100%, 0%, 0.3)", color: "white" }}
@@ -98,14 +46,14 @@ export default function SkillsAccordion() {
             aria-controls="panel-content"
             id="panel-header"
           >
-            <Typography className="text-sm" key={id}>
+            <Typography className="text-sm" key={item.name}>
               {item.name}
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            {item.children.map((child, id) => (
-              <Typography key={id} className="text-sm">
-                {child}
+            {item.children.map((child) => (
+              <Typography key={child.id} className="text-sm">
+                {child.name}
               </Typography>
             ))}
           </AccordionDetails>
