@@ -302,7 +302,7 @@ export default function VerticalTabs() {
           </div>
         </ExperiencePanel>
         <ExperiencePanel value={value} index={5}>
-          <div className="text-red-200 text-lg">Paralegal, ACLU</div>
+          <div className="text-red-200 text-lg">Legal Assistant, ACLU</div>
           <div className="text-sm sm:text-md text-white pl-3 mt-2">
             <ul className="list-disc">
               <li>

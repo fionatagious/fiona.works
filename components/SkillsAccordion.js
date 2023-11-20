@@ -61,10 +61,12 @@ export default function SkillsAccordion() {
       children: [
         "Attention to detail",
         "Communication",
+        "Creativity",
         "Curiosity",
         "Dedication",
         "Empathy",
         "Organization",
+        "Resourcefulness",
       ],
     },
   ];
