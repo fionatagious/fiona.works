@@ -28,11 +28,29 @@ const GlobalStyle = createGlobalStyle`
 		top: -5px;
 		width: 80%;
 		height: 1px;
-		margin-left: 20px;
 		background-color: rgb(148 163 184);
+		margin-left: 1.2rem;
+    margin-right: 1.2rem;
+		@media (min-width: 640px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 55%;
+    }
+		@media (min-width: 768px) {
+      margin-left: 1rem;
+      margin-right: 0rem;
+      width: 60%;
+    }
 	}
 
 	.link-animation {
+		color: #fecaca;
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+	}
+
+	.writings-link-animation {
 		color: #fecaca;
 		text-decoration: none;
 		position: relative;

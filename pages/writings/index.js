@@ -17,7 +17,7 @@ export default function Writings() {
           <Grid item xs={12}>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://codeforamerica.org/news/limits-technology-homelessness/"
               >
                 When A Cool Shiny App Won't Cut It: Recognizing the Limits of
@@ -27,7 +27,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://codeforamerica.org/news/meet-the-community-fellows-team-adams-county/"
               >
                 Meet the Community Fellows: Team Adams County&nbsp;
@@ -36,7 +36,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://digitalprivacy.news/2021/04/13/a-terrible-idea/"
               >
                 &apos;A Terrible Idea&apos; Amazon Expands Contactless
@@ -46,7 +46,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/"
               >
                 &apos;Giving It Out Like Candy&apos; Calif. Bill Seeks to Stop
@@ -56,7 +56,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://change-machine.org/change-matters-the-financial-clinics-customer-insights/"
               >
                 Change Matters: The Financial Clinic’s Customer Insights&nbsp;
@@ -65,7 +65,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://change-machine.org/when-is-more-not-extra-effective-strategies-for-financial-security/"
               >
                 When is More Not Extra? Effective Strategies for Financial
@@ -75,7 +75,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://www.aclu.org/cases/trump-conflicts-interest-foia?document=trump-conflicts-interest-foia-request#"
               >
                 Trump Conflicts of Interest FOIA&nbsp;
@@ -84,7 +84,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://www.aclu.org/news/privacy-technology/aclu-foia-seeks-information-about-how-government"
               >
                 ACLU FOIA Seeks Information About How Government Launders
@@ -94,7 +94,7 @@ export default function Writings() {
             </div>
             <div className="text-left text-sm sm:text-md text-white my-2">
               <Link
-                className="link-animation"
+                className="writings-link-animation"
                 href="https://www.aclu.org/legal-document/foia-request-under-freedom-information-act"
               >
                 Parallel Construction FOIA&nbsp;
