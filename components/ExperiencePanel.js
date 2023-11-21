@@ -25,6 +25,9 @@ const StyledTabs = styled((props) => (
     width: 30,
     backgroundColor: "#635ee7",
   },
+  "& .MuiTabs-scrollButtons": {
+    color: "#3066BE",
+  },
 });
 
 const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
@@ -97,14 +100,17 @@ export default function VerticalTabs() {
         }}
       >
         <StyledTabs
-          orientation={matches ? "vertical" : "horizontal"}
-          variant="scrollable"
-          value={value}
+          allowScrollButtonsMobile
+          aria-label="tabbed-work-experiences"
           onChange={handleChange}
-          aria-label="relevant-work-experiences"
+          orientation={matches ? "vertical" : "horizontal"}
+          scrollButtons
+          value={value}
+          variant="scrollable"
           sx={{
             display: "flex",
-            borderRight: "3px solid #94a3b8",
+            borderRight: { xs: "none", sm: "3px solid #94a3b8" },
+            borderBottom: { xs: "3px solid #94a3b8", sm: "none" },
             zIndex: 0,
             minWidth: { xs: 200 },
           }}

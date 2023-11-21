@@ -5,7 +5,6 @@ const Footer = () => {
     <>
       <div className="w-full h-full z-50">
         <div className="container mx-auto px-6">
-          <hr />
           <div className="flex justify-center text-trueBlue py-10">
             <span>
               Designed and built by Fiona Tang, using&nbsp;

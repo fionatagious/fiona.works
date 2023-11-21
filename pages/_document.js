@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
           <title>Fiona Tang</title>
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </Head>
-        <body className="bg-gray-100">
+        <body>
           <Main />
           <NextScript />
         </body>
