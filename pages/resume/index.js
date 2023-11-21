@@ -39,7 +39,7 @@ export default function Resume() {
     >
       <Container
         fluid="true"
-        className="bg-indigo-950"
+        className="bg-stone-200"
         disableGutters
         maxWidth={false}
         sx={{

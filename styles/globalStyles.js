@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+
 // import fonts from "./fonts";
 // import variables from "./variables";
 
@@ -18,7 +19,7 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyle = createGlobalStyle`
 	.heading {
 		font-size: 2rem;
-		color: white;
+		color: #04064D;
 	}
 
 	.heading::after {
@@ -44,18 +45,28 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	.link-animation {
-		color: #fecaca;
+		color: #3066BE;
 		text-decoration: none;
 		position: relative;
 		display: inline-block;
 	}
 
 	.writings-link-animation {
-		color: #fecaca;
+		color: #020617;
+    font-weight: normal;
 		text-decoration: none;
 		position: relative;
 		display: inline-block;
 	}
+
+	.writings-link-animation:hover {
+		color: #3066BE;
+    font-weight: normal;
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+	}
+  
 
 	.link-animation:after {
 		content: "";
@@ -65,7 +76,7 @@ const GlobalStyle = createGlobalStyle`
 		height: 2px;
 		bottom: 0;
 		left: 0;
-		background-color: #fecaca;
+		background-color: #3066BE;
 		transform-origin: bottom right;
 		transition: transform 0.25s ease-out;
 	}
@@ -118,7 +129,7 @@ const GlobalStyle = createGlobalStyle`
 
 	/* resume: experience */
 	.position-title {
-		color: #d79eff;
+		color: var(--pink);
 		font-size: 20px;
 		line-height: 1.4;
 	}

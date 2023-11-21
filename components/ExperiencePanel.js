@@ -33,9 +33,9 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
     marginRight: theme.spacing(1),
-    color: "rgba(255, 255, 255, 0.7)",
+    color: "black",
     "&.Mui-selected": {
-      color: "#fff",
+      color: "#3066BE",
     },
     "&.Mui-focusVisible": {
       backgroundColor: "rgba(100, 95, 228, 0.32)",
@@ -120,8 +120,10 @@ export default function VerticalTabs() {
         </StyledTabs>
         {resumeBullets.map((item) => (
           <ExperiencePanel value={value} index={item.index}>
-            <div className="text-red-200 text-lg">{item.jobTitle}</div>
-            <div className="text-sm sm:text-md text-white mt-2">
+            <div className="text-trueBlue font-bold text-lg">
+              {item.jobTitle}
+            </div>
+            <div className="text-sm sm:text-md text-sky-950 mt-2">
               <ul className="list-disc">
                 {item.children.map((child) => (
                   <li key={child.id}>{child.bullet}</li>
@@ -134,7 +136,7 @@ export default function VerticalTabs() {
       <a
         href="/resume"
         target="_blank"
-        className="items-center flex flex-grow text-red-200 justify-center sm:justify-end"
+        className="items-center flex flex-grow text-trueBlue font-bold justify-center sm:justify-end"
       >
         View my full resume&nbsp;
         <ExternalLinkIcon />

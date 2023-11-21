@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Grid item className="flex flex-col sm:flex-row px-4 justify-center">
       <Grid item xs={12} sm={12} md={8} lg={8} xl={6}>
-        <div className="text-left text-slate-400 text-sm sm:text-md md:text-lg mt-2 mb-6">
+        <div className="text-left text-sky-950 text-sm sm:text-md md:text-lg mt-2 mb-6">
           My most recent work experiences are at Code for America and at The Mom
           Project. While at CfA, I partnered with the government of Adams
           County, Colorado, to build a web app that helped people experiencing
@@ -14,7 +14,7 @@ export default function About() {
           build a platform that connects moms, dads, and caretakers with
           employers that offer flexible work.
         </div>
-        <div className="text-left text-slate-400 text-sm sm:text-md md:text-lg mt-2 mb-6">
+        <div className="text-left text-sky-950 text-sm sm:text-md md:text-lg mt-2 mb-6">
           When I'm not coding, I enjoy cooking, learning new drum beats, and
           spending time with friends and family. I'm also a stationery hobbyist
           and a coffee enthusiast.
@@ -27,7 +27,7 @@ export default function About() {
           height={350}
           width={350}
           alt="profile-photo"
-          style={{ border: "2px solid rgb(254, 202, 202)" }}
+          style={{ border: "3px solid #3066BE" }}
         />
       </div>
     </Grid>

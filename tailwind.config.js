@@ -34,6 +34,7 @@ module.exports = {
     extend: {
       colors: {
         pink: "#d79eff",
+        trueBlue: "#3066BE",
       },
     },
   },
