@@ -12,7 +12,7 @@ import Writings from "/pages/writings/index.js";
 export default function Home() {
   return (
     <>
-      <div className="mx-0 bg-stone-200">
+      <div className="mx-0 bg-nearlyWhite">
         <Navbar />
         <Grid
           container

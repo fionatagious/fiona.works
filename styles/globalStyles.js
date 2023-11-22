@@ -1,19 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import variables from "./variables";
 
-// .nav-animation a {
-// 	position: relative;
-// 	display: inline-block;
-// 	color: #fecaca;
-// }
-
-// .nav-animation a:focus,
-// .nav-animation a:hover {
-// 	position: relative;
-// 	display: inline-block;
-// 	color: #d79eff;
-// }
-
 const GlobalStyle = createGlobalStyle`
 	${variables};
 
@@ -62,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	.hamburger-animation {
-		color: var(--medium-blue);
+		color: var(--pink);
 		font-size: var(--fs-sm);
 		font-family: var(--font-mono);
 		text-decoration: none;
@@ -71,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	.nav-animation {
-		color: var(--medium-blue);
+		color: var(--pink);
 		font-size: var(--fs-sm);
 		font-family: var(--font-mono);
 		text-decoration: none;
@@ -91,7 +78,7 @@ const GlobalStyle = createGlobalStyle`
 		height: 2px;
 		bottom: 0;
 		left: 0;
-		background-color: var(--medium-blue);
+		background-color: var(--pink);
 		transform-origin: bottom right;
 		transition: transform 0.25s ease-out;
 	}

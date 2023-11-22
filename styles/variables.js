@@ -2,6 +2,7 @@ import { css } from "styled-components";
 
 const variables = css`
   :root {
+    --pink: #d79eff;
     --medium-blue: #3066be;
     --navy-blue: #04064d;
     --zinc-950: #09090b;

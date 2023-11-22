@@ -3,17 +3,18 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const StyledButton = styled.button`
-  color: #3066be;
+  color: #d79eff;
   background-color: transparent;
-  border: 1px solid #3066be;
+  border: 1px solid #d79eff;
   border-radius: 8%;
   padding: 0.75rem 1rem;
   line-height: 1;
   text-decoration: none;
   z-index: 100;
+  font-family: var(--font-mono);
   &:hover {
     outline: none;
-    box-shadow: 3px 3px 0 0 #3066be;
+    box-shadow: 3px 3px 0 0 #d79eff;
     transform: translate(-4px, -4px);
   }
 `;

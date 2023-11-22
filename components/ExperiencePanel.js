@@ -19,10 +19,9 @@ const StyledTabs = styled((props) => (
   "& .MuiTabs-indicator": {
     display: "flex",
     justifyContent: "center",
-    backgroundColor: "transparent",
   },
   "& .MuiTabs-indicatorSpan": {
-    width: 30,
+    width: "100%",
     backgroundColor: "#635ee7",
   },
   "& .MuiTabs-scrollButtons": {
@@ -35,10 +34,10 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     textTransform: "none",
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
-    marginRight: theme.spacing(1),
     color: "black",
     "&.Mui-selected": {
       color: "#3066BE",
+      backgroundColor: "transparent",
     },
     "&.Mui-focusVisible": {
       backgroundColor: "rgba(100, 95, 228, 0.32)",
@@ -120,7 +119,7 @@ export default function VerticalTabs() {
               key={item.index}
               label={item.organization}
               {...a11yProps(item.index)}
-              sx={{ alignItems: "end", textAlign: "end" }}
+              sx={{ alignItems: { xs: "center", sm: "end" }, textAlign: "end" }}
             />
           ))}
         </StyledTabs>

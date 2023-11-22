@@ -34,3 +34,8 @@ button {
   padding: 0.5rem 1rem;
   font-weight: bold;
 }
+
+footer {
+  padding: 3rem;
+  background-color: white;
+}

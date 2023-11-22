@@ -10,6 +10,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import { SwipeableDrawer } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Navbar = () => {
   const scrollTo = (id) => {
@@ -68,7 +70,7 @@ const Navbar = () => {
     <Box
       sx={{
         width: 250,
-        backgroundColor: "#020617",
+        backgroundColor: "#181B2A",
         height: "100%",
       }}
       role="presentation"
@@ -87,6 +89,7 @@ const Navbar = () => {
             >
               <ListItemText
                 className="hamburger-animation"
+                disableTypography
                 primary={item.text}
               />
             </ListItemButton>
@@ -99,34 +102,37 @@ const Navbar = () => {
     </Box>
   );
 
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+
   return (
-    <>
-      <div className="w-full h-20 sticky top-0 bg-slate-950 opacity-90 z-50">
-        <div className="container mx-auto px-4 h-full py-1">
-          <div className="flex justify-end gap-x-4 items-center h-full">
-            {/* sticky menu */}
-            <ul className="hidden list-none sm:flex gap-x-4">
-              {navItems.map((item) => (
-                <li key={item.id}>
-                  <button
-                    className="nav-animation"
-                    onClick={() => scrollTo(item.href)}
-                  >
-                    {item.text}
-                  </button>
-                </li>
-              ))}
-              <li className="sm:ml-2">
-                <ResumeButton />
+    <div className="w-full h-20 sticky top-0 bg-slate-950 opacity-90 z-50">
+      <div className="container mx-auto px-4 h-full py-1">
+        <div className="flex justify-end gap-x-4 items-center h-full">
+          {/* sticky menu */}
+          <ul className="hidden list-none sm:flex gap-x-4">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <button
+                  className="nav-animation"
+                  onClick={() => scrollTo(item.href)}
+                >
+                  {item.text}
+                </button>
               </li>
-            </ul>
-            {/* hamburger menu */}
+            ))}
+            <li className="sm:ml-2">
+              <ResumeButton />
+            </li>
+          </ul>
+          {/* hamburger menu */}
+          {!matches && (
             <div className="flex sm:hidden">
               {["right"].map((anchor) => (
                 <React.Fragment key={anchor}>
                   <button
                     onClick={toggleDrawer(anchor, true)}
-                    className="inline-block bg-white h-full "
+                    className="inline-block bg-white h-full"
                   >
                     <MenuIcon color="white" />
                   </button>
@@ -141,10 +147,11 @@ const Navbar = () => {
                 </React.Fragment>
               ))}
             </div>
-          </div>
+          )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
+
 export default Navbar;
