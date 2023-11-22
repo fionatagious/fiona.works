@@ -20,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 	.heading {
 		font-size: var(--fs-heading);
 		color: var(--navy-blue);
+		font-family: var(--font-mono);
 	}
 
 	.heading::after {

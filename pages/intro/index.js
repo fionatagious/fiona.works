@@ -12,6 +12,12 @@ export default function Intro() {
         <div className="font-bold text-left text-slate-950 text-4xl sm:text-7xl my-2">
           Fiona Tang
         </div>
+
+        <span>
+          <div className="text-left text-trueBlue font-bold font-mono text-2xl mt-2 mb-4">
+            software engineer & civic technologist
+          </div>
+        </span>
       </Grid>
       <Grid
         item

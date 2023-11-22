@@ -12,15 +12,15 @@ export default function Contact() {
             development.
           </div>
           <div className="text-left text-zinc-950 text-sm sm:text-lg my-2">
-            In addition, if you're interested in collaborating on projects
-            related to climate change, civic tech, or data visualization / data
-            journalism, I'd love to hear from you.
+            If you're interested in collaborating on projects related to climate
+            change, civic tech, or data visualization / data journalism, I'd
+            love to hear from you.
           </div>
           <div className="text-left text-zinc-950 text-sm sm:text-lg my-2">
             Write to me at&nbsp;
             <Link
               href="mailto: fionatang@alum.berkeley.edu"
-              className="writings-link-animation"
+              className="font-mono font-bold text-trueBlue"
             >
               fionatang@alum.berkeley.edu
             </Link>

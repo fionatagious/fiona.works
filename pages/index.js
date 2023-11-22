@@ -51,7 +51,7 @@ export default function Home() {
               id="contact"
               className="heading font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4"
             >
-              Contact
+              Reach out
             </div>
             <Contact />
           </Grid>
