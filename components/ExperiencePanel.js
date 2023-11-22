@@ -129,7 +129,7 @@ export default function VerticalTabs() {
             <div className="text-trueBlue font-bold text-lg">
               {item.jobTitle}
             </div>
-            <div className="text-sm sm:text-md text-sky-950 mt-2">
+            <div className="text-sm sm:text-md text-zinc-950 mt-2">
               <ul className="list-disc">
                 {item.children.map((child) => (
                   <li key={child.id}>{child.bullet}</li>

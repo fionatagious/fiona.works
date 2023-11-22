@@ -10,9 +10,7 @@ const StyledButton = styled.button`
   padding: 0.75rem 1rem;
   line-height: 1;
   text-decoration: none;
-  margin-left: 15px;
   z-index: 100;
-
   &:hover {
     outline: none;
     box-shadow: 3px 3px 0 0 #3066be;

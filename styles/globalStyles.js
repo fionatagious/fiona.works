@@ -1,7 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
-// import fonts from "./fonts";
-// import variables from "./variables";
+import variables from "./variables";
 
 // .nav-animation a {
 // 	position: relative;
@@ -17,9 +15,11 @@ import { createGlobalStyle } from "styled-components";
 // }
 
 const GlobalStyle = createGlobalStyle`
+	${variables};
+
 	.heading {
-		font-size: 2rem;
-		color: #04064D;
+		font-size: var(--fs-heading);
+		color: var(--navy-blue);
 	}
 
 	.heading::after {
@@ -44,15 +44,8 @@ const GlobalStyle = createGlobalStyle`
     }
 	}
 
-	.link-animation {
-		color: #3066BE;
-		text-decoration: none;
-		position: relative;
-		display: inline-block;
-	}
-
 	.writings-link-animation {
-		color: #020617;
+		color: var(--zinc-950);
     font-weight: normal;
 		text-decoration: none;
 		position: relative;
@@ -60,15 +53,36 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	.writings-link-animation:hover {
-		color: #3066BE;
+		color: var(--medium-blue);
     font-weight: normal;
 		text-decoration: none;
 		position: relative;
 		display: inline-block;
 	}
-  
 
-	.link-animation:after {
+	.hamburger-animation {
+		color: var(--medium-blue);
+		font-size: var(--fs-sm);
+		font-family: var(--font-mono);
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+	}
+
+	.nav-animation {
+		color: var(--medium-blue);
+		font-size: var(--fs-sm);
+		font-family: var(--font-mono);
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+    &.active {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+	}
+
+	.nav-animation:after {
 		content: "";
 		position: absolute;
 		width: 100%;
@@ -76,12 +90,12 @@ const GlobalStyle = createGlobalStyle`
 		height: 2px;
 		bottom: 0;
 		left: 0;
-		background-color: #3066BE;
+		background-color: var(--medium-blue);
 		transform-origin: bottom right;
 		transition: transform 0.25s ease-out;
 	}
 
-	.link-animation:hover:after {
+	.nav-animation:hover:after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
 	}
@@ -92,46 +106,13 @@ const GlobalStyle = createGlobalStyle`
 		z-index: 11;
 	}
 
-  /* Fade up */
-  .fadeup-enter {
-    opacity: 0.01;
-    transform: translateY(20px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  }
-
-  .fadeup-enter-active {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  }
-
-  /* Fade down */
-  .fadedown-enter {
-    opacity: 0.01;
-    transform: translateY(-20px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  }
-
-  .fadedown-enter-active {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: opacity 300ms var(--easing), transform 300ms var(--easing);
-  }
-
 	/* resume: top-level header */
 	.full-name-text {
 		display: grid;
 		align-content: center;
 		color: white;
 		margin-left: 1.2rem;
-		font-size: 1.625rem;
-	}
-
-	/* resume: experience */
-	.position-title {
-		color: var(--pink);
-		font-size: 20px;
-		line-height: 1.4;
+		font-size: var(--fs-xl);
 	}
 
 	/* resume: avatar */

@@ -26,6 +26,10 @@ export default function Resume() {
   return (
     <ThemeProvider
       theme={createTheme({
+        palette: {
+          pink: "#d79eff",
+          trueBlue: "#3066BE",
+        },
         breakpoints: {
           values: {
             xs: 0,

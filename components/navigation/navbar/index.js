@@ -1,33 +1,150 @@
-import React from "react";
-import Link from "next/link";
+import React, { useRef } from "react";
 import ResumeButton from "/components/buttons/ResumeButton";
-// import Logo from "./Logo";
+
+// hamburger menu
+import Box from "@mui/material/Box";
+import CloseIcon from "@mui/icons-material/Close";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import { SwipeableDrawer } from "@mui/material";
 
 const Navbar = () => {
+  const scrollTo = (id) => {
+    const element = document.getElementById(id);
+    var headerOffset = 150;
+    var elementPosition = element.getBoundingClientRect().top;
+    var offsetPosition = elementPosition + window.scrollY - headerOffset;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
+
+  const navItems = [
+    {
+      id: 1,
+      text: "About",
+      href: "about",
+      nodeRef: useRef(null),
+    },
+    {
+      id: 2,
+      text: "Experience",
+      href: "experience",
+      nodeRef: useRef(null),
+    },
+    {
+      id: 3,
+      text: "Media",
+      href: "media",
+      nodeRef: useRef(null),
+    },
+    {
+      id: 4,
+      text: "Contact",
+      href: "contact",
+      nodeRef: useRef(null),
+    },
+  ];
+
+  const [state, setState] = React.useState({
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{
+        width: 250,
+        backgroundColor: "#020617",
+        height: "100%",
+      }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <div className="flex justify-end p-3">
+        <CloseIcon color="primary" sx={{ cursor: "pointer" }} />
+      </div>
+      <List>
+        {navItems.map((item) => (
+          <ListItem key={item.id} disablePadding>
+            <ListItemButton
+              onClick={() => scrollTo(item.href)}
+              sx={{ textAlign: "center" }}
+            >
+              <ListItemText
+                className="hamburger-animation"
+                primary={item.text}
+              />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <div className="flex justify-center">
+        <ResumeButton />
+      </div>
+    </Box>
+  );
+
   return (
     <>
       <div className="w-full h-20 sticky top-0 bg-slate-950 opacity-90 z-50">
         <div className="container mx-auto px-4 h-full py-1">
           <div className="flex justify-end gap-x-4 items-center h-full">
-            {/* <Logo /> */}
-            <ul className="list-none sm:flex gap-x-8">
-              <li>
-                <Link className="link-animation" href="/">
-                  <p>Home</p>
-                </Link>
-              </li>
-              <li>
-                <a className="link-animation" href="/contact">
-                  <p>Contact</p>
-                </a>
+            {/* sticky menu */}
+            <ul className="hidden list-none sm:flex gap-x-4">
+              {navItems.map((item) => (
+                <li key={item.id}>
+                  <button
+                    className="nav-animation"
+                    onClick={() => scrollTo(item.href)}
+                  >
+                    {item.text}
+                  </button>
+                </li>
+              ))}
+              <li className="sm:ml-2">
+                <ResumeButton />
               </li>
             </ul>
-            <ResumeButton />
+            {/* hamburger menu */}
+            <div className="flex sm:hidden">
+              {["right"].map((anchor) => (
+                <React.Fragment key={anchor}>
+                  <button
+                    onClick={toggleDrawer(anchor, true)}
+                    className="inline-block bg-white h-full "
+                  >
+                    <MenuIcon color="white" />
+                  </button>
+                  <SwipeableDrawer
+                    anchor={anchor}
+                    open={state[anchor]}
+                    onClose={toggleDrawer(anchor, false)}
+                    onOpen={toggleDrawer(anchor, true)}
+                  >
+                    {list(anchor)}
+                  </SwipeableDrawer>
+                </React.Fragment>
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </>
   );
 };
-
 export default Navbar;

@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 
 export default function Writings() {
   return (
-    <div className="h-full h-screen mx-0">
+    <div className="mx-0">
       <Grid container className="px-4">
         <Grid item xs={12}>
           <div className="text-left text-sm sm:text-md text-trueBlue font-bold my-2">
