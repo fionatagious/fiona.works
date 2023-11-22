@@ -3,19 +3,18 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
-      <hr />
-      <div className="flex justify-center text-navyBlue py-4">
+      <div className="flex justify-center text-pink font-mono py-4">
         <span>
           Designed and built by Fiona Tang, using&nbsp;
-          <a className="text-trueBlue" href="https://nextjs.org/">
+          <a className="text-nearlyWhite" href="https://nextjs.org/">
             Next
           </a>
           ,&nbsp;
-          <a className="text-trueBlue" href="https://mui.com/">
+          <a className="text-nearlyWhite" href="https://mui.com/">
             Material
           </a>
           , and&nbsp;
-          <a className="text-trueBlue" href="https://tailwindcss.com">
+          <a className="text-nearlyWhite" href="https://tailwindcss.com">
             Tailwind CSS
           </a>
           .
