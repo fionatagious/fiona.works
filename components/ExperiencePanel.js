@@ -22,10 +22,10 @@ const StyledTabs = styled((props) => (
   },
   "& .MuiTabs-indicatorSpan": {
     width: "100%",
-    backgroundColor: "#635ee7",
+    backgroundColor: "var(--pink)",
   },
   "& .MuiTabs-scrollButtons": {
-    color: "#3066BE",
+    color: "var(--trueBlue)",
   },
 });
 
@@ -34,10 +34,12 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     textTransform: "none",
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
-    color: "black",
+    color: "var(--zinc-950)",
+    fontFamily: "var(--font-mono)",
     "&.Mui-selected": {
       color: "#3066BE",
-      backgroundColor: "transparent",
+      backgroundColor: "white",
+      fontWeight: "bold",
     },
     "&.Mui-focusVisible": {
       backgroundColor: "rgba(100, 95, 228, 0.32)",
@@ -56,11 +58,7 @@ function ExperiencePanel(props) {
       aria-labelledby={`vertical-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <>{children}</>
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
@@ -93,7 +91,6 @@ export default function VerticalTabs() {
       <Box
         sx={{
           flexGrow: 1,
-          color: "white",
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
         }}
@@ -124,12 +121,16 @@ export default function VerticalTabs() {
           ))}
         </StyledTabs>
         {resumeBullets.map((item) => (
-          <ExperiencePanel value={value} index={item.index}>
-            <div className="text-trueBlue font-bold text-lg">
+          <ExperiencePanel
+            value={value}
+            index={item.index}
+            className="bg-white p-3 z-4 border-t-2 border-b-2 border-r-2 border-gray"
+          >
+            <div className="text-trueBlue font-mono font-bold text-lg">
               {item.jobTitle}
             </div>
-            <div className="text-sm sm:text-md text-zinc-950 mt-2">
-              <ul className="list-disc">
+            <div className="text-sm sm:text-md text-zinc-950 mt-2 sm:ml-9">
+              <ul className="list-disc marker:text-trueBlue">
                 {item.children.map((child) => (
                   <li key={child.id}>{child.bullet}</li>
                 ))}
@@ -141,7 +142,7 @@ export default function VerticalTabs() {
       <a
         href="/resume"
         target="_blank"
-        className="items-center flex flex-grow text-trueBlue font-bold justify-center sm:justify-end"
+        className="items-center flex flex-grow text-trueBlue font-bold justify-center sm:justify-end mt-4"
       >
         View my full resume&nbsp;
         <ExternalLinkIcon />

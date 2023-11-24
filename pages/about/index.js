@@ -27,7 +27,7 @@ export default function About() {
           height={350}
           width={350}
           alt="profile-photo"
-          style={{ border: "3px solid #3066BE" }}
+          style={{ border: "3px solid #3066BE", borderRadius: "4%" }}
         />
       </div>
     </Grid>

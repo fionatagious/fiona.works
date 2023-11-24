@@ -12,7 +12,7 @@ import Writings from "/pages/writings/index.js";
 export default function Home() {
   return (
     <>
-      <div className="mx-0 bg-nearlyWhite">
+      <div className="mx-0 bg-lightBlue">
         <Navbar />
         <Grid
           container
@@ -49,7 +49,7 @@ export default function Home() {
           <Grid item xs={12} className="px-2 md:px-16 xl:px-32 py-20 my-20">
             <div
               id="contact"
-              className="heading font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4"
+              className="heading-contact font-bold text-md text-center text-2xl sm:text-3xl m-4"
             >
               Reach out
             </div>

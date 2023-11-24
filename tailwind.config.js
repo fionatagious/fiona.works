@@ -36,7 +36,7 @@ module.exports = {
         pink: "#d79eff",
         trueBlue: "#3066BE",
         navyBlue: "#04064d", // headings
-        nearlyWhite: "#EAEFF8", // homepage background
+        lightBlue: "#EAEFF8", // homepage background
       },
     },
   },

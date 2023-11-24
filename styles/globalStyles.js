@@ -4,7 +4,14 @@ import variables from "./variables";
 const GlobalStyle = createGlobalStyle`
 	${variables};
 
+  /* Home: Headings */
 	.heading {
+		font-size: var(--fs-heading);
+		color: var(--navy-blue);
+		font-family: var(--font-mono);
+	}
+
+	.heading-contact {
 		font-size: var(--fs-heading);
 		color: var(--navy-blue);
 		font-family: var(--font-mono);
@@ -32,6 +39,7 @@ const GlobalStyle = createGlobalStyle`
     }
 	}
 
+  /* Home: Links and Icons */
 	.writings-link-animation {
 		color: var(--zinc-950);
     font-weight: normal;
@@ -48,6 +56,13 @@ const GlobalStyle = createGlobalStyle`
 		display: inline-block;
 	}
 
+  .social-media-icons:hover {
+		transition-delay: 0s, 0.5s, 0.5s;
+		transform: translateY(-2px);
+		z-index: 11;
+	}
+
+  /* Home: Top-level Navbar */
 	.hamburger-animation {
 		color: var(--pink);
 		font-size: var(--fs-sm);
@@ -88,13 +103,7 @@ const GlobalStyle = createGlobalStyle`
 		transform-origin: bottom left;
 	}
 
-	.social-media-icons:hover {
-		transition-delay: 0s, 0.5s, 0.5s;
-		transform: translateY(-2px);
-		z-index: 11;
-	}
-
-	/* resume: top-level header */
+	/* Resume: Top-level Header */
 	.full-name-text {
 		display: grid;
 		align-content: center;
@@ -103,7 +112,7 @@ const GlobalStyle = createGlobalStyle`
 		font-size: var(--fs-xl);
 	}
 
-	/* resume: avatar */
+	/* Resume: Images */
 	.profile-image-small {
 		border-radius: 50%;
 	}

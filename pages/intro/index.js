@@ -6,18 +6,12 @@ export default function Intro() {
   return (
     <>
       <Grid item xs={12} className="grid content-center px-4 md:pl-32">
-        <div className="text-left text-trueBlue font-bold font-mono text-xl my-2">
+        <div className="text-left text-trueBlue font-bold font-mono text-xl mb-2 mt-4">
           Hello! My name is
         </div>
         <div className="font-bold text-left text-slate-950 text-4xl sm:text-7xl my-2">
           Fiona Tang
         </div>
-
-        <span>
-          <div className="text-left text-trueBlue font-bold font-mono text-2xl mt-2 mb-4">
-            software engineer & civic technologist
-          </div>
-        </span>
       </Grid>
       <Grid
         item

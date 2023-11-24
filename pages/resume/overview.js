@@ -26,7 +26,7 @@ export default function Overview() {
             <br />
             📫&nbsp;&nbsp;
             <a
-              href="mailto: fionatang@alum.berkeley.edu"
+              href="mailto:fionatang@alum.berkeley.edu"
               className="text-pink font-semibold"
             >
               fionatang@alum.berkeley.edu
