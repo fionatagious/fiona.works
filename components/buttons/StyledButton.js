@@ -1,7 +1,8 @@
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
-const StyledButton = styled.button`
+const StyledButton = styled.button.withConfig({
+  shouldForwardProp: (props) => "buttonColor" !== props,
+})`
   color: ${(props) => `${props.buttonColor}`};
   background-color: transparent;
   border: ${(props) => `1px solid ${props.buttonColor}`};
@@ -18,10 +19,4 @@ const StyledButton = styled.button`
   }
 `;
 
-export const Wrapper = ({ buttonColor, children }) => {
-  return <StyledButton buttonColor={buttonColor}>{children}</StyledButton>;
-};
-
-StyledButton.propTypes = {
-  buttonColor: PropTypes.string.isRequired,
-};
+export default StyledButton;

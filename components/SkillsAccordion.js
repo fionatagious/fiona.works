@@ -39,6 +39,7 @@ export default function SkillsAccordion() {
       {skillsData.map((item) => (
         <Accordion
           defaultExpanded
+          key={item.name}
           sx={{ backgroundColor: "hsla(0, 100%, 0%, 0.3)", color: "white" }}
         >
           <AccordionSummary
@@ -46,9 +47,7 @@ export default function SkillsAccordion() {
             aria-controls="panel-content"
             id="panel-header"
           >
-            <Typography className="text-sm" key={item.name}>
-              {item.name}
-            </Typography>
+            <Typography className="text-sm">{item.name}</Typography>
           </AccordionSummary>
           <AccordionDetails>
             {item.children.map((child) => (

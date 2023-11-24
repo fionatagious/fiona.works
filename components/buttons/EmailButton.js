@@ -1,10 +1,24 @@
-import { Wrapper } from "./StyledButton";
+import React from "react";
+import PropTypes from "prop-types";
 import Link from "next/link";
+import StyledButton from "/components/buttons/StyledButton";
 
-export default function EmailButton() {
+const EmailButton = ({ buttonLabel, ...props }) => {
   return (
     <Link href="mailto:fionatang@alum.berkeley.edu" passHref>
-      <Wrapper buttonColor="#3066BE">Email me</Wrapper>
+      <StyledButton {...props}>{buttonLabel}</StyledButton>
     </Link>
   );
-}
+};
+
+EmailButton.propTypes = {
+  buttonLabel: PropTypes.string.isRequired,
+  buttonColor: PropTypes.string.isRequired,
+};
+
+EmailButton.defaultProps = {
+  buttonLabel: "Email me",
+  buttonColor: "#3066BE",
+};
+
+export default EmailButton;

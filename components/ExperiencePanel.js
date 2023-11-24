@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import Box from "@mui/material/Box";
@@ -122,6 +122,7 @@ export default function VerticalTabs() {
         </StyledTabs>
         {resumeBullets.map((item) => (
           <ExperiencePanel
+            key={item.index}
             value={value}
             index={item.index}
             className="bg-white p-3 z-4 border-t-2 border-b-2 border-r-2 border-gray"

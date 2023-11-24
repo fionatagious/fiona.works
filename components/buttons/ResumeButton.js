@@ -1,10 +1,24 @@
-import { Wrapper } from "./StyledButton";
+import React from "react";
+import PropTypes from "prop-types";
 import Link from "next/link";
+import StyledButton from "/components/buttons/StyledButton";
 
-export default function ResumeButton() {
+const ResumeButton = ({ buttonLabel, ...props }) => {
   return (
     <Link href="/resume" passHref>
-      <Wrapper buttonColor="#d79eff">Resume</Wrapper>
+      <StyledButton {...props}>{buttonLabel}</StyledButton>
     </Link>
   );
-}
+};
+
+ResumeButton.propTypes = {
+  buttonLabel: PropTypes.string.isRequired,
+  buttonColor: PropTypes.string.isRequired,
+};
+
+ResumeButton.defaultProps = {
+  buttonLabel: "Resume",
+  buttonColor: "#d79eff",
+};
+
+export default ResumeButton;
