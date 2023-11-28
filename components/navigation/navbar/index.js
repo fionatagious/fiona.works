@@ -77,15 +77,20 @@ const Navbar = () => {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <div className="flex justify-end p-3">
-        <CloseIcon color="primary" sx={{ cursor: "pointer" }} />
+      <div className="flex justify-end p-4">
+        <button>
+          <CloseIcon
+            fontSize="large"
+            style={{ color: "#d79eff", cursor: "pointer" }}
+          />
+        </button>
       </div>
       <List>
         {navItems.map((item) => (
           <ListItem key={item.id} disablePadding>
             <ListItemButton
               onClick={() => scrollTo(item.href)}
-              sx={{ textAlign: "center" }}
+              sx={{ textAlign: "center", padding: "1rem 0" }}
             >
               <ListItemText
                 className="hamburger-animation"
@@ -96,7 +101,7 @@ const Navbar = () => {
           </ListItem>
         ))}
       </List>
-      <div className="flex justify-center">
+      <div className="flex justify-center py-4">
         <ResumeButton />
       </div>
     </Box>
@@ -132,9 +137,12 @@ const Navbar = () => {
                 <React.Fragment key={anchor}>
                   <button
                     onClick={toggleDrawer(anchor, true)}
-                    className="inline-block bg-white h-full"
+                    className="inline-block bg-slate-950 opacity-90 h-full"
                   >
-                    <MenuIcon color="white" />
+                    <MenuIcon
+                      fontSize="large"
+                      style={{ color: "#d79eff", cursor: "pointer" }}
+                    />
                   </button>
                   <SwipeableDrawer
                     anchor={anchor}
