@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
     &.active {
       transform: scaleX(1);
       transform-origin: bottom left;
-    }
+	  }
 	}
 
 	.nav-animation:after {

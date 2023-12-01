@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <div className="flex justify-center text-pink font-mono py-4">
         <span>
-          Designed and built by Fiona Tang, using&nbsp;
+          Designed & built by Fiona Tang, using&nbsp;
           <a
             className="text-lightBlue"
             href="https://nextjs.org/"
