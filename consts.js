@@ -115,7 +115,7 @@ export const resumeBullets = [
     index: 1,
     jobTitle: "Software Engineering Fellow",
     organization: "Code for America",
-    datesWorked: "11/2021 – 9/2023",
+    datesWorked: "10/2020 – 7/2021",
     children: [
       {
         id: 1,
