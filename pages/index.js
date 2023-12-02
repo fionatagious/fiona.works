@@ -12,7 +12,7 @@ import Writings from "/pages/writings/index.js";
 export default function Home() {
   return (
     <>
-      <div className="mx-0 bg-lightBlue">
+      <div className="mx-0 bg-slate-900">
         <Navbar />
         <Grid
           container
@@ -57,7 +57,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </div>
-      <div className="mx-0 bg-slate-950 opacity-90 z-50">
+      <div className="mx-0 bg-slate-950 z-50">
         <Footer />
       </div>
     </>

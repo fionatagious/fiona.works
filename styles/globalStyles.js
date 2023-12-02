@@ -7,13 +7,13 @@ const GlobalStyle = createGlobalStyle`
   /* Home: Headings */
 	.heading {
 		font-size: var(--fs-heading);
-		color: var(--navy-blue);
+		color: var(--gray-400);
 		font-family: var(--font-mono);
 	}
 
 	.heading-contact {
 		font-size: var(--fs-heading);
-		color: var(--navy-blue);
+		color: var(--gray-400);
 		font-family: var(--font-mono);
 	}
 
@@ -41,7 +41,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* Home: Links and Icons */
 	.writings-link-animation {
-		color: var(--zinc-950);
+		color: var(--gray-300);
     font-weight: normal;
 		text-decoration: none;
 		position: relative;
@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	.writings-link-animation:hover {
-		color: var(--medium-blue);
+		color: white;
     font-weight: normal;
 		text-decoration: none;
 		position: relative;

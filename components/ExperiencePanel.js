@@ -25,7 +25,7 @@ const StyledTabs = styled((props) => (
     backgroundColor: "var(--pink)",
   },
   "& .MuiTabs-scrollButtons": {
-    color: "var(--trueBlue)",
+    color: "var(--pink)",
   },
 });
 
@@ -34,11 +34,11 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     textTransform: "none",
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
-    color: "var(--zinc-950)",
+    color: "var(--gray-400)",
     fontFamily: "var(--font-mono)",
     "&.Mui-selected": {
-      color: "#3066BE",
-      backgroundColor: "white",
+      color: "var(--pink)",
+      backgroundColor: "transparent",
       fontWeight: "bold",
     },
     "&.Mui-focusVisible": {
@@ -105,8 +105,8 @@ export default function VerticalTabs() {
           variant="scrollable"
           sx={{
             display: "flex",
-            borderRight: { xs: "none", sm: "3px solid #94a3b8" },
-            borderBottom: { xs: "3px solid #94a3b8", sm: "none" },
+            borderRight: { xs: "none", sm: "5px solid var(--slate-950)" },
+            borderBottom: { xs: "3px solid var(--slate-950)", sm: "none" },
             zIndex: 0,
             minWidth: { xs: 200 },
           }}
@@ -125,13 +125,13 @@ export default function VerticalTabs() {
             key={item.index}
             value={value}
             index={item.index}
-            className="bg-white p-3 z-4 border-t-2 border-b-2 border-r-2 border-gray"
+            className="bg-transparent p-3 z-4"
           >
-            <div className="text-trueBlue font-mono font-bold text-lg">
+            <div className="text-pink font-mono font-bold text-lg">
               {item.jobTitle}
             </div>
-            <div className="text-sm sm:text-md text-zinc-950 mt-2 sm:ml-9">
-              <ul className="list-disc marker:text-trueBlue">
+            <div className="text-sm sm:text-lg text-gray-300 mt-2 sm:ml-9">
+              <ul className="list-disc marker:text-pink">
                 {item.children.map((child) => (
                   <li key={child.id}>{child.bullet}</li>
                 ))}
@@ -143,7 +143,7 @@ export default function VerticalTabs() {
       <a
         href="/resume"
         target="_blank"
-        className="items-center flex flex-grow text-trueBlue font-bold justify-center sm:justify-end mt-4"
+        className="items-center flex flex-grow text-pink font-bold justify-center mt-4 sm:justify-end pr-0 sm:pr-8"
       >
         View my full resume&nbsp;
         <ExternalLinkIcon />

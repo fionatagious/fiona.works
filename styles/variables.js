@@ -6,6 +6,9 @@ const variables = css`
     --medium-blue: #3066be;
     --navy-blue: #04064d;
     --zinc-950: #09090b;
+    --slate-950: #020617;
+    --gray-400: #9ca3af;
+    --gray-300: #d1d5db;
 
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text",
       -apple-system, system-ui, sans-serif;

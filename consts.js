@@ -269,3 +269,102 @@ export const acumen = resumeBullets[2];
 export const uber = resumeBullets[3];
 export const cm = resumeBullets[4];
 export const aclu = resumeBullets[5];
+
+export const articles = [
+  {
+    id: 1,
+    organizationName: `Code for America`,
+    title: `When a Cool, Shiny App Wont Cut It: Recognizing the Limits of Technology in Addressing Homelessness`,
+    summary: `Working to find housing solutions for people experiencing homelessness shows that technology is just one piece of the puzzle`,
+    href: "https://codeforamerica.org/news/limits-technology-homelessness/",
+    src: "https://files.codeforamerica.org/2021/05/09204729/swap-e1621447855163.jpg",
+    alt: `A long line of people stand waiting for intake to the SWAP program outside a building with the title Historic City Hall. It is a bright day in winter, with no leaves on nearby trees.`,
+  },
+  {
+    id: 2,
+    organizationName: `Code for America`,
+    title: `Meet the Community Fellows: Team Adams County`,
+    summary: `An interview with the Adams County Fellows on housing stability as a human right and using technology to make a positive impact`,
+    href: "https://codeforamerica.org/news/meet-the-community-fellows-team-adams-county/",
+    src: "https://files.codeforamerica.org/2021/05/28124636/Adams_County_Government_Center-300x210.jpeg",
+    alt: "The Adams County Government Center is a large building with the Colorado and US flags flown outside.",
+  },
+  {
+    id: 3,
+    organizationName: `Digital Privacy News`,
+    title: `'A Terrible Idea'`,
+    summary: `Amazon Expands Contactless Palm Technology During Pandemic`,
+    href: "https://digitalprivacy.news/2021/04/13/a-terrible-idea/",
+    src: "https://digitalprivacy.news/wp-content/uploads/2021/04/AmazonOne7.png",
+    alt: "a photo of a hand hovering over a blue grid representing a palm scanner",
+  },
+  {
+    id: 4,
+    organizationName: `Digital Privacy News`,
+    title: `'Giving It Out Like Candy'`,
+    summary: `Calif. Bill Seeks to Stop Police From Unbridled License-Plate Data Collection`,
+    href: "https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/",
+    src: "https://digitalprivacy.news/wp-content/uploads/2021/04/LPR-Data-845x450.png?crop=1",
+    alt: "a screenshot of software used to view license plate data",
+  },
+  {
+    id: 5,
+    organizationName: `ACLU`,
+    title: `ACLU FOIA Seeks Information About How Government Launders Evidence`,
+    summary: `The ACLU filed a Freedom of Information Act (FOIA) request seeking records related to “parallel construction.”`,
+    href: "https://www.aclu.org/news/privacy-technology/aclu-foia-seeks-information-about-how-government",
+    src: "https://www.aclu.org/wp-content/uploads/2019/09/surveillance_equip_by_thomas_hawk_credit-1000x666.jpg",
+    alt: "",
+  },
+];
+
+// <div className="text-left text-sm sm:text-lg text-pink font-bold my-2">
+// <Link
+//   className="writings-link-animation"
+//   href="https://change-machine.org/change-matters-the-financial-clinics-customer-insights/"
+//   target="_blank"
+// >
+//   Change Matters: The Financial Clinic’s Customer Insights&nbsp;
+// </Link>
+// — The Financial Clinic, 2018
+// </div>
+// <div className="text-left text-sm sm:text-lg text-pink font-bold my-2">
+// <Link
+//   className="writings-link-animation"
+//   href="https://change-machine.org/when-is-more-not-extra-effective-strategies-for-financial-security/"
+// >
+//   When is More Not Extra? Effective Strategies for Financial
+//   Security&nbsp;
+// </Link>
+// — The Financial Clinic, 2017
+// </div>
+// <div className="text-left text-sm sm:text-lg text-pink font-bold my-2">
+// <Link
+//   className="writings-link-animation"
+//   href="https://www.aclu.org/cases/trump-conflicts-interest-foia?document=trump-conflicts-interest-foia-request#"
+// >
+//   Trump Conflicts of Interest FOIA&nbsp;
+// </Link>
+// — ACLU, 2017
+// </div>
+// <div className="text-left text-sm sm:text-lg text-pink font-bold my-2">
+// <Link
+//   className="writings-link-animation"
+//   href="https://www.aclu.org/news/privacy-technology/aclu-foia-seeks-information-about-how-government"
+//   target="_blank"
+// >
+//   ACLU FOIA Seeks Information About How Government Launders
+//   Evidence&nbsp;
+// </Link>
+// — ACLU, 2016
+// </div>
+// <div className="text-left text-sm sm:text-lg text-pink font-bold my-2">
+// <Link
+//   className="writings-link-animation"
+//   href="https://www.aclu.org/legal-document/foia-request-under-freedom-information-act"
+//   target="_blank"
+// >
+//   Parallel Construction FOIA&nbsp;
+// </Link>
+// — ACLU, 2016
+// </div>
