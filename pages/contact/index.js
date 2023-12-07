@@ -15,7 +15,7 @@ export default function Contact() {
           civic tech, or data visualization / data journalism, I'd love to hear
           from you.
         </div>
-        <div className="text-center mt-4 mb-2">
+        <div className="flex justify-center mt-4 mb-2">
           <EmailButton />
         </div>
       </Grid>

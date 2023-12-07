@@ -52,7 +52,6 @@ function ExperiencePanel(props) {
 
   return (
     <div
-      role="ExperiencePanel"
       hidden={value !== index}
       id={`vertical-ExperiencePanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}

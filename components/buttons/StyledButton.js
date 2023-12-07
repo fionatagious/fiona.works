@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledButton = styled.button.withConfig({
+const StyledButton = styled.div.withConfig({
   shouldForwardProp: (props) => "buttonColor" !== props,
 })`
   color: ${(props) => `${props.buttonColor}`};
@@ -13,6 +13,7 @@ const StyledButton = styled.button.withConfig({
   z-index: 100;
   font-family: var(--font-mono);
   outline: none;
+  max-width: fit-content;
   box-shadow: ${(props) => `2px 2px 0 0 ${props.buttonColor}`};
   &:hover {
     transform: translate(1px, 1px);
