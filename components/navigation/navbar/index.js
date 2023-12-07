@@ -101,9 +101,9 @@ const Navbar = () => {
             </ListItemButton>
           </ListItem>
         ))}
-        <ListItem className="flex justify-center py-4">
+        <div className="flex justify-center py-4">
           <ResumeButton />
-        </ListItem>
+        </div>
       </List>
     </Box>
   );
