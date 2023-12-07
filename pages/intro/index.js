@@ -4,7 +4,7 @@ import SocialMedia from "/components/SocialMedia";
 
 export default function Intro() {
   return (
-    <>
+    <div className="mx-4">
       <Grid item xs={12} className="grid content-center">
         <div className="text-left text-gray-400 font-bold font-mono text-2xl mb-2 mt-4">
           Hello! My name is
@@ -21,6 +21,6 @@ export default function Intro() {
         </div>
         <SocialMedia />
       </Grid>
-    </>
+    </div>
   );
 }
