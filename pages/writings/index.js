@@ -9,7 +9,10 @@ export default function Writings() {
         {articles.map((child) => (
           <div
             key={child.id}
-            className="border-2 min-w-[212px] w-[270px] text-left text-sm sm:text-lg text-pink font-bold my-2 mr-2 p-5 border-gray-300 hover:border-white hover:brightness-100 hover:cursor-pointer hover:translate-y-[-2px]"
+            className="media text-left text-sm sm:text-lg text-pink border-2 min-w-[212px] w-[270px] my-2 mx-1 p-5 border-gray-300 hover:border-white hover:cursor-pointer hover:translate-y-[-2px]"
+            onClick={() => {
+              window.open(child.href, "_blank");
+            }}
           >
             <div className="w-full h-[150px]">
               <img
@@ -18,14 +21,10 @@ export default function Writings() {
                 alt={child.alt}
               ></img>
             </div>
-            <a
-              className="writings-link-animation"
-              href={child.href}
-              target="_blank"
-            >
-              {child.title}
-            </a>
-            <div className="text-pink font-light">{child.organizationName}</div>
+            <div className="article text-gray-300">{child.title}</div>
+            <div className="text-pink font-mono text-sm">
+              {child.organizationName}
+            </div>
             <div className="text-sm text-gray-400 font-normal">
               {child.summary}
             </div>

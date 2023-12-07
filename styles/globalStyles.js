@@ -40,27 +40,15 @@ const GlobalStyle = createGlobalStyle`
 	}
 
   /* Home: Links and Icons */
-	.writings-link-animation {
-		color: var(--gray-300);
-    font-weight: normal;
-		text-decoration: none;
-		position: relative;
-		display: inline-block;
-	}
-
-	.writings-link-animation:hover {
-		color: white;
-    font-weight: normal;
-		text-decoration: none;
-		position: relative;
-		display: inline-block;
-	}
-
   .social-media-icons:hover {
 		transition-delay: 0s, 0.5s, 0.5s;
 		transform: translateY(-2px);
 		z-index: 11;
 	}
+
+  .media:hover .article {
+    color: white;
+  }
 
   /* Home: Top-level Navbar */
 	.hamburger-animation {
