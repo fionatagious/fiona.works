@@ -18,7 +18,9 @@ export default function Home() {
           container
           className="flex flex-col min-h-1/2 px-4 3xl:px-64 4xl:px-96 pt-24 sm:pt-32"
         >
-          <Intro />
+          <Grid item xs={12} className="px-2 md:px-16 xl:px-32 py-20 my-20">
+            <Intro />
+          </Grid>
           <Grid item xs={12} className="px-2 md:px-16 xl:px-32 py-20 my-20">
             <div
               id="about"
@@ -37,7 +39,11 @@ export default function Home() {
             </div>
             <ExperiencePanel />
           </Grid>
-          <Grid item xs={12} className="px-2 md:px-16 xl:px-32 py-20 my-20">
+          <Grid
+            item
+            xs={12}
+            className="px-2 md:px-16 xl:pl-30 4xl:pl-32 py-20 my-20"
+          >
             <div
               id="media"
               className="heading font-bold text-md text-center sm:text-left text-2xl sm:text-3xl m-4"

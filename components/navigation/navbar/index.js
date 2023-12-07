@@ -90,6 +90,7 @@ const Navbar = () => {
           <ListItem key={item.id} disablePadding>
             <ListItemButton
               onClick={() => scrollTo(item.href)}
+              tabIndex={0}
               sx={{ textAlign: "center", padding: "1rem 0" }}
             >
               <ListItemText
@@ -100,10 +101,10 @@ const Navbar = () => {
             </ListItemButton>
           </ListItem>
         ))}
+        <ListItem className="flex justify-center py-4">
+          <ResumeButton />
+        </ListItem>
       </List>
-      <div className="flex justify-center py-4">
-        <ResumeButton />
-      </div>
     </Box>
   );
 

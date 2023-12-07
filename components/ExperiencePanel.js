@@ -82,6 +82,12 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      window.open("/resume", "_blank");
+    }
+  };
+
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
@@ -139,14 +145,16 @@ export default function VerticalTabs() {
           </ExperiencePanel>
         ))}
       </Box>
-      <a
-        href="/resume"
-        target="_blank"
-        className="items-center flex flex-grow text-pink font-bold justify-center mt-4 sm:justify-end pr-0 sm:pr-8"
-      >
-        View my full resume&nbsp;
-        <ExternalLinkIcon />
-      </a>
+      <div className="flex flex-col" onKeyDown={handleKeyPress} tabIndex={0}>
+        <a
+          href="/resume"
+          target="_blank"
+          className="max-w-fit flex flex-grow text-pink font-bold self-center mt-4 sm:self-end pr-0 sm:pr-8"
+        >
+          View my full resume&nbsp;
+          <ExternalLinkIcon />
+        </a>
+      </div>
     </>
   );
 }

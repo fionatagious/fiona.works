@@ -26,7 +26,7 @@ export default function About() {
           src="/images/headshot.jpg"
           height={350}
           width={350}
-          alt="profile-photo"
+          alt="profile-image-large"
           style={{ borderRadius: "4%" }}
         />
       </div>

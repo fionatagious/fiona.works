@@ -26,7 +26,7 @@ export default function CFACard() {
               className="company-logo"
               height={65}
               width={65}
-              alt="cfa-logo"
+              alt="code-for-america-logo"
             />
           </Grid>
           <Grid item sx={{ marginLeft: "0.75rem" }}>

@@ -3,9 +3,15 @@ import { articles } from "../../consts";
 import Grid from "@mui/material/Grid";
 
 export default function Writings() {
+  const handleKeyDown = (event, href) => {
+    if (event.key === "Enter") {
+      window.open(href, "_blank");
+    }
+  };
+
   return (
-    <Grid container className="px-4 flex flex-col p-4 overflow-auto">
-      <Grid item xs={12} className="flex flex-row px-6">
+    <Grid container className="flex px-0 4xl:px-4 py-4 overflow-auto">
+      <Grid item xs={12} className="flex flex-row px-0 4xl:px-6">
         {articles.map((child) => (
           <div
             key={child.id}
@@ -13,6 +19,10 @@ export default function Writings() {
             onClick={() => {
               window.open(child.href, "_blank");
             }}
+            onKeyDown={(event) => {
+              handleKeyDown(event, child.href);
+            }}
+            tabIndex={0}
           >
             <div className="w-full h-[150px]">
               <img
@@ -21,12 +31,15 @@ export default function Writings() {
                 alt={child.alt}
               ></img>
             </div>
-            <div className="article text-gray-300">{child.title}</div>
-            <div className="text-pink font-mono text-sm">
-              {child.organizationName}
-            </div>
-            <div className="text-sm text-gray-400 font-normal">
-              {child.summary}
+
+            <div>
+              <div className="article text-gray-300">{child.title}</div>
+              <div className="text-pink font-mono text-sm">
+                {child.organizationName}
+              </div>
+              <div className="text-sm text-gray-400 font-normal">
+                {child.summary}
+              </div>
             </div>
           </div>
         ))}
