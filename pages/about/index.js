@@ -11,13 +11,13 @@ export default function About() {
           Project. While at CfA, I partnered with the government of Adams
           County, Colorado, to build a web app that helped people experiencing
           homelessness access temporary shelter. At The Mom Project, I helped to
-          build a platform that connects moms, dads, and caretakers with
-          employers that offer flexible work.
+          build a digital talent marketplace that connects moms, dads, and
+          caretakers to companies looking to hire.
         </div>
         <div className="text-left text-gray-300 text-sm sm:text-lg md:text-lg mt-2 mb-6">
-          When I'm not coding, I enjoy cooking, learning new drum beats, and
-          spending time with friends and family. I'm also a stationery hobbyist
-          and a coffee enthusiast.
+          When I'm not coding, I enjoy reading, cooking, learning new drum
+          beats, listening to podcasts, and spending time with friends and
+          family. I'm also a stationery hobbyist and a coffee enthusiast.
         </div>
       </Grid>
       <div className="hidden xl:inline-block ml-4 sm:ml-6 my-auto">
