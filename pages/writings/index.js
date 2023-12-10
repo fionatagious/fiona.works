@@ -28,7 +28,7 @@ export default function Writings() {
             }}
             tabIndex={0}
           >
-            <div className="w-full h-[150px]">
+            <div className="flex w-full sm:h-[150px] justify-center">
               <img
                 className="object-contain h-full"
                 src={child.src}

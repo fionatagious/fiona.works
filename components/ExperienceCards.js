@@ -11,6 +11,7 @@ export default function ExperienceCards() {
     <>
       {resumeBullets.map((item) => (
         <Card
+          key={item.index}
           className="my-2"
           sx={{
             minWidth: 275,
@@ -20,12 +21,15 @@ export default function ExperienceCards() {
           }}
         >
           <CardContent key={item.index}>
-            <Grid container sx={{ display: "flex", alignItems: "center" }}>
-              <Grid item>
+            <Grid
+              container
+              sx={{ display: "flex", flexWrap: "nowrap", alignItems: "center" }}
+            >
+              <Grid item className="shrink-0">
                 <Image
                   priority
                   src={`/images/${item.alias}-logo.jpg`}
-                  className={`${item.alias}-company-logo`}
+                  className="company-logo"
                   height={65}
                   width={65}
                   alt={`${item.alias}-logo`}

@@ -108,7 +108,6 @@ const GlobalStyle = createGlobalStyle`
 	.company-logo {
 		margin-bottom: 0.3rem;
 		display: inline-block;
-		border-radius: 50%;
 		margin-left: 0rem;
 	}
 `;
