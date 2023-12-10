@@ -7,12 +7,7 @@ import Image from "next/image";
 // Experience section
 import Grid from "@mui/material/Grid";
 import Overview from "./overview";
-import TMPCard from "./tmp";
-import CFACard from "./cfa";
-import AcumenCard from "./acumen";
-import UberCard from "./uber";
-import CMCard from "./cm";
-import ACLUCard from "./aclu";
+import ExperienceCards from "/components/ExperienceCards";
 // Skills section
 import Skills from "./skills";
 // Education section
@@ -116,16 +111,11 @@ export default function Resume() {
               <div className="text-xl text-white ml-3 3xl:ml-0 my-2">
                 Experience
               </div>
-              <TMPCard className="min-h-full" />
-              <CFACard className="min-h-full" />
-              <AcumenCard className="min-h-full" />
-              <UberCard className="min-h-full" />
-              <CMCard className="min-h-full" />
-              <ACLUCard className="min-h-full" />
+              <ExperienceCards className="min-h-full" />
             </Grid>
             <Grid item xs={12}>
               <div className="text-xl text-white my-2 ml-3 sm:ml-2 2xl:ml-0">
-                Leadership and Activities
+                Leadership and Volunteering
               </div>
               <Leadership className="min-h-full" />
             </Grid>

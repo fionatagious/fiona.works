@@ -6,6 +6,13 @@ import Typography from "@mui/material/Typography";
 
 const leadershipData = [
   {
+    role: "Web Developer",
+    organization: "Radical Engineers",
+    date: "9/2023 – Present",
+    description:
+      "Partner with social impact organizations to build software that helps them achieve their missions.",
+  },
+  {
     role: "Finance and Advancement Chair",
     organization: "New Leaders Council",
     date: "7/2021 – Present",
@@ -42,8 +49,8 @@ export default function Leadership() {
       <CardContent>
         <Grid container sx={{ display: "flex", alignItems: "center" }}>
           {leadershipData.map((item, id) => (
-            <div key={id}>
-              <div className="text-lg sm:text-xl mt-2 text-pink leading-7">
+            <div className="w-full" key={id}>
+              <div className="text-md font-mono mt-2 text-pink leading-7">
                 {item.role}
               </div>
               <Typography variant="subtitle2">{item.organization}</Typography>

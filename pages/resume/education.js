@@ -39,7 +39,7 @@ export default function Education() {
               marginLeft: "0.75rem",
             }}
           >
-            <div className="text-md text-pink sm:text-xl">
+            <div className="text-md font-mono text-pink">
               University of California, Berkeley
             </div>
             <Typography variant="subtitle2">B.A. Legal Studies</Typography>

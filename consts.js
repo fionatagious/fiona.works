@@ -61,6 +61,7 @@ export const skillsData = [
 export const resumeBullets = [
   {
     index: 0,
+    alias: "tmp",
     jobTitle: "Software Engineer",
     organization: "The Mom Project",
     datesWorked: "11/2021 – 9/2023",
@@ -113,6 +114,7 @@ export const resumeBullets = [
   },
   {
     index: 1,
+    alias: "cfa",
     jobTitle: "Software Engineering Fellow",
     organization: "Code for America",
     datesWorked: "10/2020 – 7/2021",
@@ -156,6 +158,7 @@ export const resumeBullets = [
   },
   {
     index: 2,
+    alias: "acumen",
     jobTitle: "Data and Policy Analyst - Statistical Programmer",
     organization: "Acumen",
     datesWorked: "1/2020 – 2/2021",
@@ -184,6 +187,7 @@ export const resumeBullets = [
   },
   {
     index: 3,
+    alias: "uber",
     jobTitle: "Data Analyst",
     organization: "Uber",
     datesWorked: "9/2018 – 3/2019",
@@ -218,6 +222,7 @@ export const resumeBullets = [
   },
   {
     index: 4,
+    alias: "cm",
     jobTitle: "Data Associate",
     organization: "Change Machine",
     datesWorked: "10/2017 – 4/2018",
@@ -242,6 +247,7 @@ export const resumeBullets = [
   },
   {
     index: 5,
+    alias: "aclu",
     jobTitle: "Legal Assistant",
     organization: "ACLU",
     team: "Speech, Privacy, and Technology Project",
@@ -262,13 +268,6 @@ export const resumeBullets = [
     ],
   },
 ];
-
-export const tmp = resumeBullets[0];
-export const cfa = resumeBullets[1];
-export const acumen = resumeBullets[2];
-export const uber = resumeBullets[3];
-export const cm = resumeBullets[4];
-export const aclu = resumeBullets[5];
 
 export const articles = [
   {
