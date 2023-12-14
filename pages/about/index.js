@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
 
@@ -15,9 +15,10 @@ export default function About() {
           caretakers to companies looking to hire.
         </div>
         <div className="text-left text-gray-300 text-sm sm:text-lg md:text-lg mt-2 mb-6">
-          When I'm not coding, I enjoy reading, cooking, learning new drum
-          beats, listening to podcasts, and spending time with friends and
-          family. I'm also a stationery hobbyist and a coffee enthusiast.
+          When I'm not coding, I enjoy reading, cooking, practicing new drum
+          beats, listening to podcasts, learning about urban planning and
+          walkable cities, and spending time with friends and family. I'm also a
+          stationery hobbyist and a coffee enthusiast.
         </div>
       </Grid>
       <div className="hidden xl:inline-block ml-4 sm:ml-6 my-auto">

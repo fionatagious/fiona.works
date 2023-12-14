@@ -17,7 +17,7 @@ export default function Intro() {
         <div className="text-left text-gray-300 text-lg sm:text-xl my-2 mb-6">
           I&apos;m a user-focused, results-driven software engineer specializing
           in building technology solutions that help individuals and
-          organizations advance social and economic equity.
+          organizations build a more sustainable and equitable future.
         </div>
         <SocialMedia />
       </Grid>
