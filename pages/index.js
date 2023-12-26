@@ -11,9 +11,9 @@ import Writings from "/pages/writings/index.js";
 
 export default function Home() {
   return (
-    <>
-      <div className="bg-lightBlue">
-        <Navbar />
+    <div className="w-full bg-lightBlue">
+      <Navbar />
+      <div>
         <Grid
           container
           className="flex flex-col min-h-1/2 px-4 3xl:px-64 4xl:px-96 pt-24 sm:pt-32"
@@ -64,6 +64,6 @@ export default function Home() {
         </Grid>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

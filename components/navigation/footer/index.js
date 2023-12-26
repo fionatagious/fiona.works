@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="mx-0 bg-slate-950 z-50">
-      <div className="flex justify-center text-pink font-mono">
+      <div className="flex justify-center text-center text-pink font-mono px-6">
         <span>
           Designed & built by Fiona Tang, using&nbsp;
           <a
@@ -21,7 +21,7 @@ const Footer = () => {
             target="_blank"
             tabIndex={-1}
           >
-            Material UI
+            Material
           </a>
           ,&nbsp;
           <a
@@ -39,14 +39,14 @@ const Footer = () => {
             target="_blank"
             tabIndex={-1}
           >
-            Tailwind CSS
+            Tailwind
           </a>
           .
         </span>
       </div>
       <div
         id="cc"
-        className="flex justify-center text-gray-600 text-sm font-mono mt-8"
+        className="flex justify-center text-gray-600 text-center text-xs sm:text-sm font-mono mt-8 px-6"
       >
         <span>
           <p>

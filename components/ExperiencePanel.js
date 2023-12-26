@@ -42,7 +42,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     "&.Mui-selected": {
       color: "var(--mauve)",
       backgroundColor: "var(--white)",
-      border: "2px solid var(--slate-950)",
+      border: "2px solid var(--gray-400)",
       fontWeight: "bold",
     },
     "&.Mui-focusVisible": {
@@ -115,8 +115,8 @@ export default function VerticalTabs() {
           variant="scrollable"
           sx={{
             display: "flex",
-            borderRight: { xs: "none", sm: "5px solid var(--slate-950)" },
-            borderBottom: { xs: "3px solid var(--slate-950)", sm: "none" },
+            borderRight: { xs: "none", sm: "5px solid var(--mauve)" },
+            borderBottom: { xs: "3px solid var(--mauve)", sm: "none" },
             zIndex: 0,
             minWidth: { xs: 200 },
           }}
