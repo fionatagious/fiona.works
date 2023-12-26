@@ -36,10 +36,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        pink: "#d79eff",
-        trueBlue: "#3066BE",
-        navyBlue: "#04064d", // headings
-        lightBlue: "#EAEFF8", // homepage background
+        eggplant: "#6f4b79", // homepage section headings
+        lightBlue: "#eaeff8", // homepage background
+        mauve: "#956f9f",
+        pink: "#d79eff", // site navigation links, resume position titles
+        lightMauve: "#c098ca",
       },
     },
   },

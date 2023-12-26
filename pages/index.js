@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import About from "/pages/about/index.js";
 import Contact from "/pages/contact/index.js";
@@ -12,7 +12,7 @@ import Writings from "/pages/writings/index.js";
 export default function Home() {
   return (
     <>
-      <div className="mx-0 bg-slate-900">
+      <div className="bg-lightBlue">
         <Navbar />
         <Grid
           container
@@ -63,9 +63,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </div>
-      <div className="mx-0 bg-slate-950 z-50">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 }

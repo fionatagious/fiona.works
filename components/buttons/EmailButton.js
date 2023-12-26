@@ -18,7 +18,7 @@ EmailButton.propTypes = {
 
 EmailButton.defaultProps = {
   buttonLabel: "Email me",
-  buttonColor: "#d79eff",
+  buttonColor: "#956f9f",
 };
 
 export default EmailButton;

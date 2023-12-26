@@ -3,12 +3,13 @@ import { css } from "styled-components";
 const variables = css`
   :root {
     --pink: #d79eff;
-    --medium-blue: #3066be;
-    --navy-blue: #04064d;
-    --zinc-950: #09090b;
     --slate-950: #020617;
+    --gray-100: #f3f4f6;
     --gray-400: #9ca3af;
-    --gray-300: #d1d5db;
+    --eggplant: #6f4b79;
+    --mauve: #956f9f;
+    --white: #fff;
+    ${"" /* --slate-750:  */}
 
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text",
       -apple-system, system-ui, sans-serif;

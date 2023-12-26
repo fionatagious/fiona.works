@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 // Top-level header
 import Toolbar from "@mui/material/Toolbar";
@@ -13,9 +14,6 @@ import Skills from "./skills";
 // Education section
 import Education from "./education";
 import Leadership from "./leadership";
-// Media Carousel
-// import MediaCarousel from 'components/carousel'
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 export default function Resume() {
   return (
@@ -23,7 +21,6 @@ export default function Resume() {
       theme={createTheme({
         palette: {
           pink: "#d79eff",
-          trueBlue: "#3066BE",
         },
         breakpoints: {
           values: {
@@ -71,7 +68,6 @@ export default function Resume() {
             </a>
             <h2 className="full-name-text">Fiona Tang</h2>
           </div>
-          <HomeButton />
         </Toolbar>
         <Grid
           container

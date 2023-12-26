@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import ResumeButton from "/components/buttons/ResumeButton";
 
 // hamburger menu
 import Box from "@mui/material/Box";
@@ -101,9 +100,6 @@ const Navbar = () => {
             </ListItemButton>
           </ListItem>
         ))}
-        <div className="flex justify-center py-4">
-          <ResumeButton />
-        </div>
       </List>
     </Box>
   );
@@ -116,7 +112,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 h-full py-1">
         <div className="flex justify-end gap-x-4 items-center h-full">
           {/* sticky menu */}
-          <ul className="hidden list-none sm:flex gap-x-4">
+          <ul className="hidden list-none sm:flex sm:gap-x-4 sm:mr-4">
             {navItems.map((item) => (
               <li key={item.id}>
                 <button
@@ -127,9 +123,6 @@ const Navbar = () => {
                 </button>
               </li>
             ))}
-            <li className="sm:ml-2">
-              <ResumeButton />
-            </li>
           </ul>
           {/* hamburger menu */}
           {!matches && (

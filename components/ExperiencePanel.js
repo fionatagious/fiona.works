@@ -21,28 +21,33 @@ const StyledTabs = styled((props) => (
     justifyContent: "center",
   },
   "& .MuiTabs-indicatorSpan": {
-    width: "100%",
     backgroundColor: "var(--pink)",
+    width: "100%",
   },
   "& .MuiTabs-scrollButtons": {
-    color: "var(--pink)",
+    color: "var(--slate-950)",
   },
 });
 
 const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
   ({ theme }) => ({
-    textTransform: "none",
+    color: "var(--gray-400)",
     fontWeight: theme.typography.fontWeightRegular,
     fontSize: theme.typography.pxToRem(15),
-    color: "var(--gray-400)",
     fontFamily: "var(--font-mono)",
+    textTransform: "none",
+    "&:hover": {
+      color: "var(--slate-950)",
+    },
     "&.Mui-selected": {
-      color: "var(--pink)",
-      backgroundColor: "transparent",
+      color: "var(--mauve)",
+      backgroundColor: "var(--white)",
+      border: "2px solid var(--slate-950)",
       fontWeight: "bold",
     },
     "&.Mui-focusVisible": {
-      backgroundColor: "rgba(100, 95, 228, 0.32)",
+      color: "var(--slate-950)",
+      backgroundColor: "var(--white)",
     },
   })
 );
@@ -120,6 +125,7 @@ export default function VerticalTabs() {
             <StyledTab
               key={item.index}
               label={item.organization}
+              tabIndex={0}
               {...a11yProps(item.index)}
               sx={{ alignItems: { xs: "center", sm: "end" }, textAlign: "end" }}
             />
@@ -130,13 +136,13 @@ export default function VerticalTabs() {
             key={item.index}
             value={value}
             index={item.index}
-            className="bg-transparent p-3 z-4"
+            className="bg-white border-2 border-gray-400 p-4 z-4"
           >
-            <div className="text-pink font-mono font-bold text-lg">
+            <div className="text-mauve font-mono font-bold text-lg">
               {item.jobTitle}
             </div>
-            <div className="text-sm sm:text-lg text-gray-300 mt-2 sm:ml-9">
-              <ul className="list-disc marker:text-pink">
+            <div className="text-sm sm:text-lg text-slate-950 mt-2 sm:ml-9">
+              <ul className="list-disc marker:text-mauve">
                 {item.children.map((child) => (
                   <li key={child.id}>{child.bullet}</li>
                 ))}
@@ -149,7 +155,7 @@ export default function VerticalTabs() {
         <a
           href="/resume"
           target="_blank"
-          className="max-w-fit flex flex-grow text-pink font-bold self-center mt-4 sm:self-end pr-0 sm:pr-8"
+          className="max-w-fit flex flex-grow text-mauve font-bold self-center mt-4 sm:self-end pr-0 sm:pr-8"
         >
           View my full resume&nbsp;
           <ExternalLinkIcon />

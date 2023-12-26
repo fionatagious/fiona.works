@@ -4,7 +4,7 @@ const StyledButton = styled.div.withConfig({
   shouldForwardProp: (props) => "buttonColor" !== props,
 })`
   color: ${(props) => `${props.buttonColor}`};
-  background-color: transparent;
+  background-color: #fff;
   border: ${(props) => `1px solid ${props.buttonColor}`};
   border-radius: 10px;
   padding: 0.75rem 1rem;

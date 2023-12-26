@@ -7,13 +7,13 @@ const GlobalStyle = createGlobalStyle`
   /* Home: Headings */
 	.heading {
 		font-size: var(--fs-heading);
-		color: var(--gray-400);
+		color: var(--eggplant);
 		font-family: var(--font-mono);
 	}
 
 	.heading-contact {
 		font-size: var(--fs-heading);
-		color: var(--gray-400);
+		color: var(--eggplant);
 		font-family: var(--font-mono);
 	}
 
@@ -45,10 +45,6 @@ const GlobalStyle = createGlobalStyle`
 		transform: translateY(-2px);
 		z-index: 11;
 	}
-
-  .media:hover .article {
-    color: white;
-  }
 
   /* Home: Top-level Navbar */
 	.hamburger-animation {

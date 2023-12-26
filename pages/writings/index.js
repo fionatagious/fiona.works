@@ -19,7 +19,7 @@ export default function Writings() {
         {articles.map((child) => (
           <div
             key={child.id}
-            className="media text-left text-sm sm:text-lg text-pink border-2 min-w-[212px] w-[340px] sm:w-[200px] my-1 mx-1 p-5 border-gray-300 hover:border-white hover:cursor-pointer hover:translate-y-[-2px]"
+            className="media text-left text-sm sm:text-lg text-mauve min-w-[212px] w-[340px] sm:w-[200px] my-1 mx-1 p-5 border-2 border-gray-400 hover:border-slate-950 bg-white hover:cursor-pointer hover:translate-y-[-2px]"
             onClick={() => {
               window.open(child.href, "_blank");
             }}
@@ -37,13 +37,13 @@ export default function Writings() {
             </div>
 
             <div>
-              <div className="article text-sm sm:text-lg text-gray-300 mt-2 leading-6">
+              <div className="text-sm sm:text-lg text-slate-950 mt-2 leading-6">
                 {child.title}
               </div>
-              <div className="text-pink font-mono text-sm leading-6">
+              <div className="text-mauve font-mono text-sm leading-6">
                 {child.organizationName}
               </div>
-              <div className="text-sm text-gray-400 font-normal whitespace-normal line-clamp-4 truncate">
+              <div className="text-sm text-gray-600 font-normal whitespace-normal line-clamp-4 truncate">
                 {child.summary}
               </div>
             </div>
