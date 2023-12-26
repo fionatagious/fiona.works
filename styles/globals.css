@@ -15,8 +15,11 @@ body {
 }
 
 a {
-  color: #b4c5e4;
   text-decoration: none;
+}
+
+#cc a.link {
+  text-decoration: underline #9ca3af;
 }
 
 img {
@@ -36,5 +39,6 @@ button {
 }
 
 footer {
-  padding: 3rem;
+  padding-bottom: 2.5rem;
+  padding-top: 3rem;
 }
