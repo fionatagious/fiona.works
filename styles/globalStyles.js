@@ -17,28 +17,6 @@ const GlobalStyle = createGlobalStyle`
 		font-family: var(--font-mono);
 	}
 
-	.heading::after {
-		content: "";
-		display: inline-block;
-		position: relative;
-		top: -5px;
-		width: 80%;
-		height: 1px;
-		background-color: rgb(148 163 184);
-		margin-left: 1.2rem;
-    margin-right: 1.2rem;
-		@media (min-width: 640px) {
-      margin-left: 1rem;
-      margin-right: 1rem;
-      width: 55%;
-    }
-		@media (min-width: 768px) {
-      margin-left: 1rem;
-      margin-right: 0rem;
-      width: 60%;
-    }
-	}
-
   /* Home: Links and Icons */
   .social-media-icons:hover {
 		transition-delay: 0s, 0.5s, 0.5s;
@@ -63,10 +41,6 @@ const GlobalStyle = createGlobalStyle`
 		text-decoration: none;
 		position: relative;
 		display: inline-block;
-    &.active {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-	  }
 	}
 
 	.nav-animation:after {
@@ -78,13 +52,18 @@ const GlobalStyle = createGlobalStyle`
 		bottom: 0;
 		left: 0;
 		background-color: var(--pink);
-		transform-origin: bottom right;
-		transition: transform 0.25s ease-out;
 	}
 
 	.nav-animation:hover:after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+	}
+
+	.nav-animation:focus:after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
 	}
 
 	/* Resume: Top-level Header */
