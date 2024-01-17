@@ -6,6 +6,13 @@ import Typography from "@mui/material/Typography";
 
 const leadershipData = [
   {
+    role: "Member",
+    organization: "Chicago Hack Night",
+    date: "9/2023 – Present",
+    description:
+      "Work on public service projects with a community of civic-minded technologists. Build user-focused apps to enhance public services in Chicago.",
+  },
+  {
     role: "Web Developer",
     organization: "Radical Engineers",
     date: "9/2023 – Present",
