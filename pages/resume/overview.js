@@ -24,14 +24,13 @@ export default function Overview() {
             consulting firms, and startups.
             <br />
             <br />
-            📫&nbsp;&nbsp;
+            📫&nbsp;&nbsp;Write to me at&nbsp;
             <a
-              href="mailto:fionatang@alum.berkeley.edu"
+              href="mailto:fiona@fiona.works"
               className="text-pink font-semibold"
             >
-              fionatang@alum.berkeley.edu
+              fiona@fiona.works
             </a>
-            .
           </div>
         </CardContent>
       </Card>
