@@ -9,7 +9,6 @@ const variables = css`
     --eggplant: #6f4b79;
     --mauve: #956f9f;
     --white: #fff;
-    ${"" /* --slate-750:  */}
 
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text",
       -apple-system, system-ui, sans-serif;

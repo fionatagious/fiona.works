@@ -28,7 +28,11 @@ export default function About() {
           height={350}
           width={350}
           alt="profile-image-large"
-          style={{ borderRadius: "4%" }}
+          style={{
+            borderRadius: "4%",
+            border: "2px solid var(--slate-950)",
+            boxShadow: "0 0 10px var(--slate-950)",
+          }}
         />
       </div>
     </Grid>

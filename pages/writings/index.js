@@ -37,7 +37,7 @@ export default function Writings() {
             </div>
 
             <div>
-              <div className="text-sm sm:text-lg text-slate-950 mt-2 leading-6">
+              <div className="text-sm sm:text-md font-mono text-slate-950 mt-2 leading-6">
                 {child.title}
               </div>
               <div className="text-mauve font-mono text-sm leading-6">

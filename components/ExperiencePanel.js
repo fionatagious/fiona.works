@@ -21,7 +21,7 @@ const StyledTabs = styled((props) => (
     justifyContent: "center",
   },
   "& .MuiTabs-indicatorSpan": {
-    backgroundColor: "var(--pink)",
+    backgroundColor: "var(--slate-950)",
     width: "100%",
   },
   "& .MuiTabs-scrollButtons": {
@@ -36,13 +36,16 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     fontSize: theme.typography.pxToRem(15),
     fontFamily: "var(--font-mono)",
     textTransform: "none",
+    borderRadius: "0.5rem",
+    marginRight: "0.3rem",
+    zIndex: 5,
     "&:hover": {
       color: "var(--slate-950)",
     },
     "&.Mui-selected": {
       color: "var(--mauve)",
       backgroundColor: "var(--white)",
-      border: "2px solid var(--gray-400)",
+      border: "2px solid var(--slate-950)",
       fontWeight: "bold",
     },
     "&.Mui-focusVisible": {
@@ -136,7 +139,7 @@ export default function VerticalTabs() {
             key={item.index}
             value={value}
             index={item.index}
-            className="bg-white border-2 border-gray-400 p-4 z-4"
+            className="bg-white border-2 border-slate-950 p-2 z-4 shadow-lg shadow-gray-400"
           >
             <div className="text-mauve font-mono font-bold text-lg">
               {item.jobTitle}
