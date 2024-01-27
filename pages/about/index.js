@@ -30,7 +30,7 @@ export default function About() {
           alt="profile-image-large"
           style={{
             borderRadius: "4%",
-            border: "2px solid var(--slate-950)",
+            border: "1px solid var(--slate-950)",
             boxShadow: "0 0 10px var(--slate-950)",
           }}
         />

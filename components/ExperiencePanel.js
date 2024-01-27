@@ -45,7 +45,7 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     "&.Mui-selected": {
       color: "var(--mauve)",
       backgroundColor: "var(--white)",
-      border: "2px solid var(--slate-950)",
+      border: "1px solid var(--slate-950)",
       fontWeight: "bold",
     },
     "&.Mui-focusVisible": {
@@ -139,7 +139,7 @@ export default function VerticalTabs() {
             key={item.index}
             value={value}
             index={item.index}
-            className="bg-white border-2 border-slate-950 p-2 z-4 shadow-lg shadow-gray-400"
+            className="bg-white border rounded-tr-lg rounded-br-lg border-slate-950 p-2 z-4 shadow-lg shadow-gray-400"
           >
             <div className="text-mauve font-mono font-bold text-lg">
               {item.jobTitle}
