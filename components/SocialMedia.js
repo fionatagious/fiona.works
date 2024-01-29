@@ -9,21 +9,21 @@ export default function SocialMedia() {
       <a
         href="https://github.com/fionatagious"
         target="_blank"
-        className="social-media-icons"
+        className="darken"
       >
         <GithubIcon />
       </a>
       <a
         href="https://twitter.com/fionatagious"
         target="_blank"
-        className="social-media-icons"
+        className="darken"
       >
         <TwitterIcon />
       </a>
       <a
         href="https://linkedin.com/in/fionaroni"
         target="_blank"
-        className="social-media-icons"
+        className="darken"
       >
         <LinkedInIcon />
       </a>

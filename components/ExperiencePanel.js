@@ -158,7 +158,7 @@ export default function VerticalTabs() {
         <a
           href="/resume"
           target="_blank"
-          className="max-w-fit flex flex-grow text-mauve font-bold self-center mt-4 sm:self-end pr-0 sm:pr-8"
+          className="darken max-w-fit flex flex-grow text-mauve font-bold self-center mt-4 sm:self-end pr-0 sm:pr-8"
         >
           View my full resume&nbsp;
           <ExternalLinkIcon />

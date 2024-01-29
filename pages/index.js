@@ -11,9 +11,9 @@ import Writings from "/pages/writings/index.js";
 
 export default function Home() {
   return (
-    <div className="w-full bg-lightBlue">
+    <div className="w-full">
       <Navbar />
-      <div>
+      <div className="w-full bg-orange-50">
         <Grid
           container
           className="flex flex-col min-h-1/2 px-4 3xl:px-64 4xl:px-96 pt-24 sm:pt-32"

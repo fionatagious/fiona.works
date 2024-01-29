@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
   /* Home: Links and Icons */
-  .social-media-icons:hover {
+  .darken:hover {
 		transition-delay: 0s, 0.5s, 0.5s;
 		filter: brightness(50%);
 		z-index: 11;
