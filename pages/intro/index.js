@@ -16,8 +16,8 @@ export default function Intro() {
       <Grid item xs={12} md={8} lg={6} className="grid content-start mb-4">
         <div className="text-left text-slate-950 text-lg sm:text-xl my-2 mb-6">
           I&apos;m a user-focused, results-driven software engineer specializing
-          in building technology solutions that help individuals and
-          organizations build a more sustainable and equitable future.
+          in building technology solutions that enable individuals and
+          organizations to create a more sustainable and equitable future.
         </div>
         <SocialMedia />
       </Grid>
