@@ -108,7 +108,7 @@ const Navbar = () => {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <div className="w-full h-20 sticky top-0 bg-white/80 backdrop-blur-md border-b border-gray z-50">
+    <div className="w-full h-20 sticky top-0 bg-white/70 backdrop-blur-lg border-b border-gray z-50">
       <div className="container mx-auto px-4 h-full py-1">
         <div className="flex justify-end gap-x-4 items-center h-full">
           {/* sticky menu */}
@@ -131,11 +131,11 @@ const Navbar = () => {
                 <React.Fragment key={anchor}>
                   <button
                     onClick={toggleDrawer(anchor, true)}
-                    className="inline-block bg-slate-950 opacity-90 h-full"
+                    className="inline-block bg-white/70 backdrop-blur-lg h-full"
                   >
                     <MenuIcon
                       fontSize="large"
-                      style={{ color: "#d79eff", cursor: "pointer" }}
+                      style={{ color: "#6f4b79", cursor: "pointer" }}
                     />
                   </button>
                   <SwipeableDrawer
