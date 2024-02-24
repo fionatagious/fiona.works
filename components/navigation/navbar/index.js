@@ -108,7 +108,7 @@ const Navbar = () => {
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
   return (
-    <div className="w-full h-20 sticky top-0 bg-slate-950 opacity-90 z-50">
+    <div className="w-full h-20 sticky top-0 bg-white/30  backdrop-blur border-b border-gray z-50">
       <div className="container mx-auto px-4 h-full py-1">
         <div className="flex justify-end gap-x-4 items-center h-full">
           {/* sticky menu */}

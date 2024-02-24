@@ -2,12 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="mx-0 bg-slate-950 z-50">
-      <div className="flex justify-center text-center text-pink font-mono px-6">
+    <footer className="mx-0 bg-white border-gray border-t z-50">
+      <div className="flex justify-center text-center text-mauve font-bold font-mono px-6">
         <span>
           Designed & built by Fiona Tang, using&nbsp;
           <a
-            className="text-white"
+            className="text-eggplant"
             href="https://nextjs.org/"
             target="_blank"
             tabIndex={-1}
@@ -16,7 +16,7 @@ const Footer = () => {
           </a>
           ,&nbsp;
           <a
-            className="text-white"
+            className="text-eggplant"
             href="https://mui.com/material-ui/"
             target="_blank"
             tabIndex={-1}
@@ -25,7 +25,7 @@ const Footer = () => {
           </a>
           ,&nbsp;
           <a
-            className="text-white"
+            className="text-eggplant"
             href="https://react.dev/"
             target="_blank"
             tabIndex={-1}
@@ -34,7 +34,7 @@ const Footer = () => {
           </a>
           , and&nbsp;
           <a
-            className="text-white"
+            className="text-eggplant"
             href="https://tailwindcss.com"
             target="_blank"
             tabIndex={-1}

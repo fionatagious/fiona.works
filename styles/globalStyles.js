@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	.nav-animation {
-		color: var(--pink);
+		color: var(--eggplant);
 		font-size: var(--fs-sm);
 		font-family: var(--font-mono);
 		text-decoration: none;
@@ -51,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
 		height: 2px;
 		bottom: 0;
 		left: 0;
-		background-color: var(--pink);
+		background-color: var(--eggplant);
 	}
 
 	.nav-animation:hover:after {
