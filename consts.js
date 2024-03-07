@@ -293,8 +293,8 @@ export const articles = [
     organizationName: `Digital Privacy News`,
     title: `'A Terrible Idea'`,
     summary: `Amazon Expands Contactless Palm Technology During Pandemic`,
-    href: "https://digitalprivacy.news/2021/04/13/a-terrible-idea/",
-    src: "https://digitalprivacy.news/wp-content/uploads/2021/04/AmazonOne7.png",
+    href: "https://web.archive.org/web/20230922075054/https://digitalprivacy.news/2021/04/13/a-terrible-idea/",
+    src: "/images/amazon-one-palm-scanner.jpg",
     alt: "a photo of a hand hovering over a blue grid representing a palm scanner",
   },
   {
@@ -302,9 +302,9 @@ export const articles = [
     organizationName: `Digital Privacy News`,
     title: `'Giving It Out Like Candy'`,
     summary: `Calif. Bill Seeks to Stop Police From Unbridled License-Plate Data Collection`,
-    href: "https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/",
-    src: "https://digitalprivacy.news/wp-content/uploads/2021/04/LPR-Data-845x450.png?crop=1",
-    alt: "a screenshot of software used to view license plate data",
+    href: "https://web.archive.org/web/20230922080456/https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/",
+    src: "/images/alpr-software.jpg",
+    alt: "a screenshot of software used by law enforcement to view license plate data",
   },
   {
     id: 5,

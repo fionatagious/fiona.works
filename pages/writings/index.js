@@ -1,5 +1,6 @@
 import React from "react";
 import { articles } from "../../consts";
+import Image from "next/image";
 import Grid from "@mui/material/Grid";
 
 export default function Writings() {
@@ -29,11 +30,13 @@ export default function Writings() {
             tabIndex={0}
           >
             <div className="flex w-full sm:h-[150px] justify-center">
-              <img
+              <Image
                 className="object-contain h-full"
                 src={child.src}
                 alt={child.alt}
-              ></img>
+                width={200}
+                height={200}
+              ></Image>
             </div>
 
             <div>
