@@ -61,6 +61,31 @@ export const skillsData = [
 export const resumeBullets = [
   {
     index: 0,
+    alias: "braven",
+    jobTitle: "Senior Software Engineer",
+    organization: "Braven",
+    datesWorked: "3/2024 – Present",
+    children: [
+      {
+        id: 1,
+        bullet: `Build and maintain integrations with third-party platforms (Salesforce, Pathify, Canvas).`,
+      },
+      {
+        id: 2,
+        bullet: `Collaborate cross-functionally to refine, build, and QA user-facing features (HTML, CSS, vanilla Javascript).`,
+      },
+      {
+        id: 3,
+        bullet: `Create processes to improve developer workflows and documentation (bug reports, pull request, flaky tests).`,
+      },
+      {
+        id: 4,
+        bullet: `Pair program with other developers to troubleshoot, give and receive feedback, and bugfix features.`,
+      },
+    ],
+  },
+  {
+    index: 1,
     alias: "tmp",
     jobTitle: "Software Engineer",
     organization: "The Mom Project",
@@ -113,7 +138,7 @@ export const resumeBullets = [
     ],
   },
   {
-    index: 1,
+    index: 2,
     alias: "cfa",
     jobTitle: "Software Engineering Fellow",
     organization: "Code for America",
@@ -157,7 +182,7 @@ export const resumeBullets = [
     ],
   },
   {
-    index: 2,
+    index: 3,
     alias: "acumen",
     jobTitle: "Data and Policy Analyst - Statistical Programmer",
     organization: "Acumen",
@@ -186,7 +211,7 @@ export const resumeBullets = [
     ],
   },
   {
-    index: 3,
+    index: 4,
     alias: "uber",
     jobTitle: "Data Analyst",
     organization: "Uber",
@@ -221,7 +246,7 @@ export const resumeBullets = [
     ],
   },
   {
-    index: 4,
+    index: 5,
     alias: "cm",
     jobTitle: "Data Associate",
     organization: "Change Machine",
@@ -246,7 +271,7 @@ export const resumeBullets = [
     ],
   },
   {
-    index: 5,
+    index: 6,
     alias: "aclu",
     jobTitle: "Legal Assistant",
     organization: "ACLU",
