@@ -5,8 +5,8 @@ const ExternalLinkIcon = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 64 64"
-      width="28px"
-      height="28px"
+      width="20px"
+      height="20px"
       fill="#956f9f"
       style={{ marginLeft: "0.3rem" }}
     >
