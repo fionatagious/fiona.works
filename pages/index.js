@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import About from "/pages/about/index.js";
 import Contact from "/pages/contact/index.js";
@@ -7,8 +8,8 @@ import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
 import Intro from "/pages/intro/index.js";
 import Navbar from "/components/navigation/navbar";
+import SectionHeading from "/components/SectionHeading";
 import Writings from "/pages/writings/index.js";
-import Head from "next/head";
 
 export default function Home() {
   return (
@@ -27,21 +28,11 @@ export default function Home() {
               <Intro />
             </Grid>
             <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
-              <div
-                id="about"
-                className="heading font-bold text-md text-center sm:text-left text-2xl sm:text-3xl my-4"
-              >
-                About me
-              </div>
+              <SectionHeading id="about" headingText="About Me" />
               <About />
             </Grid>
             <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
-              <div
-                id="experience"
-                className="heading font-bold text-md text-center sm:text-left text-2xl sm:text-3xl my-4"
-              >
-                Experience
-              </div>
+              <SectionHeading id="experience" headingText="Experience" />
               <ExperiencePanel />
             </Grid>
             <Grid
@@ -49,12 +40,7 @@ export default function Home() {
               xs={12}
               className="px-2 md:px-12 xl:pl-30 4xl:pl-32 py-20 my-20"
             >
-              <div
-                id="media"
-                className="heading font-bold text-md text-center sm:text-left text-2xl sm:text-3xl my-4"
-              >
-                Writings & Media
-              </div>
+              <SectionHeading id="media" headingText="Writings & Media" />
               <Writings />
             </Grid>
             <Grid item xs={12} className="px-2 md:px-12 xl:px-32 py-20 my-20">
