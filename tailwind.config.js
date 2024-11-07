@@ -43,6 +43,16 @@ module.exports = {
         pink: "#d79eff", // site navigation links, resume position titles
         lightMauve: "#c098ca",
       },
+      animation: {
+        fade: "fade 1s ease-in-out",
+        fadeSlow: "fade 1700ms ease-in-out",
+      },
+      keyframes: {
+        fade: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      },
     },
   },
   plugins: [],
