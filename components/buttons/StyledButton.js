@@ -6,7 +6,7 @@ const StyledButton = styled.div.withConfig({
   color: ${(props) => `${props.buttonColor}`};
   background-color: #fff;
   border: ${(props) => `1px solid ${props.buttonColor}`};
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0.75rem 1rem;
   line-height: 1;
   text-decoration: none;

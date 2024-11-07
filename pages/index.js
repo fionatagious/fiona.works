@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <div className="w-full">
         <Navbar />
-        <div className="w-full bg-slate-50">
+        <div className="w-full bg-gray-50">
           <Grid
             container
             className="flex flex-col min-h-1/2 px-4 3xl:px-64 4xl:px-96 pt-24 sm:pt-32"

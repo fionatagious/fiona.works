@@ -25,7 +25,7 @@ ResumeButton.propTypes = {
 
 ResumeButton.defaultProps = {
   buttonLabel: "View my resume",
-  buttonColor: "#956f9f",
+  buttonColor: "#6f4b79",
 };
 
 export default ResumeButton;
