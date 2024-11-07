@@ -65,6 +65,8 @@ export const resumeBullets = [
     jobTitle: "Senior Software Engineer",
     organization: "Braven",
     datesWorked: "3/2024 – Present",
+    summary:
+      "Braven is a non-profit organization that empowers promising young people on their path to college graduation and strong first jobs. At Braven, I build user flows to help students from low-income and marginalized backgrounds access resources and opportunities.",
     children: [
       {
         id: 1,
@@ -86,6 +88,8 @@ export const resumeBullets = [
     jobTitle: "Software Engineer",
     organization: "The Mom Project",
     datesWorked: "11/2021 – 9/2023",
+    summary:
+      "The Mom Project is a digital talent marketplace and community that connects professionally accomplished job seekers with world-class companies. I worked on the Growth team, which was focused on user acquisition and retention.",
     children: [
       {
         id: 1,
@@ -139,6 +143,7 @@ export const resumeBullets = [
     jobTitle: "Software Engineering Fellow",
     organization: "Code for America",
     datesWorked: "10/2020 – 7/2021",
+    summary: `Code for America is a non-profit organization that uses the principles and practices of the tech industry to improve how government provides public services to Americans. As a Software Engineering fellow, I worked with a government agency of Adams County, Colorado to build an app that helped people experiencing homelessness access temporary shelter.`,
     children: [
       {
         id: 1,
@@ -183,6 +188,8 @@ export const resumeBullets = [
     jobTitle: "Data and Policy Analyst - Statistical Programmer",
     organization: "Acumen",
     datesWorked: "1/2020 – 2/2021",
+    summary:
+      "Acumen is a government consulting firm that provides data-driven solutions to federal agencies. I analyzed data from the Medicare Diabetes Prevention Program, a health behavior change program that helps people prevent Type 2 diabetes.",
     children: [
       {
         id: 1,
@@ -212,15 +219,16 @@ export const resumeBullets = [
     jobTitle: "Data Analyst",
     organization: "Uber",
     datesWorked: "9/2018 – 3/2019",
+    summary: `On the Uber Eats team, I analyzed data on user retention and acquisition and helped to inform an overarching product roadmap.`,
     children: [
       {
         id: 1,
         bullet: `Built pipelines for querying and analysis using Uber's
-        internal ingestion tools, Watchtower and Kirby.`,
+        internal ingestion tools.`,
       },
       {
         id: 2,
-        bullet: `Wrote advanced queries to build dashboard on growth KPIs, such as
+        bullet: `Wrote queries to build dashboard on growth KPIs, such as
         retention and average revenue per user (SQL).`,
       },
       {
@@ -247,6 +255,7 @@ export const resumeBullets = [
     jobTitle: "Data Associate",
     organization: "Change Machine",
     datesWorked: "10/2017 – 4/2018",
+    summary: `Change Machine is a financial coaching platform that helps low-income individuals build assets and reduce debt. I worked as an analyst to track the financial outcomes of clients and evaluate the efficacy of our programs.`,
     children: [
       {
         id: 1,
@@ -273,6 +282,7 @@ export const resumeBullets = [
     organization: "ACLU",
     team: "Speech, Privacy, and Technology Project",
     datesWorked: "4/2016 – 10/2017",
+    summary: `The ACLU is a non-profit organization that works to defend and preserve individual rights and liberties. I supported a team of attorneys on the Speech, Privacy, and Technology Project, which focuses on the intersection of privacy and free speech in the digital age.`,
     children: [
       {
         id: 1,
