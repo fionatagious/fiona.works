@@ -26,10 +26,10 @@ export default function Overview() {
             <br />
             📫&nbsp;&nbsp;Write to me at&nbsp;
             <a
-              href="mailto:fiona@fiona.works"
+              href="mailto:fionatagious@gmail.com"
               className="text-pink font-semibold"
             >
-              fiona@fiona.works
+              fionatagious@gmail.com
             </a>
           </div>
         </CardContent>

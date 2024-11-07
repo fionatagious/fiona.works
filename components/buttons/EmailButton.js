@@ -5,7 +5,7 @@ import StyledButton from "/components/buttons/StyledButton";
 
 const EmailButton = ({ buttonLabel, ...props }) => {
   return (
-    <Link href="mailto:fiona@fiona.works" passHref>
+    <Link href="mailto:fionatagious@gmail.com" passHref>
       <StyledButton {...props}>{buttonLabel}</StyledButton>
     </Link>
   );
