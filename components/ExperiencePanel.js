@@ -139,7 +139,7 @@ export default function VerticalTabs() {
             key={item.index}
             value={value}
             index={item.index}
-            className="bg-white rounded-tr-lg rounded-br-lg p-2 z-4 shadow-lg shadow-gray-200"
+            className="bg-white rounded-tr-lg rounded-br-lg p-2 z-4 border border-gray-400 shadow-lg shadow-gray-200"
           >
             <div className="text-mauve font-mono font-bold text-lg">
               {item.jobTitle}
