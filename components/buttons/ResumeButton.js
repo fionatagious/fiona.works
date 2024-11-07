@@ -1,12 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
+
+import ExternalLinkIcon from "/components/icons/ExternalLinkIcon";
 import Link from "next/link";
 import StyledButton from "/components/buttons/StyledButton";
 
 const ResumeButton = ({ buttonLabel, ...props }) => {
   return (
-    <Link href="/resume" passHref>
-      <StyledButton {...props}>{buttonLabel}</StyledButton>
+    <Link href="/resume" target="_blank" passHref>
+      <StyledButton {...props}>
+        <div className="inline-flex items-center">
+          {buttonLabel}
+          <ExternalLinkIcon />
+        </div>
+      </StyledButton>
     </Link>
   );
 };
@@ -17,8 +24,8 @@ ResumeButton.propTypes = {
 };
 
 ResumeButton.defaultProps = {
-  buttonLabel: "Resume",
-  buttonColor: "#d79eff",
+  buttonLabel: "View my resume",
+  buttonColor: "#956f9f",
 };
 
 export default ResumeButton;

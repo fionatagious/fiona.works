@@ -1,7 +1,6 @@
 import React from "react";
 import GithubIcon from "/components/icons/GithubIcon";
 import LinkedInIcon from "/components/icons/LinkedInIcon";
-import TwitterIcon from "/components/icons/TwitterIcon";
 
 export default function SocialMedia() {
   return (
@@ -12,13 +11,6 @@ export default function SocialMedia() {
         className="darken"
       >
         <GithubIcon />
-      </a>
-      <a
-        href="https://twitter.com/fionatagious"
-        target="_blank"
-        className="darken"
-      >
-        <TwitterIcon />
       </a>
       <a
         href="https://linkedin.com/in/fionaroni"
