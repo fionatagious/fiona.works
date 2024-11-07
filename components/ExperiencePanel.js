@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Box from "@mui/material/Box";
-import ExternalLinkIcon from "/components/icons/ExternalLinkIcon";
+import ResumeButton from "/components/buttons/ResumeButton";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import { resumeBullets } from "../consts";
@@ -90,9 +90,9 @@ export default function VerticalTabs() {
     setValue(newValue);
   };
 
-  const handleKeyPress = (event) => {
+  const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      window.open("/resume", "_blank");
+      window.location = "mailto:fionatagious@gmail.com";
     }
   };
 
@@ -145,24 +145,17 @@ export default function VerticalTabs() {
               {item.jobTitle}
             </div>
             <div className="text-sm sm:text-lg text-slate-950 mt-2 sm:ml-9">
-              <ul className="list-disc marker:text-mauve">
-                {item.children.map((child) => (
-                  <li key={child.id}>{child.bullet}</li>
-                ))}
-              </ul>
+              <ul className="list-disc marker:text-mauve">{item.summary}</ul>
             </div>
           </ExperiencePanel>
         ))}
       </Box>
-      <div className="flex flex-col" onKeyDown={handleKeyPress} tabIndex={0}>
-        <a
-          href="/resume"
-          target="_blank"
-          className="darken max-w-fit flex flex-grow text-mauve font-bold self-center mt-4 sm:self-end pr-0 sm:pr-8"
-        >
-          View my full resume&nbsp;
-          <ExternalLinkIcon />
-        </a>
+      <div
+        className="flex justify-center mt-6 mb-2"
+        tabIndex={0}
+        onKeyDown={handleKeyDown}
+      >
+        <ResumeButton />
       </div>
     </>
   );
