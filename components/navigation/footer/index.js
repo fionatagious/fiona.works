@@ -14,16 +14,7 @@ const Footer = () => {
           >
             Next
           </a>
-          ,&nbsp;
-          <a
-            className="text-eggplant"
-            href="https://mui.com/material-ui/"
-            target="_blank"
-            tabIndex={-1}
-          >
-            Material
-          </a>
-          ,&nbsp;
+          &nbsp;and&nbsp;
           <a
             className="text-eggplant"
             href="https://react.dev/"
@@ -31,15 +22,6 @@ const Footer = () => {
             tabIndex={-1}
           >
             React
-          </a>
-          , and&nbsp;
-          <a
-            className="text-eggplant"
-            href="https://tailwindcss.com"
-            target="_blank"
-            tabIndex={-1}
-          >
-            Tailwind
           </a>
           .
         </span>
