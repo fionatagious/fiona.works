@@ -39,12 +39,18 @@ const Navbar = () => {
     },
     {
       id: 3,
+      text: "Projects",
+      href: "projects",
+      nodeRef: useRef(null),
+    },
+    {
+      id: 4,
       text: "Media",
       href: "media",
       nodeRef: useRef(null),
     },
     {
-      id: 4,
+      id: 5,
       text: "Contact",
       href: "contact",
       nodeRef: useRef(null),
