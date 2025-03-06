@@ -385,4 +385,12 @@ export const projects = [
     src: "/images/aqi-viewer.jpg",
     alt: "display of air quality in Bangkok",
   },
+  {
+    id: 5,
+    projectName: `Severe Weather Action Plan app`,
+    summary: `Emergency shelter for people experiencing homelessness in Adams County, Colorado`,
+    href: "https://swapp-1.herokuapp.com/users/sign_in",
+    src: "/images/swapp.jpg",
+    alt: "news reports of Denver's 2021 blizzard becoming the #4 largest snowstorm of all-time",
+  },
 ];
