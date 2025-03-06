@@ -70,15 +70,19 @@ export const resumeBullets = [
     children: [
       {
         id: 1,
-        bullet: `Collaborate cross-functionally to refine, build, and QA user-facing features (HTML, CSS, vanilla Javascript). Build and maintain integrations with third-party platforms (Salesforce, Pathify, Canvas).`,
+        bullet: `Build and maintain integrations with third-party platforms, applying software design best practices to enhance code quality.`,
       },
       {
         id: 2,
-        bullet: `Create processes to improve developer workflows and documentation (bug reports, pull request, flaky tests).`,
+        bullet: `Collaborate cross-functionally to refine, build, and QA user-facing features.`,
       },
       {
         id: 3,
-        bullet: `Pair program with other developers to troubleshoot, give and receive feedback, and bugfix features.`,
+        bullet: `Create processes to improve work flows, documentation, and developer guides for a team of six developers (bug reports, pull requests, flaky tests).`,
+      },
+      {
+        id: 4,
+        bullet: `Identify tech debt and areas of the codebase that are worthwhile to refactor.`,
       },
     ],
   },
