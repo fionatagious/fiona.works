@@ -15,16 +15,9 @@ const leadershipData = [
   {
     role: "Web Developer",
     organization: "Radical Engineers",
-    date: "9/2023 – Present",
+    date: "9/2023 – 3/2024",
     description:
       "Partner with social impact organizations to build software that helps them achieve their missions.",
-  },
-  {
-    role: "Finance and Advancement Chair",
-    organization: "New Leaders Council",
-    date: "7/2021 – Present",
-    description:
-      "Lead the Fundraiser & Capstone components of the NLC Oakland fellowship. Collaborate with Board members on recruitment and selections of fellows. Develop curriculum content, plan events and fundraisers, and connect with local political leaders.",
   },
   {
     role: "Tapistry Founder & Co-Chair",
@@ -32,6 +25,20 @@ const leadershipData = [
     date: "1/2023 – 9/2023",
     description:
       "Founded the first AAPI employee resource group at The Mom Project. Recruited new members and organized company-wide events to build community and bring awareness to issues impacting the AAPI community.",
+  },
+  {
+    role: "Finance and Advancement Chair",
+    organization: "New Leaders Council",
+    date: "6/2021 – 7/2022",
+    description:
+      "Lead the Fundraiser & Capstone components of the NLC Oakland fellowship. Collaborate with Board members on recruitment and selections of fellows. Develop curriculum content, plan events and fundraisers, and connect with local political leaders.",
+  },
+  {
+    role: "Cohort Co-Chair & Finance Committee Co-Lead",
+    organization: "New Leaders Council",
+    date: "1/2021 – 6/2021",
+    description:
+      "Developed fundraising strategies to reach 2021 fellowship cohort's fundraising goal of $20k. Established Finance Committee processes and project management tools. Served as liaison between Finance Committee and Oakland Chapter Board.",
   },
   {
     role: "Community Organizer & Canvasser",
