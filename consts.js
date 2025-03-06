@@ -337,7 +337,7 @@ export const articles = [
     organizationName: `Digital Privacy News`,
     title: `'Giving It Out Like Candy'`,
     summary: `Calif. Bill Seeks to Stop Police From Unbridled License-Plate Data Collection`,
-    href: "https://web.archive.org/web/20230922080456/https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy/",
+    href: "https://web.archive.org/web/20230922080456/https://digitalprivacy.news/2021/04/16/giving-it-out-like-candy",
     src: "/images/alpr-software.jpg",
     alt: "a screenshot of software used by law enforcement to view license plate data",
   },
@@ -349,5 +349,40 @@ export const articles = [
     href: "https://www.aclu.org/news/privacy-technology/aclu-foia-seeks-information-about-how-government",
     src: "https://www.aclu.org/wp-content/uploads/2019/09/surveillance_equip_by_thomas_hawk_credit-1000x666.jpg",
     alt: "",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    projectName: `Dish Deets`,
+    summary: `ChatGPT-powered dish identifier for dishes from cuisines around the world`,
+    href: "https://dishdeets.com",
+    src: "/images/dish-deets.jpg",
+    alt: "a web page showing search results from a dish description written in English",
+  },
+  {
+    id: 2,
+    projectName: `Ward Wise`,
+    summary: `Neighborhood spending in Chicago`,
+    href: "https://www.wardwisechicago.org",
+    src: "/images/ward-wise.jpg",
+    alt: "map of neighborhood spending in Chicago and search bar",
+  },
+  {
+    id: 3,
+    projectName: `Caring for Girls`,
+    summary: `Reproductive care for women and girls in Sierra Leone`,
+    href: "https://caringforgirls.org",
+    src: "/images/caring-for-girls.jpg",
+    alt: "a girl wearing a backpack, standing with her peers, smiles at the camera",
+  },
+  {
+    id: 4,
+    projectName: `Air Quality Index (AQI) Viewer`,
+    summary: `Air Quality Index (AQI) viewer`,
+    href: "#",
+    src: "/images/aqi-viewer.jpg",
+    alt: "display of air quality in Bangkok",
   },
 ];

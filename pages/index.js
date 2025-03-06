@@ -8,6 +8,7 @@ import Footer from "/components/navigation/footer";
 import Grid from "@mui/material/Grid";
 import Intro from "/pages/intro/index.js";
 import Navbar from "/components/navigation/navbar";
+import Projects from "/pages/projects/index.js";
 import SectionHeading from "/components/SectionHeading";
 import Writings from "/pages/writings/index.js";
 
@@ -34,6 +35,14 @@ export default function Home() {
             <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
               <SectionHeading id="experience" headingText="Experience" />
               <ExperiencePanel />
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              className="px-2 md:px-12 xl:pl-30 4xl:pl-32 py-20 my-20"
+            >
+              <SectionHeading id="projects" headingText="Projects" />
+              <Projects />
             </Grid>
             <Grid
               item
