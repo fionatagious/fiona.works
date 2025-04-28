@@ -32,7 +32,7 @@ export default function Projects() {
             <div className="flex w-full sm:h-[150px] justify-center">
               <Image
                 className="object-contain h-full"
-                src={child.src}
+                src={`/images/${child.src}`}
                 alt={child.alt}
                 width={200}
                 height={200}
