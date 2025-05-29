@@ -20,7 +20,7 @@ export default function Writings() {
         {articles.map((child) => (
           <div
             key={child.id}
-            className="media text-left text-sm sm:text-lg text-mauve min-w-[212px] w-[340px] sm:w-[200px] my-1 mx-1 p-5 border rounded-md border-gray-400 hover:border-slate-950 hover:brightness-75 bg-white hover:cursor-pointer hover:translate-y-[-2px]"
+            className="media text-left text-sm sm:text-lg text-mauve bg-white min-w-[212px] w-[340px] sm:w-[200px] my-1 mx-1 p-5 border rounded-md border-gray-400 hover:border-slate-950 hover:bg-eggplant/10 hover:cursor-pointer"
             onClick={() => {
               window.open(child.href, "_blank");
             }}

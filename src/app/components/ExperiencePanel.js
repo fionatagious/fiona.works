@@ -163,7 +163,7 @@ export default function VerticalTabs() {
         onKeyDown={handleKeyDown}
       >
         <Button
-          className="text-mauve font-normal font-mono border-[1px] border-slate-950 rounded-md p-4 group hover:bg-mauve hover:text-white transition duration-200 ease-in-out"
+          className="text-eggplant bg-lightMauve/20 font-normal font-mono border-[1px] border-slate-950 rounded-lg p-4 group hover:bg-eggplant hover:text-white transition duration-200 ease-in-out"
           label="&nbsp;View my resume"
           onClick={handleClick}
           icon={<ExternalLinkIcon />}

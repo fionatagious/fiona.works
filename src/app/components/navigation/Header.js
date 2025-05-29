@@ -12,6 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Drawer } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { Button } from "@/app/components/buttons/Button";
 
 const Header = () => {
   const handleScroll = (id) => {
@@ -39,26 +40,26 @@ const Header = () => {
       href: "about",
       nodeRef: useRef(null),
     },
+    // {
+    //   id: 2,
+    //   text: "Experience",
+    //   href: "experience",
+    //   nodeRef: useRef(null),
+    // },
     {
       id: 2,
-      text: "Experience",
-      href: "experience",
-      nodeRef: useRef(null),
-    },
-    {
-      id: 3,
       text: "Projects",
       href: "projects",
       nodeRef: useRef(null),
     },
     {
-      id: 4,
+      id: 3,
       text: "Media",
       href: "media",
       nodeRef: useRef(null),
     },
     {
-      id: 5,
+      id: 4,
       text: "Contact",
       href: "contact",
       nodeRef: useRef(null),

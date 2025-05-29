@@ -2,6 +2,7 @@ import React from "react";
 import { projects } from "../../../consts";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
+import Tag from "@/app/components/Tag";
 
 export default function Projects() {
   const handleKeyDown = (event, href) => {
@@ -15,12 +16,12 @@ export default function Projects() {
       <Grid
         item
         xs={12}
-        className="flex flex-row flex-wrap justify-center px-0 4xl:px-6"
+        className="flex flex-wrap justify-center px-0 4xl:px-6"
       >
         {projects.map((child) => (
           <div
             key={child.id}
-            className="media text-left text-sm sm:text-lg text-mauve min-w-[212px] w-[340px] sm:w-[200px] my-1 mx-1 p-5 border rounded-md border-gray-400 hover:border-slate-950 hover:brightness-75 bg-white hover:cursor-pointer hover:translate-y-[-2px]"
+            className="media text-left text-sm bg-white sm:text-lg text-mauve min-w-[212px] w-[340px] sm:w-[200px] my-1 mx-1 p-5 border rounded-md border-gray-400 hover:border-slate-950 hover:bg-eggplant/10 hover:brightness-75 hover:cursor-pointer"
             onClick={() => {
               window.open(child.href, "_blank");
             }}
@@ -45,6 +46,11 @@ export default function Projects() {
               </div>
               <div className="text-sm text-gray-600 font-normal whitespace-normal line-clamp-4 truncate">
                 {child.summary}
+              </div>
+              <div className="flex flex-wrap mt-4 gap-2 ">
+                {child.tags.map((tag, index) => (
+                  <Tag key={index} label={tag} />
+                ))}
               </div>
             </div>
           </div>

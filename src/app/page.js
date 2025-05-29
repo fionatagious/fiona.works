@@ -6,6 +6,7 @@ import Head from "next/head";
 import Grid from "@mui/material/Grid";
 import Header from "@/app/components/navigation/Header";
 import Footer from "@/app/components/navigation/Footer";
+import Tag from "@/app/components/Tag";
 
 import ExperiencePanel from "@/app/components/ExperiencePanel";
 import SectionHeading from "@/app/components/SectionHeading";
@@ -37,10 +38,10 @@ export default function Home() {
               <SectionHeading id="about" headingText="About Me" />
               <About />
             </Grid>
-            <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
+            {/* <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
               <SectionHeading id="experience" headingText="Experience" />
               <ExperiencePanel />
-            </Grid>
+            </Grid> */}
             <Grid
               item
               xs={12}
