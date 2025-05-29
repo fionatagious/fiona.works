@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 
 // hamburger menu
 import Box from "@mui/material/Box";
@@ -32,26 +32,31 @@ const Header = () => {
       id: 1,
       text: "About",
       href: "about",
+      nodeRef: useRef(null),
     },
     {
       id: 2,
       text: "Experience",
       href: "experience",
+      nodeRef: useRef(null),
     },
     {
       id: 3,
       text: "Projects",
       href: "projects",
+      nodeRef: useRef(null),
     },
     {
       id: 4,
       text: "Media",
       href: "media",
+      nodeRef: useRef(null),
     },
     {
       id: 5,
       text: "Contact",
       href: "contact",
+      nodeRef: useRef(null),
     },
   ];
 
