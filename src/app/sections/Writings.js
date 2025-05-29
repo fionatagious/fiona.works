@@ -46,7 +46,7 @@ export default function Writings() {
               <div className="text-mauve font-mono text-sm leading-6">
                 {child.organizationName}
               </div>
-              <div className="text-sm text-gray-600 font-normal whitespace-normal line-clamp-4 truncate">
+              <div className="text-sm text-gray-600 font-mono whitespace-normal line-clamp-4 truncate">
                 {child.summary}
               </div>
             </div>
