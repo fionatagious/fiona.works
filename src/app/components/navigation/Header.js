@@ -147,14 +147,16 @@ const Header = () => {
                       style={{ color: "#6f4b79", cursor: "pointer" }}
                     />
                   </button>
-                  <SwipeableDrawer
-                    anchor={anchor}
-                    open={state[anchor]}
-                    onClose={toggleDrawer(anchor, false)}
-                    onOpen={toggleDrawer(anchor, true)}
-                  >
-                    {list(anchor)}
-                  </SwipeableDrawer>
+                  {typeof window !== "undefined" && (
+                    <SwipeableDrawer
+                      anchor={anchor}
+                      open={state[anchor]}
+                      onClose={toggleDrawer(anchor, false)}
+                      onOpen={toggleDrawer(anchor, true)}
+                    >
+                      {list(anchor)}
+                    </SwipeableDrawer>
+                  )}
                 </React.Fragment>
               ))}
             </div>
