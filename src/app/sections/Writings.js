@@ -1,5 +1,5 @@
 import React from "react";
-import { articles } from "../../consts";
+import { articles } from "../../../consts";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
 

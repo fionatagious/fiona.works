@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import SocialMedia from "/components/SocialMedia";
+import SocialMedia from "@/app/components/SocialMedia";
 
 export default function Intro() {
   return (

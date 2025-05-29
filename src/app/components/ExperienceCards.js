@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
-import { resumeBullets } from "../consts";
+import { resumeBullets } from "../../../consts";
 import Typography from "@mui/material/Typography";
 
 export default function ExperienceCards() {

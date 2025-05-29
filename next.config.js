@@ -18,4 +18,7 @@ module.exports = {
       },
     ],
   },
+  experimental: {
+    appDir: true, // enables the app/ directory routing (App Router)
+  },
 };

@@ -1,13 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Button } from "@/app/components/buttons/Button";
+import ExternalLinkIcon from "@/app/components/icons/ExternalLinkIcon";
 
 import Box from "@mui/material/Box";
-import ResumeButton from "/components/buttons/ResumeButton";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
-import { resumeBullets } from "../consts";
 import { styled } from "@mui/material/styles";
 import { useTheme } from "@mui/material/styles";
+
+import { resumeBullets } from "../../../consts";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const StyledTabs = styled((props) => (
@@ -54,6 +56,11 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
     },
   })
 );
+
+const handleClick = () => {
+  // open the resume in a new tab
+  window.open("/resume", "_blank");
+};
 
 function ExperiencePanel(props) {
   const { children, value, index, ...other } = props;
@@ -155,7 +162,12 @@ export default function VerticalTabs() {
         tabIndex={0}
         onKeyDown={handleKeyDown}
       >
-        <ResumeButton />
+        <Button
+          className="text-mauve font-normal font-mono border-2 border-slate-950 rounded-md p-4 group hover:bg-mauve hover:text-white transition duration-200 ease-in-out"
+          label="&nbsp;View my resume"
+          onClick={handleClick}
+          icon={<ExternalLinkIcon />}
+        />
       </div>
     </>
   );

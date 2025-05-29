@@ -1,16 +1,20 @@
-import React from "react";
-import Head from "next/head";
+"use client";
 
-import About from "/pages/about/index.js";
-import Contact from "/pages/contact/index.js";
-import ExperiencePanel from "/components/ExperiencePanel";
-import Footer from "/components/navigation/footer";
+import React from "react";
+import GlobalStyle from "../../styles/globalStyles";
+import Head from "next/head";
 import Grid from "@mui/material/Grid";
-import Intro from "/pages/intro/index.js";
-import Navbar from "/components/navigation/navbar";
-import Projects from "/pages/projects/index.js";
-import SectionHeading from "/components/SectionHeading";
-import Writings from "/pages/writings/index.js";
+import Header from "@/app/components/navigation/Header";
+import Footer from "@/app/components/navigation/Footer";
+
+import ExperiencePanel from "@/app/components/ExperiencePanel";
+import SectionHeading from "@/app/components/SectionHeading";
+
+import About from "./sections/About";
+import Intro from "./sections/Intro";
+import Projects from "./sections/Projects";
+import Writings from "./sections/Writings";
+import Contact from "./sections/Contact";
 
 export default function Home() {
   return (
@@ -18,9 +22,10 @@ export default function Home() {
       <Head>
         <title>Fiona Tang</title>
       </Head>
+      <Header />
       <div className="w-full">
-        <Navbar />
         <div className="w-full bg-gray-50">
+          <GlobalStyle />
           <Grid
             container
             className="flex flex-col min-h-1/2 px-4 3xl:px-64 4xl:px-96 pt-24 sm:pt-32"
@@ -63,8 +68,8 @@ export default function Home() {
             </Grid>
           </Grid>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+"use client";
+import React from "react";
 
 // hamburger menu
 import Box from "@mui/material/Box";
@@ -12,7 +13,7 @@ import { SwipeableDrawer } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-const Navbar = () => {
+const Header = () => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     var headerOffset = 150;
@@ -29,31 +30,26 @@ const Navbar = () => {
       id: 1,
       text: "About",
       href: "about",
-      nodeRef: useRef(null),
     },
     {
       id: 2,
       text: "Experience",
       href: "experience",
-      nodeRef: useRef(null),
     },
     {
       id: 3,
       text: "Projects",
       href: "projects",
-      nodeRef: useRef(null),
     },
     {
       id: 4,
       text: "Media",
       href: "media",
-      nodeRef: useRef(null),
     },
     {
       id: 5,
       text: "Contact",
       href: "contact",
-      nodeRef: useRef(null),
     },
   ];
 
@@ -162,4 +158,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

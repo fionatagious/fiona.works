@@ -1,8 +1,12 @@
 import * as React from "react";
-import EmailButton from "/components/buttons/EmailButton";
+import { Button } from "@/app/components/buttons/Button";
 import Grid from "@mui/material/Grid";
 
 export default function Contact() {
+  const handleClick = () => {
+    window.location = "mailto:fionatagious@gmail.com";
+  };
+
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       window.location = "mailto:fionatagious@gmail.com";
@@ -20,7 +24,11 @@ export default function Contact() {
           tabIndex={0}
           onKeyDown={handleKeyDown}
         >
-          <EmailButton />
+          <Button
+            className="text-mauve font-normal font-mono border-2 border-slate-950 rounded-md p-4 group hover:bg-mauve hover:text-white transition duration-200 ease-in-out"
+            label="Email me"
+            onClick={handleClick}
+          />
         </div>
       </Grid>
     </Grid>

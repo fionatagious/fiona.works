@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Head from "next/head";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -8,7 +10,7 @@ import Image from "next/image";
 // Experience section
 import Grid from "@mui/material/Grid";
 import Overview from "./overview";
-import ExperienceCards from "/components/ExperienceCards";
+import ExperienceCards from "@/app/components/ExperienceCards";
 // Skills section
 import Skills from "./skills";
 // Education section
@@ -59,17 +61,7 @@ export default function Resume() {
               justifyContent: "space-between",
             }}
           >
-            <div className="flex flex-row">
-              <a href="/">
-                <Image
-                  priority
-                  src="/images/headshot.jpg"
-                  className="profile-image-small"
-                  height={50}
-                  width={50}
-                  alt="profile-image-small"
-                />
-              </a>
+            <div className="flex flex-row w-full justify-center">
               <h2 className="full-name-text">Fiona Tang</h2>
             </div>
           </Toolbar>

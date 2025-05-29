@@ -1,6 +1,6 @@
 import React from "react";
-import GithubIcon from "/components/icons/GithubIcon";
-import LinkedInIcon from "/components/icons/LinkedInIcon";
+import GithubIcon from "@/app/components/icons/GithubIcon";
+import LinkedInIcon from "@/app/components/icons/LinkedInIcon";
 
 export default function SocialMedia() {
   return (

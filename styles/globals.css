@@ -107,3 +107,11 @@ footer {
   padding-bottom: 2.5rem;
   padding-top: 3rem;
 }
+
+.full-name-text {
+  display: grid;
+  align-content: center;
+  color: white;
+  margin-left: 1.2rem;
+  font-size: 1.5rem;
+}
