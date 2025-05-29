@@ -5,12 +5,7 @@ export const metadata = {
   description: "Fiona Tang's site",
 };
 
-export default function Layout({
-  children,
-  excludeHeader = false,
-  excludeFooter = false,
-}) {
-  console.log(excludeHeader, excludeFooter);
+export default function Layout({ children }) {
   return (
     <html lang="en">
       <body>
