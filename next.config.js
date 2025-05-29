@@ -1,4 +1,7 @@
-module.exports = {
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -15,7 +18,6 @@ module.exports = {
       },
     ],
   },
-  experimental: {
-    appDir: true, // enables the app/ directory routing (App Router)
-  },
 };
+
+module.exports = nextConfig;
