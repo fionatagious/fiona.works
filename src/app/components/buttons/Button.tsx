@@ -95,8 +95,8 @@ export const Button: FC<ButtonProps> = ({
       style={bgColor}
       {...props}
     >
-      {icon && icon}
       {label}
+      {icon && icon}
     </button>
   );
 };
