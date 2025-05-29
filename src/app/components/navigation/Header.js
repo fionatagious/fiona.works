@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 
 // hamburger menu
 import Box from "@mui/material/Box";
@@ -14,8 +14,10 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Header = () => {
-  const scrollTo = (id) => {
+  const handleScroll = (id) => {
     const element = document.getElementById(id);
+    if (!element) return; // Avoid runtime error if element is not found
+
     var headerOffset = 150;
     var elementPosition = element.getBoundingClientRect().top;
     var offsetPosition = elementPosition + window.scrollY - headerOffset;
@@ -90,7 +92,7 @@ const Header = () => {
         {navItems.map((item) => (
           <ListItem key={item.id} disablePadding>
             <ListItemButton
-              onClick={() => scrollTo(item.href)}
+              onClick={() => handleScroll(item.href)}
               tabIndex={0}
               sx={{ textAlign: "center", padding: "1rem 0" }}
             >
@@ -119,7 +121,7 @@ const Header = () => {
               <li key={item.id}>
                 <button
                   className="nav-animation"
-                  onClick={() => scrollTo(item.href)}
+                  onClick={() => handleScroll(item.href)}
                 >
                   {item.text}
                 </button>
