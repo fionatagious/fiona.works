@@ -9,7 +9,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import { SwipeableDrawer } from "@mui/material";
+import { Drawer } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
@@ -148,14 +148,13 @@ const Header = () => {
                     />
                   </button>
                   {typeof window !== "undefined" && (
-                    <SwipeableDrawer
+                    <Drawer
                       anchor={anchor}
                       open={state[anchor]}
                       onClose={toggleDrawer(anchor, false)}
-                      onOpen={toggleDrawer(anchor, true)}
                     >
                       {list(anchor)}
-                    </SwipeableDrawer>
+                    </Drawer>
                   )}
                 </React.Fragment>
               ))}

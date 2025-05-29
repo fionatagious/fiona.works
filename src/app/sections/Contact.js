@@ -25,7 +25,7 @@ export default function Contact() {
           onKeyDown={handleKeyDown}
         >
           <Button
-            className="text-mauve font-normal font-mono border-2 border-slate-950 rounded-md p-4 group hover:bg-mauve hover:text-white transition duration-200 ease-in-out"
+            className="text-mauve font-normal font-mono border-[1px] border-slate-950 rounded-md p-4 group hover:bg-mauve hover:text-white transition duration-200 ease-in-out"
             label="Email me"
             onClick={handleClick}
           />
