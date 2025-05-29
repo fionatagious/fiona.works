@@ -12,6 +12,7 @@ export default function Contact() {
       window.location = "mailto:fionatagious@gmail.com";
     }
   };
+
   return (
     <Grid container className="flex justify-center px-4">
       <Grid item xs={12} md={6} lg={5} className="grid content-start">

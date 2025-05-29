@@ -27,6 +27,11 @@ const Header = () => {
     });
   };
 
+  const [mounted, setMounted] = React.useState(false);
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const navItems = [
     {
       id: 1,
@@ -147,7 +152,7 @@ const Header = () => {
                       style={{ color: "#6f4b79", cursor: "pointer" }}
                     />
                   </button>
-                  {typeof window !== "undefined" && (
+                  {typeof window !== "undefined" && mounted && (
                     <Drawer
                       anchor={anchor}
                       open={state[anchor]}
