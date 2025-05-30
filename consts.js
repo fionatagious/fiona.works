@@ -173,8 +173,8 @@ export const resumeBullets = [
         of non-contiguous intake periods (Rails).`,
       },
       {
-        id: 5,
-        bullet: ` Wrote unit tests and validations for program activation dates and
+        id: 6,
+        bullet: `Wrote unit tests and validations for program activation dates and
         intake dates to expand application test coverage (Rails).`,
       },
     ],
