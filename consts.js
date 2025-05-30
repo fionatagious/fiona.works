@@ -70,19 +70,19 @@ export const resumeBullets = [
     children: [
       {
         id: 1,
-        bullet: `Build and maintain integrations with third-party platforms, applying software design best practices to enhance code quality.`,
+        bullet: `Build and maintain integrations with third-party platforms (Salesforce, Canvas, Pathify), applying software design best practices to enhance code quality.`,
       },
       {
         id: 2,
-        bullet: `Collaborate cross-functionally to refine, build, and QA user-facing features.`,
+        bullet: `Collaborate cross-functionally to refine, build, and QA user-facing features (Ruby on Rails, Docker).`,
       },
       {
         id: 3,
-        bullet: `Create processes to improve work flows, documentation, and developer guides for a team of six developers (bug reports, pull requests, flaky tests).`,
+        bullet: `Set up tools and processes to streamline workflows, documentation, and collaboration for a team of six developers.`,
       },
       {
         id: 4,
-        bullet: `Identify tech debt and areas of the codebase that are worthwhile to refactor.`,
+        bullet: `Developed an encrypted token system to address signup friction, reducing related product support issues.`,
       },
     ],
   },
@@ -127,14 +127,11 @@ export const resumeBullets = [
       },
       {
         id: 6,
-        bullet: `Built a new site navigation (top-level header and footer) that
-            included dropdown menus, a toggleable Login/Join modal, and a
-            hamburger menu for mobile devices, tablets, and smaller screen
-            widths on desktop.`,
+        bullet: `Developed a new, responsive site navigation for logged-out and logged-in user experiences (React).`,
       },
       {
         id: 7,
-        bullet: `Updated transactional emails with new content and designs,
+        bullet: `Setup transactional emails with new content and designs,
             following two major company re-brands. Wrote application logic to
             implement email-related workers and triggers (React, Rails,
             SendGrid, Sidekiq).`,
@@ -158,10 +155,7 @@ export const resumeBullets = [
       },
       {
         id: 2,
-        bullet: `Performed user research to better understand the social services
-        needs of people experiencing homelessness, and to better
-        understand the technology needs of caseworkers working to help the
-        unhoused.`,
+        bullet: `Performed user research to better understand the needs of people experiencing homelessness and to better understand the technology needs of caseworkers who serve them.`,
       },
       {
         id: 3,
@@ -171,18 +165,17 @@ export const resumeBullets = [
       },
       {
         id: 4,
-        bullet: `Expanded the app's admin functionality to allow for storage
+        bullet: `Produced wireframes and interactive prototypes for an intake form on mobile, tablet, and desktop (Figma, usability testing).`,
+      },
+      {
+        id: 5,
+        bullet: `Implemented an admin portal to enable caseworkers to perform critical administrative tasks (Ruby on Rails, React). Expanded the app's admin functionality to allow for storage
         of non-contiguous intake periods (Rails).`,
       },
       {
         id: 5,
         bullet: ` Wrote unit tests and validations for program activation dates and
         intake dates to expand application test coverage (Rails).`,
-      },
-      {
-        id: 6,
-        bullet: `Problem solved a technical tradeoff by writing optimized SQL to
-        query data that was unattainable using ActiveRecord.`,
       },
     ],
   },
@@ -232,7 +225,7 @@ export const resumeBullets = [
       },
       {
         id: 2,
-        bullet: `Wrote queries to build dashboard on growth KPIs, such as
+        bullet: `Wrote complex queries to build dashboard on growth KPIs, such as
         retention and average revenue per user (SQL).`,
       },
       {
@@ -357,7 +350,7 @@ export const projects = [
     id: 1,
     projectName: `Dish Deets`,
     summary: `ChatGPT-powered dish identifier for dishes from cuisines around the world`,
-    tags: ["Ruby on Rails", "Open AI API", "NextJS", "React with TypeScript"],
+    tags: ["Ruby on Rails", "OpenAI API", "NextJS", "React with TypeScript"],
     href: "https://dishdeets.com",
     src: "dish-deets.jpg",
     alt: "a web page showing search results from a dish description written in English",

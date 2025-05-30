@@ -25,7 +25,7 @@ export default function About() {
           a government consulting firm.
         </div>
         <div className="animate-fade text-left text-slate-950 text-sm sm:text-lg md:text-lg mt-2 mb-6">
-          When I'm not coding, I enjoy reading, cooking, playing the drums,
+          When I&apos;m not coding, I enjoy reading, cooking, playing the drums,
           listening to podcasts, and spending time with friends and family.
         </div>
         <Button
