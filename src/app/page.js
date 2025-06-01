@@ -32,11 +32,7 @@ export default function Home() {
             container
             className="flex flex-col min-h-1/2 px-4 3xl:px-64 4xl:px-96 pt-24 sm:pt-32"
           >
-            <Grid
-              item
-              xs={12}
-              className="px-2 md:px-12 xl:pl-30 py-20 my-20 min-h-[60vh]"
-            >
+            <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
               <Intro />
             </Grid>
             <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">

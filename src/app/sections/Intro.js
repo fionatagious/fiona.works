@@ -3,7 +3,7 @@ import { ScrollButton } from "@/app/components/buttons/ScrollButton";
 
 export default function Intro() {
   return (
-    <div className="text-center">
+    <div className="text-center min-h-[60vh]">
       <p className="font-mono text-slate-950 text-sm sm:text-lg md:text-lg mb-2">
         Hello! I'm
       </p>
