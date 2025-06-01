@@ -6,14 +6,11 @@ import Head from "next/head";
 import Grid from "@mui/material/Grid";
 import Header from "@/app/components/navigation/Header";
 import Footer from "@/app/components/navigation/Footer";
-import Tag from "@/app/components/Tag";
 
 // import ExperiencePanel from "@/app/components/ExperiencePanel";
 import SectionHeading from "@/app/components/SectionHeading";
-
-import SocialMedia from "@/app/components/SocialMedia";
-import About from "./sections/About";
 import Intro from "./sections/Intro";
+import About from "./sections/About";
 import Projects from "./sections/Projects";
 import Writings from "./sections/Writings";
 import Contact from "./sections/Contact";
@@ -32,7 +29,12 @@ export default function Home() {
             container
             className="flex flex-col min-h-1/2 px-4 3xl:px-64 4xl:px-96 pt-24 sm:pt-32"
           >
-            <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
+            <Grid
+              item
+              xs={12}
+              className="px-2 md:px-12 xl:pl-30 py-20 my-20"
+              style={{ minHeight: "65vh" }}
+            >
               <Intro />
             </Grid>
             <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">

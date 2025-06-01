@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-display: block;
 }
 
 * {
@@ -65,4 +66,12 @@ footer {
   100% {
     opacity: 0;
   }
+}
+
+.full-name-text {
+  display: grid;
+  align-content: center;
+  color: white;
+  margin-left: 1.2rem;
+  font-size: var(--fs-xl);
 }

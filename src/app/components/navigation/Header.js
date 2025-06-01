@@ -125,10 +125,10 @@ const Header = () => {
   return (
     <div className="w-full h-20 sticky top-0 bg-white/70 backdrop-blur-lg border-b border-gray z-50">
       <div className="container mx-auto px-4 h-full py-1">
+        {/* sticky menu */}
         <div className="hidden sm:flex justify-between gap-x-4 items-center h-full">
-          {/* sticky menu */}
-          <a href="/" className="hidden sm:flex">
-            <SiteLogo className="mx-2" />
+          <a href="/" className="hidden sm:flex ml-4">
+            <SiteLogo />
           </a>
           <ul className="hidden list-none sm:flex sm:gap-x-4 sm:mr-4">
             {navItems.map((item) => (
