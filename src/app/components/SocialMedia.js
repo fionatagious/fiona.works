@@ -1,10 +1,18 @@
 import React from "react";
 import GithubIcon from "@/app/components/icons/GithubIcon";
 import LinkedInIcon from "@/app/components/icons/LinkedInIcon";
+import EmailIcon from "@/app/components/icons/EmailIcon";
 
 export default function SocialMedia() {
   return (
-    <div className="flex flex-row gap-x-2">
+    <div className="flex flex-row gap-x-2 mx-2">
+      <a
+        href="https://linkedin.com/in/fionaroni"
+        target="_blank"
+        className="darken"
+      >
+        <LinkedInIcon />
+      </a>
       <a
         href="https://github.com/fionatagious"
         target="_blank"
@@ -13,11 +21,11 @@ export default function SocialMedia() {
         <GithubIcon />
       </a>
       <a
-        href="https://linkedin.com/in/fionaroni"
+        href="mailto:fionatagious@gmail.com"
         target="_blank"
         className="darken"
       >
-        <LinkedInIcon />
+        <EmailIcon />
       </a>
     </div>
   );

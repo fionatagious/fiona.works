@@ -1,18 +1,18 @@
 "use client";
 import React, { useRef } from "react";
 
-// hamburger menu
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
+import Drawer from "@mui/material/Drawer";
+import InitialLogo from "@/app/components/icons/InitialLogo";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Drawer } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import SiteLogo from "@/app/components/icons/SiteLogo";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { Button } from "@/app/components/buttons/Button";
+import { useTheme } from "@mui/material/styles";
 
 const Header = () => {
   const handleScroll = (id) => {
@@ -125,8 +125,11 @@ const Header = () => {
   return (
     <div className="w-full h-20 sticky top-0 bg-white/70 backdrop-blur-lg border-b border-gray z-50">
       <div className="container mx-auto px-4 h-full py-1">
-        <div className="flex justify-end gap-x-4 items-center h-full">
+        <div className="hidden sm:flex justify-between gap-x-4 items-center h-full">
           {/* sticky menu */}
+          <a href="/" className="hidden sm:flex">
+            <SiteLogo className="mx-2" />
+          </a>
           <ul className="hidden list-none sm:flex sm:gap-x-4 sm:mr-4">
             {navItems.map((item) => (
               <li key={item.id}>
@@ -139,34 +142,37 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          {/* hamburger menu */}
-          {!matches && (
-            <div className="flex sm:hidden">
-              {["right"].map((anchor) => (
-                <React.Fragment key={anchor}>
-                  <button
-                    onClick={toggleDrawer(anchor, true)}
-                    className="inline-block bg-white/70 backdrop-blur-lg h-full"
-                  >
-                    <MenuIcon
-                      fontSize="large"
-                      style={{ color: "#6f4b79", cursor: "pointer" }}
-                    />
-                  </button>
-                  {typeof window !== "undefined" && mounted && (
-                    <Drawer
-                      anchor={anchor}
-                      open={state[anchor]}
-                      onClose={toggleDrawer(anchor, false)}
-                    >
-                      {list(anchor)}
-                    </Drawer>
-                  )}
-                </React.Fragment>
-              ))}
-            </div>
-          )}
         </div>
+        {/* hamburger menu */}
+        {!matches &&
+          ["right"].map((anchor) => (
+            <div
+              className="flex justify-between items-center w-full h-full sm:hidden"
+              key={anchor}
+            >
+              <a href="/">
+                <InitialLogo />
+              </a>
+              <button
+                onClick={toggleDrawer(anchor, true)}
+                className="inline-block bg-white/70 backdrop-blur-lg h-full"
+              >
+                <MenuIcon
+                  fontSize="large"
+                  style={{ color: "#6f4b79", cursor: "pointer" }}
+                />
+              </button>
+              {typeof window !== "undefined" && mounted && (
+                <Drawer
+                  anchor={anchor}
+                  open={state[anchor]}
+                  onClose={toggleDrawer(anchor, false)}
+                >
+                  {list(anchor)}
+                </Drawer>
+              )}
+            </div>
+          ))}
       </div>
     </div>
   );

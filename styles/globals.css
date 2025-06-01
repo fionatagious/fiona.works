@@ -14,84 +14,10 @@ body {
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-#cc a.link {
-  text-decoration: underline #9ca3af;
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
-
-@keyframes fadeIn {
-  from {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  from {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadeIn {
-  from {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadeIn {
-  from {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadeIn {
-  from {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-.fade-in-entry {
-  animation: fadeIn 1s ease-in-out;
-  --webkit-animation: fadeIn; /* Safari, Chrome and Opera > 12.1 */
-  --moz-animation: fadeIn; /* Firefox < 16 */
-  --ms-animation: fadeIn; /* Internet Explorer */
-  --o-animation: fadeIn; /* Opera < 12.1 */
-}
-
 h1,
 h2,
 p {
@@ -108,10 +34,35 @@ footer {
   padding-top: 3rem;
 }
 
-.full-name-text {
-  display: grid;
-  align-content: center;
-  color: white;
-  margin-left: 1.2rem;
-  font-size: 1.5rem;
+/* animated scroll button */
+#animated-scroll button span::before {
+  z-index: 10;
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url("../src/app/components/buttons/circle.png");
+  background-size: contain;
+  background-repeat: no-repeat center center;
+  animation: scroll-down 2s infinite;
+  filter: brightness(0) saturate(100%) invert(22%) sepia(7%) saturate(1740%)
+    hue-rotate(245deg) brightness(89%) contrast(91%);
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translate(0, -18px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 24px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

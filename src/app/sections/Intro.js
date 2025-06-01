@@ -1,21 +1,19 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
-import SocialMedia from "@/app/components/SocialMedia";
+import { ScrollButton } from "@/app/components/buttons/ScrollButton";
 
 export default function Intro() {
   return (
-    <Grid container>
-      <Grid item xs={12} md={6} lg={5}>
-        <div id="page-name">
-          <div className="text-left font-mono text-slate-950 text-sm sm:text-lg md:text-lg mb-2">
-            Hello! My name is
-          </div>
-          <div className="fade-in-entry text-left text-page-title text-5xl text-nowrap font-mono text-eggplant mb-2">
-            Fiona Tang
-          </div>
-          <SocialMedia />
-        </div>
-      </Grid>
-    </Grid>
+    <div className="text-center">
+      <p className="font-mono text-slate-950 text-sm sm:text-lg md:text-lg mb-2">
+        Hello! I'm
+      </p>
+      <h1 className="invisible">Fiona Tang</h1>
+      <div className="text-nowrap text-eggplant text-8xl sm:text-9xl font-extrabold tracking-widest">
+        Fiona
+      </div>
+      <div id="animated-scroll" className="mt-8">
+        <ScrollButton />
+      </div>
+    </div>
   );
 }

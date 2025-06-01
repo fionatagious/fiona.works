@@ -61,8 +61,8 @@ export default function Resume() {
               justifyContent: "space-between",
             }}
           >
-            <div className="flex flex-row w-full justify-center">
-              <h2 className="full-name-text">Fiona Tang</h2>
+            <div className="full-name-text flex flex-row w-full justify-center">
+              Fiona Tang
             </div>
           </Toolbar>
           <Grid

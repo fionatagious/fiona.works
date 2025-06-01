@@ -41,6 +41,10 @@ const GlobalStyle = createGlobalStyle`
 		text-decoration: none;
 		position: relative;
 		display: inline-block;
+		button {
+  		padding: 0.5rem 1rem;
+			font-weight: bold;
+		}
 	}
 
 	.nav-animation:after {
@@ -76,10 +80,6 @@ const GlobalStyle = createGlobalStyle`
 	}
 
 	/* Resume: Images */
-	.profile-image-small {
-		border-radius: 50%;
-	}
-
 	.company-logo {
 		margin-bottom: 0.3rem;
 		display: inline-block;
