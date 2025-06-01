@@ -32,12 +32,18 @@ export default function Home() {
             <Grid
               item
               xs={12}
-              className="px-2 md:px-12 xl:pl-30 py-20 my-20"
+              className="px-2 md:px-12 xl:pl-30 py-20"
+              sx={{ marginTop: "5rem", marginBottom: "5rem" }}
               style={{ minHeight: "65vh" }}
             >
               <Intro />
             </Grid>
-            <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
+            <Grid
+              item
+              xs={12}
+              className="px-2 md:px-12 xl:pl-30 py-20 my-20"
+              sx={{ marginTop: "5rem", marginBottom: "5rem" }}
+            >
               <SectionHeading id="about" headingText="About Me" />
               <About />
             </Grid>
@@ -48,7 +54,8 @@ export default function Home() {
             <Grid
               item
               xs={12}
-              className="px-2 md:px-12 xl:pl-30 4xl:pl-32 py-20 my-20"
+              className="px-2 md:px-12 xl:pl-30 4xl:pl-32 py-20"
+              sx={{ marginTop: "5rem", marginBottom: "5rem" }}
             >
               <SectionHeading id="projects" headingText="Projects" />
               <Projects />
@@ -56,12 +63,18 @@ export default function Home() {
             <Grid
               item
               xs={12}
-              className="px-2 md:px-12 xl:pl-30 4xl:pl-32 py-20 my-20"
+              className="px-2 md:px-12 xl:pl-30 4xl:pl-32 py-20"
+              sx={{ marginTop: "5rem", marginBottom: "5rem" }}
             >
               <SectionHeading id="media" headingText="Writings & Media" />
               <Writings />
             </Grid>
-            <Grid item xs={12} className="px-2 md:px-12 xl:px-32 py-20 my-20">
+            <Grid
+              item
+              xs={12}
+              className="px-2 md:px-12 xl:px-32 py-20"
+              sx={{ marginTop: "5rem", marginBottom: "5rem" }}
+            >
               <div
                 id="contact"
                 className="heading-contact font-bold text-md text-center text-2xl sm:text-3xl m-4"
