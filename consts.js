@@ -5,23 +5,32 @@ export const skillsData = [
       { id: 1, name: "HTML5" },
       { id: 2, name: "CSS3" },
       { id: 3, name: "Javascript" },
-      { id: 4, name: "SQL" },
       { id: 5, name: "TypeScript" },
+      { id: 4, name: "SQL" },
       { id: 6, name: "Ruby" },
       { id: 7, name: "Python" },
-      { id: 8, name: "R" },
+    ],
+  },
+  {
+    name: "Libraries",
+    children: [
+      { id: 1, name: "React" },
+      { id: 2, name: "Material UI" },
+    ],
+  },
+  {
+    name: "CSS Frameworks",
+    children: [
+      { id: 1, name: "Tailwind CSS" },
+      { id: 2, name: "Bootstrap CSS" },
     ],
   },
   {
     name: "Frameworks",
     children: [
-      { id: 1, name: "Tailwind CSS" },
-      { id: 2, name: "Bootstrap CSS" },
-      { id: 3, name: "Next.js" },
-      { id: 4, name: "React.js" },
-      { id: 5, name: "Ruby on Rails" },
-      { id: 6, name: "Material UI" },
-      { id: 7, name: "Sidekiq" },
+      { id: 1, name: "Next.js" },
+      { id: 2, name: "Express.js" },
+      { id: 3, name: "Ruby on Rails" },
     ],
   },
   {
@@ -30,11 +39,16 @@ export const skillsData = [
       { id: 1, name: "Jest" },
       { id: 2, name: "Rspec" },
       { id: 3, name: "Capybara" },
+      { id: 4, name: "Cypress" },
     ],
   },
   {
-    name: "Version control",
-    children: [{ id: 1, name: "Git" }],
+    name: "Databases",
+    children: [
+      { id: 1, name: "MySQL" },
+      { id: 2, name: "PostgreSQL" },
+      { id: 3, name: "SQLite" },
+    ],
   },
   {
     name: "Observability",
