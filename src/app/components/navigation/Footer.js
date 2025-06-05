@@ -13,16 +13,7 @@ const Footer = () => {
             target="_blank"
             tabIndex={-1}
           >
-            Next
-          </a>
-          &nbsp;and&nbsp;
-          <a
-            className="text-eggplant"
-            href="https://react.dev/"
-            target="_blank"
-            tabIndex={-1}
-          >
-            React
+            Next.js
           </a>
           .
         </span>
@@ -49,23 +40,6 @@ const Footer = () => {
               rel="license noopener noreferrer"
             >
               Attribution-ShareAlike 4.0 International license.
-              <span>
-                {/* <img
-                  className="object-contain h-full"
-                  // style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                  src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
-                ></img>
-                <img
-                  className="object-contain h-full"
-                  // style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                  src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
-                ></img>
-                <img
-                  className="object-contain h-full"
-                  // style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
-                  src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
-                ></img> */}
-              </span>
             </a>
           </p>
         </span>

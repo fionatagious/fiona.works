@@ -5,7 +5,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import { skillsData } from "../../../consts";
+import { skillsData } from "../consts";
 
 export default function SkillsAccordion() {
   return (

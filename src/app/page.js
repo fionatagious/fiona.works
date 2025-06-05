@@ -48,7 +48,7 @@ export default function Home() {
               <About />
             </Grid>
             {/* <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
-              <SectionHeading id="experience" headingText="Experience" />
+              <SectionHeading id="experience" headingText="Where I've worked" />
               <ExperiencePanel />
             </Grid> */}
             <Grid

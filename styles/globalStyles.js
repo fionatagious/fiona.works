@@ -61,13 +61,13 @@ const GlobalStyle = createGlobalStyle`
 	.nav-animation:hover:after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
-    transition: transform 0.25s ease-out;
+    	transition: transform 0.25s ease-out;
 	}
 
 	.nav-animation:focus:after {
 		transform: scaleX(1);
 		transform-origin: bottom left;
-    transition: transform 0.25s ease-out;
+    	transition: transform 0.25s ease-out;
 	}
 
 	/* Resume: Top-level Header */
@@ -77,13 +77,6 @@ const GlobalStyle = createGlobalStyle`
 		color: white;
 		margin-left: 1.2rem;
 		font-size: var(--fs-xl);
-	}
-
-	/* Resume: Images */
-	.company-logo {
-		margin-bottom: 0.3rem;
-		display: inline-block;
-		margin-left: 0rem;
 	}
 `;
 

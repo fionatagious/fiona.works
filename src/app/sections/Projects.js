@@ -1,5 +1,5 @@
 import React from "react";
-import { projects } from "../../../consts";
+import { projects } from "../consts";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
 import Tag from "@/app/components/Tag";

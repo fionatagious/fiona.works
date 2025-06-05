@@ -6,16 +6,16 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 // Top-level header
 import Toolbar from "@mui/material/Toolbar";
-import Image from "next/image";
 // Experience section
 import Grid from "@mui/material/Grid";
-import Overview from "./overview";
+import Overview from "./Overview";
 import ExperienceCards from "@/app/components/ExperienceCards";
 // Skills section
-import Skills from "./skills";
+import Skills from "./Skills";
 // Education section
-import Education from "./education";
-import Leadership from "./leadership";
+import Education from "./Education";
+// Leadership section
+import Leadership from "./Leadership";
 
 export default function Resume() {
   return (
