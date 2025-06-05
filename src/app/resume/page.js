@@ -6,11 +6,11 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import Grid from "@mui/material/Grid";
-import Overview from "./Overview";
+import Overview from "@/app/resume/Overview";
 import ExperienceCards from "@/app/components/ExperienceCards";
-import Skills from "./Skills";
-import Education from "./Education";
-import Leadership from "./Leadership";
+import Skills from "@/app/resume/Skills";
+import Education from "@/app/resume/Education";
+import Leadership from "@/app/resume/Leadership";
 
 export default function Resume() {
   return (

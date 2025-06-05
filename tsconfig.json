@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     "src/app/page.js",
-    "src/app/page.js"
+    "src/app/resume/page.js"
   ],
   "exclude": ["node_modules"]
 }
