@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import SkillsAccordion from "@/app/components/SkillsAccordion";
 
-const Skills = () => {
+const ResumeSkills = () => {
   return (
     <Card
       sx={{
@@ -19,4 +19,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default ResumeSkills;

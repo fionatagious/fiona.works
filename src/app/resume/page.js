@@ -6,11 +6,11 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 import Grid from "@mui/material/Grid";
-import Overview from "@/app/resume/Overview";
+import ResumeOverview from "@/app/resume/ResumeOverview";
 import ExperienceCards from "@/app/components/ExperienceCards";
-import Skills from "@/app/resume/Skills";
-import Education from "@/app/resume/Education";
-import Leadership from "@/app/resume/Leadership";
+import ResumeSkills from "@/app/resume/ResumeSkills";
+import ResumeEducation from "@/app/resume/ResumeEducation";
+import ResumeLeadership from "@/app/resume/ResumeLeadership";
 
 export default function Resume() {
   return (
@@ -75,7 +75,7 @@ export default function Resume() {
               md={3}
               sx={{ height: "100vh", overflow: "auto" }}
             >
-              <Skills />
+              <ResumeSkills />
             </Grid>
             <Grid
               item
@@ -92,7 +92,7 @@ export default function Resume() {
               }}
             >
               <Grid item xs={12}>
-                <Overview className="min-h-full" />
+                <ResumeOverview className="min-h-full" />
               </Grid>
               <Grid item xs={12}>
                 <div className="text-xl text-white ml-3 3xl:ml-0 my-2">
@@ -104,13 +104,13 @@ export default function Resume() {
                 <div className="text-xl text-white my-2 ml-3 sm:ml-2 2xl:ml-0">
                   Leadership and Volunteering
                 </div>
-                <Leadership className="min-h-full" />
+                <ResumeLeadership className="min-h-full" />
               </Grid>
               <Grid item xs={12}>
                 <div className="text-xl text-white my-2 ml-3 sm:ml-2 2xl:ml-0">
                   Education
                 </div>
-                <Education className="min-h-full" />
+                <ResumeEducation className="min-h-full" />
               </Grid>
               <Grid item xs={12}>
                 <div className="block sm:hidden text-xl text-white mt-3 ml-3 lg:ml-2 xxl:ml-0">
