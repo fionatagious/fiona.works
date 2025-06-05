@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
-export default function Education() {
+const Education = () => {
   return (
     <Card
       sx={{
@@ -50,4 +50,6 @@ export default function Education() {
       </CardContent>
     </Card>
   );
-}
+};
+
+export default Education;

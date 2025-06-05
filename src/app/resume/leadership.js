@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { leadershipData } from "../consts";
 
-export default function Leadership() {
+const Leadership = () => {
   return (
     <Card
       sx={{
@@ -35,4 +35,6 @@ export default function Leadership() {
       </CardContent>
     </Card>
   );
-}
+};
+
+export default Leadership;
