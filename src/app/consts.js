@@ -438,11 +438,11 @@ export const leadershipData = [
       "Partner with social impact organizations to build software that helps them achieve their missions.",
   },
   {
-    role: "Tapistry Founder & Co-Chair",
-    organization: "The Mom Project",
+    role: "Founder & Co-Chair",
+    organization: "The Mom Project, Tapistry",
     date: "1/2023 – 9/2023",
     description:
-      "Founded the first AAPI employee resource group at The Mom Project. Recruited new members and organized company-wide events to build community and bring awareness to issues impacting the AAPI community.",
+      "Founded the first AAPI Employee Resource Group at The Mom Project. Recruited new members and organized company-wide events to build community and bring awareness to issues impacting the AAPI community.",
   },
   {
     role: "Finance and Advancement Chair",
