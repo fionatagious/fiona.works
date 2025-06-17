@@ -1,60 +1,67 @@
 export const skillsData = [
   {
-    name: "Languages",
-    children: [
-      { id: 1, name: "HTML5" },
-      { id: 2, name: "CSS3" },
-      { id: 3, name: "Javascript" },
-      { id: 5, name: "TypeScript" },
-      { id: 4, name: "SQL" },
-      { id: 6, name: "Ruby" },
-      { id: 7, name: "Python" },
-    ],
-  },
-  {
-    name: "Libraries",
+    name: "Frontend",
     children: [
       { id: 1, name: "React" },
-      { id: 2, name: "Material UI" },
+      { id: 2, name: "TypeScript" },
+      { id: 3, name: "Next.js" },
+      { id: 5, name: "Bootstrap" },
+      { id: 4, name: "Tailwind CSS" },
+      { id: 6, name: "Material UI" },
     ],
   },
   {
-    name: "CSS Frameworks",
+    name: "Backend",
     children: [
-      { id: 1, name: "Tailwind CSS" },
-      { id: 2, name: "Bootstrap CSS" },
-    ],
-  },
-  {
-    name: "Frameworks",
-    children: [
-      { id: 1, name: "Next.js" },
+      { id: 1, name: "Ruby on Rails" },
       { id: 2, name: "Express.js" },
-      { id: 3, name: "Ruby on Rails" },
+      { id: 3, name: "Node.js" },
+      { id: 4, name: "Ruby" },
+      { id: 5, name: "Python" },
+      { id: 6, name: "SQL" },
     ],
   },
   {
-    name: "Testing",
+    name: "Unit Testing",
     children: [
-      { id: 1, name: "Jest" },
-      { id: 2, name: "Rspec" },
-      { id: 3, name: "Capybara" },
-      { id: 4, name: "Cypress" },
+      { id: 1, name: "Vitest" },
+      { id: 2, name: "Jest" },
+      { id: 3, name: "RSpec" },
+    ],
+  },
+  {
+    name: "End-to-end Testing",
+    children: [
+      { id: 1, name: "Cypress" },
+      { id: 2, name: "Capybara" },
     ],
   },
   {
     name: "Databases",
     children: [
-      { id: 1, name: "MySQL" },
-      { id: 2, name: "PostgreSQL" },
+      { id: 1, name: "PostgreSQL" },
+      { id: 2, name: "MySQL" },
       { id: 3, name: "SQLite" },
     ],
   },
   {
-    name: "Observability",
+    name: "DevOps & CI/CD",
+    children: [
+      { id: 1, name: "AWS EC2" },
+      { id: 2, name: "Heroku" },
+      { id: 3, name: "Vercel" },
+      { id: 4, name: "GitHub Actions" },
+      { id: 5, name: "Jenkins" },
+      { id: 5, name: "Docker" },
+    ],
+  },
+  {
+    name: "Monitoring",
     children: [
       { id: 1, name: "Logz.io" },
       { id: 2, name: "Honeybadger" },
+      { id: 3, name: "Honeycomb" },
+      { id: 4, name: "Sentry" },
     ],
   },
   {
@@ -78,25 +85,33 @@ export const resumeBullets = [
     alias: "braven",
     jobTitle: "Senior Software Engineer",
     organization: "Braven",
-    datesWorked: "3/2024 – Present",
+    datesWorked: "3/2024 – 5/2023",
     summary:
       "Braven is a non-profit organization that empowers promising young people on their path to college graduation and strong first jobs. At Braven, I build user flows to help students from low-income and marginalized backgrounds access resources and opportunities.",
     children: [
       {
         id: 1,
-        bullet: `Build and maintain integrations with third-party platforms (Salesforce, Canvas, Pathify), applying software design best practices to enhance code quality.`,
+        bullet: `Build and maintain integrations with third-party platforms (Salesforce API, Canvas API, Ruby on Rails, PostgreSQL).`,
       },
       {
         id: 2,
-        bullet: `Collaborate cross-functionally to refine, build, and QA user-facing features (Ruby on Rails, Docker).`,
+        bullet: `Led accessibility epic to secure a WCAG 2.2 Level AAA VPAT. Identified and resolved accessibility issues.`,
       },
       {
         id: 3,
-        bullet: `Set up tools and processes to streamline workflows, documentation, and collaboration for a team of six developers.`,
+        bullet: `Collaborated cross-functionally to refine, build, and QA user-facing features (Ruby on Rails, Docker).`,
       },
       {
         id: 4,
         bullet: `Developed an encrypted token system to address signup friction, reducing related product support issues.`,
+      },
+      {
+        id: 5,
+        bullet: `Set up tools and processes to streamline workflows, documentation, and collaboration for a team of six developers.`,
+      },
+      {
+        id: 6,
+        bullet: `Mentored junior developers and shaped team's technical strategy, processes, and culture.`,
       },
     ],
   },
