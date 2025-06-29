@@ -3,8 +3,8 @@ import React from "react";
 import { Button } from "@/app/components/buttons/Button";
 import ExternalLinkIcon from "@/app/components/icons/ExternalLinkIcon";
 import { resumeBullets } from "../consts";
-import { StyledTab } from "@/app/components/StyledTab";
-import { StyledTabs } from "@/app/components/StyledTabs";
+import StyledTab from "@/app/components/StyledTab";
+import StyledTabs from "@/app/components/StyledTabs";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -31,9 +31,9 @@ export default function ExperiencePanel() {
     setValue(newValue);
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "Enter") {
-      window.location = "mailto:fionatagious@gmail.com";
+      window.location.href = "mailto:fionatagious@gmail.com";
     }
   };
 

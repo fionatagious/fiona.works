@@ -5,7 +5,11 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { leadershipData } from "../consts";
 
-const ResumeLeadership = () => {
+interface ResumeLeadershipProps {
+  className?: string;
+}
+
+const ResumeLeadership = ({ className }: ResumeLeadershipProps) => {
   return (
     <Card
       sx={{
@@ -14,7 +18,7 @@ const ResumeLeadership = () => {
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}
-      className="mb-2"
+      className={`mb-2 ${className}`}
     >
       <CardContent>
         <Grid container sx={{ display: "flex", alignItems: "center" }}>

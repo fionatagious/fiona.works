@@ -3,7 +3,11 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 
-const ResumeOverview = () => {
+interface ResumeOverviewProps {
+  className?: string;
+}
+
+const ResumeOverview = ({ className }: ResumeOverviewProps) => {
   return (
     <>
       <Card
@@ -13,7 +17,7 @@ const ResumeOverview = () => {
           backgroundColor: "hsla(0, 100%, 0%, 0.7)",
           color: "white",
         }}
-        className="mt-3 mb-2"
+        className={`mt-3 mb-2 ${className}`}
       >
         <CardContent className="d-flex pb-6">
           <div className="text-sm sm:text-md calibre">

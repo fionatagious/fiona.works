@@ -21,7 +21,9 @@ export default function Resume() {
       <ThemeProvider
         theme={createTheme({
           palette: {
-            pink: "#d79eff",
+            primary: {
+              main: "#d79eff",
+            },
           },
           breakpoints: {
             values: {
@@ -35,7 +37,6 @@ export default function Resume() {
         })}
       >
         <Container
-          fluid="true"
           disableGutters
           maxWidth={false}
           sx={{

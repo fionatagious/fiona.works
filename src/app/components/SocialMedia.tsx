@@ -3,7 +3,7 @@ import GithubIcon from "@/app/components/icons/GithubIcon";
 import LinkedInIcon from "@/app/components/icons/LinkedInIcon";
 import EmailIcon from "@/app/components/icons/EmailIcon";
 
-export default function SocialMedia() {
+const SocialMedia = () => {
   return (
     <div className="flex flex-row gap-x-2 mx-2">
       <a
@@ -29,4 +29,6 @@ export default function SocialMedia() {
       </a>
     </div>
   );
-}
+};
+
+export default SocialMedia;

@@ -6,7 +6,11 @@ import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
-const ResumeEducation = () => {
+interface ResumeEducationProps {
+  className?: string;
+}
+
+const ResumeEducation = ({ className }: ResumeEducationProps) => {
   return (
     <Card
       sx={{
@@ -15,7 +19,7 @@ const ResumeEducation = () => {
         backgroundColor: "hsla(0, 100%, 0%, 0.7)",
         color: "white",
       }}
-      className="mb-2"
+      className={`mb-2 ${className}`}
     >
       <CardContent>
         <Grid

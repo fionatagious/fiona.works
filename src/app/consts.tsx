@@ -5,8 +5,8 @@ export const skillsData = [
       { id: 1, name: "React" },
       { id: 2, name: "TypeScript" },
       { id: 3, name: "Next.js" },
-      { id: 5, name: "Bootstrap" },
       { id: 4, name: "Tailwind CSS" },
+      { id: 5, name: "Bootstrap" },
       { id: 6, name: "Material UI" },
     ],
   },
@@ -52,7 +52,7 @@ export const skillsData = [
       { id: 3, name: "Vercel" },
       { id: 4, name: "GitHub Actions" },
       { id: 5, name: "Jenkins" },
-      { id: 5, name: "Docker" },
+      { id: 6, name: "Docker" },
     ],
   },
   {
@@ -244,7 +244,7 @@ export const resumeBullets = [
     alias: "uber",
     jobTitle: "Data Analyst",
     organization: "Uber",
-    datesWorked: "9/2018 – 3/2019",
+    datesWorked: "9/2018 – 7/2019",
     summary: `On the Uber Eats team, I analyzed data on user retention and acquisition and helped to inform an overarching product roadmap.`,
     children: [
       {

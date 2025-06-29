@@ -4,12 +4,12 @@ import Grid from "@mui/material/Grid";
 
 export default function Contact() {
   const handleClick = () => {
-    window.location = "mailto:fionatagious@gmail.com";
+    window.location.href = "mailto:fionatagious@gmail.com";
   };
 
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
-      window.location = "mailto:fionatagious@gmail.com";
+      window.location.href = "mailto:fionatagious@gmail.com";
     }
   };
 

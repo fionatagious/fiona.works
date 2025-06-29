@@ -1,7 +1,9 @@
 import Tabs from "@mui/material/Tabs";
 import { styled } from "@mui/material/styles";
 
-export const StyledTabs = styled((props) => (
+interface StyledTabsProps extends React.ComponentProps<typeof Tabs> {}
+
+const StyledTabs = styled(({ ...props }: StyledTabsProps) => (
   <Tabs
     {...props}
     TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
@@ -19,3 +21,5 @@ export const StyledTabs = styled((props) => (
     color: "var(--slate-950)",
   },
 });
+
+export default StyledTabs;

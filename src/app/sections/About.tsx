@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 import { Button } from "@/app/components/buttons/Button";
 import ExternalLinkIcon from "@/app/components/icons/ExternalLinkIcon";
 
-export default function About() {
+const About = () => {
   const handleClick = () => {
     // open the resume in a new tab
     window.open("/resume", "_blank");
@@ -36,4 +36,6 @@ export default function About() {
       </Grid>
     </Grid>
   );
-}
+};
+
+export default About;

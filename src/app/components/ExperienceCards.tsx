@@ -6,13 +6,17 @@ import Image from "next/image";
 import { resumeBullets } from "../consts";
 import Typography from "@mui/material/Typography";
 
-export default function ExperienceCards() {
+interface ExperienceCardsProps {
+  className?: string;
+}
+
+const ExperienceCards = ({ className }: ExperienceCardsProps) => {
   return (
     <>
       {resumeBullets.map((item) => (
         <Card
           key={item.index}
-          className="my-2"
+          className={`my-2 ${className}`}
           sx={{
             minWidth: 275,
             maxWidth: 1200,
@@ -56,4 +60,6 @@ export default function ExperienceCards() {
       ))}
     </>
   );
-}
+};
+
+export default ExperienceCards;
