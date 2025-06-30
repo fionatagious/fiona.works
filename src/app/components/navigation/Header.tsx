@@ -123,7 +123,7 @@ const Header = () => {
   );
 
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const matches = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <div className="w-full h-20 sticky top-0 bg-white/70 backdrop-blur-lg border-b border-gray z-50">

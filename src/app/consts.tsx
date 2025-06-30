@@ -85,7 +85,7 @@ export const resumeBullets = [
     alias: "braven",
     jobTitle: "Senior Software Engineer",
     organization: "Braven",
-    datesWorked: "3/2024 – 5/2023",
+    datesWorked: "3/2024 – 5/2025",
     summary:
       "Braven is a non-profit organization that empowers promising young people on their path to college graduation and strong first jobs. At Braven, I build user flows to help students from low-income and marginalized backgrounds access resources and opportunities.",
     children: [
@@ -445,6 +445,13 @@ export const leadershipData = [
       "Founded the first AAPI Employee Resource Group at The Mom Project. Recruited new members and organized company-wide events to build community and bring awareness to issues impacting the AAPI community.",
   },
   {
+    role: "Community Organizer & Canvasser",
+    organization: "Community Democracy Project",
+    date: "6/2019 – 8/2022",
+    description:
+      "Gathered signatures for a grassroots campaign to amend the City of Oakland charter to enable participatory budgeting.",
+  },
+  {
     role: "Finance and Advancement Chair",
     organization: "New Leaders Council",
     date: "6/2021 – 7/2022",
@@ -457,12 +464,5 @@ export const leadershipData = [
     date: "1/2021 – 6/2021",
     description:
       "Developed fundraising strategies to reach 2021 fellowship cohort's fundraising goal of $20k. Established Finance Committee processes and project management tools. Served as liaison between Finance Committee and Oakland Chapter Board.",
-  },
-  {
-    role: "Community Organizer & Canvasser",
-    organization: "Community Democracy Project",
-    date: "6/2019 – 8/2022",
-    description:
-      "Gathered signatures for a grassroots campaign to amend the City of Oakland charter to enable participatory budgeting.",
   },
 ];
