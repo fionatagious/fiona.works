@@ -4,18 +4,18 @@ import React, { useRef } from "react";
 import Box from "@mui/material/Box";
 import CloseIcon from "@mui/icons-material/Close";
 import Drawer from "@mui/material/Drawer";
-import InitialLogo from "@/app/components/icons/InitialLogo";
+import InitialLogo from "../icons/InitialLogo";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
-import SiteLogo from "@/app/components/icons/SiteLogo";
+import SiteLogo from "../icons/SiteLogo";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
 const Header = () => {
-  const handleScroll = (id) => {
+  const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (!element) return; // Avoid runtime error if element is not found
 
@@ -70,17 +70,20 @@ const Header = () => {
     right: false,
   });
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-    setState({ ...state, [anchor]: open });
-  };
+  const toggleDrawer =
+    (anchor: string, open: boolean) =>
+    (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event.type === "keydown" &&
+        "key" in event &&
+        (event.key === "Tab" || event.key === "Shift")
+      ) {
+        return;
+      }
+      setState({ ...state, [anchor]: open });
+    };
 
-  const list = (anchor) => (
+  const list = (anchor: string) => (
     <Box
       sx={{
         width: 250,
@@ -88,8 +91,8 @@ const Header = () => {
         height: "100%",
       }}
       role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
+      onClick={toggleDrawer("right", false)}
+      onKeyDown={toggleDrawer("right", false)}
     >
       <div className="flex justify-end p-4">
         <button>
@@ -145,7 +148,7 @@ const Header = () => {
         </div>
         {/* hamburger menu */}
         {!matches &&
-          ["right"].map((anchor) => (
+          (["right"] as Array<"right">).map((anchor) => (
             <div
               className="flex justify-between items-center w-full h-full sm:hidden"
               key={anchor}
