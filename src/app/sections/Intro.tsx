@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollButton } from "@/app/components/buttons/ScrollButton";
+import { ScrollButton } from "../components/buttons/ScrollButton";
 
 export default function Intro() {
   return (

@@ -2,10 +2,10 @@ import React from "react";
 import { projects } from "../consts";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
-import Tag from "@/app/components/Tag";
+import Tag from "../components/Tag";
 
 export default function Projects() {
-  const handleKeyDown = (event, href) => {
+  const handleKeyDown = (event: React.KeyboardEvent, href: string) => {
     if (event.key === "Enter") {
       window.open(href, "_blank");
     }
