@@ -1,8 +1,8 @@
 import React from "react";
 import SocialMedia from "../components/SocialMedia";
 import Grid from "@mui/material/Grid";
-import { Button } from "@/app/components/buttons/Button";
-import ExternalLinkIcon from "@/app/components/icons/ExternalLinkIcon";
+import { Button } from "../components/buttons/Button";
+import ExternalLinkIcon from "../components/icons/ExternalLinkIcon";
 
 const About = () => {
   const handleClick = () => {

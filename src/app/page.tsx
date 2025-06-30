@@ -4,11 +4,11 @@ import React from "react";
 import GlobalStyle from "../../styles/globalStyles";
 import Head from "next/head";
 import Grid from "@mui/material/Grid";
-import Header from "@/app/components/navigation/Header";
-import Footer from "@/app/components/navigation/Footer";
+import Header from "./components/navigation/Header";
+import Footer from "./components/navigation/Footer";
 
-// import ExperiencePanel from "@/app/components/ExperiencePanel";
-import SectionHeading from "@/app/components/SectionHeading";
+// import ExperiencePanel from "./components/ExperiencePanel";
+import SectionHeading from "./components/SectionHeading";
 import Intro from "./sections/Intro";
 import About from "./sections/About";
 import Projects from "./sections/Projects";
@@ -47,10 +47,10 @@ export default function Home() {
               <SectionHeading id="about" headingText="About Me" />
               <About />
             </Grid>
-            {/* <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
+            <Grid item xs={12} className="px-2 md:px-12 xl:pl-30 py-20 my-20">
               <SectionHeading id="experience" headingText="Where I've worked" />
-              <ExperiencePanel />
-            </Grid> */}
+              {/* <ExperiencePanel /> */}
+            </Grid>
             <Grid
               item
               xs={12}

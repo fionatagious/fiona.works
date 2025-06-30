@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Button } from "@/app/components/buttons/Button";
+import { Button } from "../components/buttons/Button";
 import Grid from "@mui/material/Grid";
 
 export default function Contact() {
@@ -7,7 +7,7 @@ export default function Contact() {
     window.location.href = "mailto:fionatagious@gmail.com";
   };
 
-  const handleKeyDown = (event) => {
+  const handleKeyDown = (event: React.KeyboardEvent) => {
     if (event.key === "Enter") {
       window.location.href = "mailto:fionatagious@gmail.com";
     }

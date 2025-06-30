@@ -1,7 +1,7 @@
 import React from "react";
-import GithubIcon from "@/app/components/icons/GithubIcon";
-import LinkedInIcon from "@/app/components/icons/LinkedInIcon";
-import EmailIcon from "@/app/components/icons/EmailIcon";
+import GithubIcon from "./icons/GithubIcon";
+import LinkedInIcon from "./icons/LinkedInIcon";
+import EmailIcon from "./icons/EmailIcon";
 
 const SocialMedia = () => {
   return (

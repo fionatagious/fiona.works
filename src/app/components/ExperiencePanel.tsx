@@ -1,15 +1,15 @@
 import React from "react";
 
-import { Button } from "@/app/components/buttons/Button";
-import ExternalLinkIcon from "@/app/components/icons/ExternalLinkIcon";
+import { Button } from "./buttons/Button";
+import ExternalLinkIcon from "./icons/ExternalLinkIcon";
 import { resumeBullets } from "../consts";
-import StyledTab from "@/app/components/StyledTab";
-import StyledTabs from "@/app/components/StyledTabs";
+import StyledTab from "./StyledTab";
+import StyledTabs from "./StyledTabs";
 import Box from "@mui/material/Box";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-function Panel(props) {
+const Panel = ({ ...props }) => {
   const { children, value, index, ...other } = props;
 
   return (
@@ -22,12 +22,13 @@ function Panel(props) {
       {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
-}
+};
 
 export default function ExperiencePanel() {
   const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    console.log("Tab changed to:", newValue);
     setValue(newValue);
   };
 
@@ -40,7 +41,7 @@ export default function ExperiencePanel() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
 
-  function a11yProps(index) {
+  function a11yProps(index: number) {
     return {
       id: `vertical-tab-${index}`,
       "aria-controls": `vertical-ExperiencePanel-${index}`,

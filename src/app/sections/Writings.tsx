@@ -4,7 +4,10 @@ import Image from "next/image";
 import Grid from "@mui/material/Grid";
 
 export default function Writings() {
-  const handleKeyDown = (event, href) => {
+  const handleKeyDown = (
+    event: React.KeyboardEvent<HTMLDivElement>,
+    href: string | URL | undefined
+  ) => {
     if (event.key === "Enter") {
       window.open(href, "_blank");
     }
