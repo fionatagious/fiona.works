@@ -5,7 +5,11 @@ export const metadata = {
   description: "Fiona Tang's site",
 };
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en">
       <body>
