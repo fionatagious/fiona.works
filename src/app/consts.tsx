@@ -378,8 +378,14 @@ export const projects = [
   {
     id: 1,
     projectName: `Dish Deets`,
-    summary: `ChatGPT-powered dish identifier for dishes from cuisines around the world`,
-    tags: ["Ruby on Rails", "OpenAI API", "NextJS", "React with TypeScript"],
+    summary: `Identify dishes from cuisines around the world and learn how to pronounce dish names`,
+    tags: [
+      "Ruby on Rails",
+      "OpenAI GPT-4",
+      "Azure Text-to-speech API",
+      "NextJS",
+      "React with TypeScript",
+    ],
     href: "https://dishdeets.com",
     src: "dish-deets.jpg",
     alt: "a web page showing search results from a dish description written in English",
@@ -405,11 +411,11 @@ export const projects = [
   {
     id: 4,
     projectName: `Air Quality Index (AQI) Viewer`,
-    summary: `Air Quality Index (AQI) viewer`,
+    summary: `Air quality data for a selection of cities around the world`,
     tags: ["React", "Tailwind CSS"],
     href: "https://fionatagious.github.io/aqi-viewer/",
     src: "aqi-viewer.jpg",
-    alt: "displays air quality in a handful of cities around the world",
+    alt: "displays air quality of a handful of cities around the world",
   },
   {
     id: 5,
