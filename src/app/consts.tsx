@@ -378,11 +378,11 @@ export const projects = [
   {
     id: 1,
     projectName: `Dish Deets`,
-    summary: `Identify dishes from cuisines around the world and learn how to pronounce dish names`,
+    summary: `Identify dishes from cuisines around the world and learn how to pronounce them`,
     tags: [
       "Ruby on Rails",
       "OpenAI GPT-4",
-      "Azure Text-to-speech API",
+      "Azure Text-to-speech",
       "NextJS",
       "React with TypeScript",
     ],
@@ -393,7 +393,7 @@ export const projects = [
   {
     id: 2,
     projectName: `Ward Wise`,
-    summary: `Neighborhood spending in Chicago`,
+    summary: `Neighborhood infrastructure spending in Chicago`,
     tags: ["NextJS", "Tailwind CSS", "React with TypeScript"],
     href: "https://www.wardwisechicago.org",
     src: "ward-wise.jpg",
@@ -420,7 +420,7 @@ export const projects = [
   {
     id: 5,
     projectName: `Severe Weather Action Plan app`,
-    summary: `Emergency shelter for people experiencing homelessness in Adams County, Colorado`,
+    summary: `Emergency shelter for people experiencing homelessness`,
     tags: ["Ruby on Rails", "React"],
     href: "https://swapp-1.herokuapp.com/users/sign_in",
     src: "swapp.jpg",
